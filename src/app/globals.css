@@ -1,0 +1,413 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ITHAC Design System - Global Styles */
+
+:root {
+  /* ITHAC Brand Colors */
+  --ithac-blue: #0056d2;
+  --ithac-blue-dark: #003a8c;
+  --ithac-light-blue: #e6f0ff;
+  --ithac-dark-gray: #1a1a1a;
+  --ithac-gray-light: #f5f7fa;
+  --ithac-gold: #f5c542;
+  --ithac-silver: #c7cbd1;
+  --ithac-emerald: #00c2a8;
+  --ithac-purple: #5b3df5;
+  --ithac-error: #e63946;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: var(--font-inter), "Inter", system-ui, sans-serif;
+  color: var(--ithac-dark-gray);
+  background-color: white;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Enhanced Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ithac-gray-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, var(--ithac-blue), var(--ithac-purple));
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    45deg,
+    var(--ithac-blue-dark),
+    var(--ithac-purple)
+  );
+}
+
+/* ITHAC Design System Utilities */
+@layer utilities {
+  /* Glass Effects */
+  .glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .glass-dark {
+    background: rgba(0, 86, 210, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-ithac {
+    background: rgba(0, 86, 210, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 86, 210, 0.1);
+  }
+
+  /* Text Utilities */
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* ITHAC Gradient Text */
+  .text-gradient-ithac {
+    background: linear-gradient(135deg, var(--ithac-blue), var(--ithac-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-accent {
+    background: linear-gradient(
+      135deg,
+      var(--ithac-emerald),
+      var(--ithac-blue-dark)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, var(--ithac-gold), var(--ithac-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Shadow Utilities */
+  .shadow-ithac-blue {
+    box-shadow: 0 10px 40px rgba(0, 86, 210, 0.3);
+  }
+
+  .shadow-ithac-purple {
+    box-shadow: 0 10px 40px rgba(91, 61, 245, 0.3);
+  }
+
+  .shadow-ithac-emerald {
+    box-shadow: 0 10px 40px rgba(0, 194, 168, 0.3);
+  }
+
+  .shadow-ithac-gold {
+    box-shadow: 0 10px 40px rgba(245, 197, 66, 0.3);
+  }
+}
+
+/* ITHAC Component Styles */
+@layer components {
+  /* Button Presets */
+  .btn-ithac-primary {
+    @apply bg-gradient-to-r from-ithac-blue to-ithac-purple text-white rounded-full px-8 py-3 font-semibold shadow-lg shadow-ithac-blue/30 hover:scale-105 hover:shadow-ithac-blue/50 transition-all duration-300;
+  }
+
+  .btn-ithac-secondary {
+    @apply border border-ithac-blue text-ithac-blue hover:bg-ithac-blue hover:text-white rounded-full px-8 py-3 transition-all duration-300 font-semibold;
+  }
+
+  .btn-ithac-cta {
+    @apply bg-gradient-to-r from-ithac-emerald to-ithac-blue text-white rounded-full px-10 py-4 font-bold text-lg shadow-xl shadow-ithac-emerald/30 hover:scale-105 hover:shadow-ithac-emerald/50 transition-all duration-300;
+  }
+
+  /* Card Presets */
+  .card-ithac-base {
+    @apply bg-white rounded-3xl shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300;
+  }
+
+  .card-ithac-feature {
+    @apply bg-white rounded-3xl p-8 shadow-xl shadow-ithac-blue/10 hover:shadow-ithac-blue/20 hover:scale-[1.02] transition-all duration-300;
+  }
+
+  .card-ithac-service {
+    @apply bg-gradient-to-br from-white to-ithac-light-blue rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 border border-ithac-light-blue/50;
+  }
+
+  /* Section Presets */
+  .section-ithac {
+    @apply py-20 lg:py-32;
+  }
+
+  .container-ithac {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Enhanced Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 86, 210, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(0, 86, 210, 0.6);
+  }
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* Animation Classes */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.animate-gradient-shift {
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Image Optimization */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.lazy-image {
+  transition: opacity 0.3s ease;
+}
+
+.lazy-image.loading {
+  opacity: 0.7;
+}
+
+/* Interactive Elements */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 86, 210, 0.15);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(0, 86, 210, 0.4);
+}
+
+/* Focus Styles for Accessibility */
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 86, 210, 0.5);
+  border-radius: 4px;
+}
+
+/* ITHAC Gradient Backgrounds */
+.bg-gradient-ithac-primary {
+  background: linear-gradient(
+    135deg,
+    var(--ithac-blue) 0%,
+    var(--ithac-purple) 100%
+  );
+}
+
+.bg-gradient-ithac-accent {
+  background: linear-gradient(
+    135deg,
+    var(--ithac-emerald) 0%,
+    var(--ithac-blue-dark) 100%
+  );
+}
+
+.bg-gradient-ithac-cta {
+  background: linear-gradient(135deg, #0056d2 0%, #00c2a8 100%);
+}
+
+.bg-gradient-ithac-light {
+  background: linear-gradient(135deg, var(--ithac-light-blue) 0%, #ffffff 100%);
+}
+
+.bg-gradient-ithac-hero {
+  background: linear-gradient(
+    135deg,
+    var(--ithac-blue) 0%,
+    var(--ithac-purple) 50%,
+    var(--ithac-emerald) 100%
+  );
+}
+
+/* Typography Enhancements */
+.font-satoshi {
+  font-family: var(--font-satoshi), "Satoshi", system-ui, sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter), "Inter", system-ui, sans-serif;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .text-responsive-hero {
+    font-size: clamp(2rem, 8vw, 4rem);
+  }
+
+  .text-responsive-section {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+  .dark-mode-support {
+    --bg-primary: var(--ithac-dark-gray);
+    --text-primary: var(--ithac-light-blue);
+    --accent-color: var(--ithac-gold);
+  }
+}
+
+/* Performance Optimizations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    color: black !important;
+    background: white !important;
+  }
+}
