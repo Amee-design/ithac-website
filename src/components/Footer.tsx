@@ -8,7 +8,7 @@ import {
   Linkedin,
   Twitter,
   Instagram,
-  Github,
+  Facebook,
 } from "lucide-react";
 
 const Footer = () => {
@@ -42,10 +42,22 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: <Linkedin className="w-5 h-5" />, href: "#", name: "LinkedIn" },
+    {
+      icon: <Linkedin className="w-5 h-5" />,
+      href: "https://www.linkedin.com/company/information-technologies-hub-and-cynosure-ithac/",
+      name: "LinkedIn",
+    },
     { icon: <Twitter className="w-5 h-5" />, href: "#", name: "Twitter" },
-    { icon: <Instagram className="w-5 h-5" />, href: "#", name: "Instagram" },
-    { icon: <Github className="w-5 h-5" />, href: "#", name: "GitHub" },
+    {
+      icon: <Instagram className="w-5 h-5" />,
+      href: "https://www.instagram.com/ithacceomd?igsh=N25kMHI2Z20wajlx",
+      name: "Instagram",
+    },
+    {
+      icon: <Facebook className="w-5 h-5" />,
+      href: "https://www.facebook.com/share/17EcJUNSAe/",
+      name: "Facebook",
+    },
   ];
 
   return (
@@ -76,19 +88,21 @@ const Footer = () => {
                   <div className="flex items-center gap-3">
                     <MapPin className="w-5 h-5 text-ithac-blue flex-shrink-0" />
                     <span className="text-gray-300 text-sm">
-                      123 Innovation Drive, Victoria Island, Lagos, Nigeria
+                      Carlin Concept Plaza, opposite Aco estate or Mantrac
+                      Caterpillar company, beside Salbas petrol station, Airport
+                      Road, Abuja, Nigeria
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="w-5 h-5 text-ithac-blue flex-shrink-0" />
                     <span className="text-gray-300 text-sm">
-                      +234 (0) 901 234 5678
+                      +234 902 143 9349
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="w-5 h-5 text-ithac-blue flex-shrink-0" />
                     <span className="text-gray-300 text-sm">
-                      hello@ithac.ng
+                      contactus@ithac.org
                     </span>
                   </div>
                 </div>
@@ -230,7 +244,7 @@ const Footer = () => {
               className="text-gray-300 text-sm"
             >
               © {currentYear} ITHAC. All rights reserved. | Made with ❤️ in
-              Lagos, Nigeria
+              Abuja, Nigeria
             </motion.div>
 
             {/* Social Links */}

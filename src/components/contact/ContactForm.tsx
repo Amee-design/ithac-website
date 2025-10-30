@@ -287,7 +287,7 @@ export default function ContactForm() {
                     value={formData.phone}
                     onChange={(e) => handleInputChange("phone", e.target.value)}
                     className="w-full px-4 py-3 border border-ithac-light-gray rounded-xl focus:outline-none focus:ring-2 focus:ring-ithac-blue/20 focus:border-ithac-blue transition-all"
-                    placeholder="+234 901 234 5678"
+                    placeholder="+234 902 143 9349"
                   />
                 </div>
 

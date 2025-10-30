@@ -51,9 +51,9 @@ const Chatbot = () => {
         "Our pricing varies by program:\n\n💰 Training Programs: Starting from ₦150,000 for workshops\n💰 Development Services: Custom quotes based on project scope\n💰 Hackathon Events: Free participation for students\n\nContact us for detailed pricing and payment plans!",
     },
     location: {
-      keywords: ["location", "where", "address", "lagos", "office"],
+      keywords: ["location", "where", "address", "abuja", "office"],
       response:
-        "📍 We're located in Lagos, Nigeria:\n\nITHAC Headquarters\n123 Innovation Drive\nVictoria Island, Lagos, Nigeria\n\n📞 Phone: +234 (0) 901 234 5678\n📧 Email: hello@ithac.ng",
+        "📍 We're located in Abuja, Nigeria:\n\nITHAC Headquarters\nCarlin Concept Plaza, opposite Aco estate or Mantrac Caterpillar company, beside Salbas petrol station, Airport Road, Abuja, Nigeria\n\n📞 Phone: +234 902 143 9349\n📧 Email: contactus@ithac.org",
     },
     requirements: {
       keywords: ["requirement", "prerequisite", "need", "qualify"],
@@ -68,12 +68,12 @@ const Chatbot = () => {
     contact: {
       keywords: ["contact", "reach", "get in touch", "call", "email"],
       response:
-        "Get in touch with us:\n\n📧 Email: hello@ithac.ng\n📧 Admissions: admissions@ithac.ng\n📞 Phone: +234 (0) 901 234 5678\n📞 WhatsApp: +234 (0) 803 456 7890\n\nOr use the contact form on our website!",
+        "Get in touch with us:\n\n📧 Email: contactus@ithac.org\n📞 Phone: +234 902 143 9349\n\nOr use the contact form on our website!",
     },
     about: {
       keywords: ["about", "who are you", "company", "ithac"],
       response:
-        "About ITHAC:\n\n🚀 We're a Lagos-based software company empowering the next generation of tech innovators\n\n📈 Our Impact:\n• 500+ Graduates\n• 10+ Global Partners\n• 95% Success Rate\n\nWe provide training, development, and innovation experiences through comprehensive tech programs!",
+        "About ITHAC:\n\n🚀 We're an Abuja-based software company empowering the next generation of tech innovators\n\n📈 Our Impact:\n• 500+ Graduates\n• 10+ Global Partners\n• 95% Success Rate\n\nWe provide training, development, and innovation experiences through comprehensive tech programs!",
     },
   };
 
@@ -87,7 +87,7 @@ const Chatbot = () => {
     }
 
     // Default response for unmatched queries
-    return "I'd be happy to help! I can provide information about:\n\n• Our training programs and courses\n• Services we offer\n• Pricing and requirements\n• Location and contact details\n• Program duration and schedules\n\nPlease ask me about any of these topics, or contact our team directly at hello@ithac.ng for personalized assistance!";
+    return "I'd be happy to help! I can provide information about:\n\n• Our training programs and courses\n• Services we offer\n• Pricing and requirements\n• Location and contact details\n• Program duration and schedules\n\nPlease ask me about any of these topics, or contact our team directly at contactus@ithac.org for personalized assistance!";
   };
 
   const handleSendMessage = async () => {

@@ -236,12 +236,12 @@ extend: {
 
 For questions about the ITHAC homepage implementation:
 
-- **Email**: hello@ithac.ng
-- **Phone**: +234 (0) 901 234 5678
-- **Address**: 123 Innovation Drive, Victoria Island, Lagos, Nigeria
+- **Email**: contactus@ithac.org
+- **Phone**: +234 902 143 9349
+- **Address**: Carlin Concept Plaza, opposite Aco estate or Mantrac Caterpillar company, beside Salbas petrol station, Airport Road, Abuja, Nigeria
 
 ---
 
-**Built with ❤️ in Lagos, Nigeria**
+**Built with ❤️ in Abuja, Nigeria**
 
 _Empowering the next generation of tech innovators through world-class education and innovation._

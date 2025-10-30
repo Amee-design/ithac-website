@@ -100,8 +100,7 @@ const CTA = () => {
                 <Mail className="w-6 h-6 text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Email Us</h3>
-              <p className="text-blue-100">hello@ithac.ng</p>
-              <p className="text-blue-100">admissions@ithac.ng</p>
+              <p className="text-blue-100">contactus@ithac.org</p>
             </motion.div>
 
             <motion.div
@@ -112,8 +111,7 @@ const CTA = () => {
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Call Us</h3>
-              <p className="text-blue-100">+234 (0) 901 234 5678</p>
-              <p className="text-blue-100">+234 (0) 803 456 7890</p>
+              <p className="text-blue-100">+234 902 143 9349</p>
             </motion.div>
 
             <motion.div
@@ -124,8 +122,10 @@ const CTA = () => {
                 <MapPin className="w-6 h-6 text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Visit Us</h3>
-              <p className="text-blue-100">123 Innovation Drive</p>
-              <p className="text-blue-100">Victoria Island, Lagos, Nigeria</p>
+              <p className="text-blue-100">
+                Carlin Concept Plaza, opposite Aco estate
+              </p>
+              <p className="text-blue-100">Airport Road, Abuja, Nigeria</p>
             </motion.div>
           </motion.div>
 

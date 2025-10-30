@@ -6,11 +6,12 @@ import { MapPin, Clock, Phone, Mail, Globe, Users } from "lucide-react";
 
 const offices = [
   {
-    city: "Lagos",
+    city: "Abuja",
     country: "Nigeria",
-    address: "123 Victoria Island, Lagos State, Nigeria",
-    phone: "+234 901 234 5678",
-    email: "lagos@ithac.tech",
+    address:
+      "Carlin Concept Plaza, opposite Aco estate or Mantrac Caterpillar company, beside Salbas petrol station, Airport Road, Abuja, Nigeria",
+    phone: "+234 902 143 9349",
+    email: "contactus@ithac.org",
     hours: "Mon-Fri: 8am-6pm WAT",
     timezone: "GMT+1",
     isHeadquarters: true,

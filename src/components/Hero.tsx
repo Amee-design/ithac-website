@@ -198,7 +198,7 @@ const Hero = () => {
           <div className="inline-flex items-center gap-3 bg-ithac-blue/10 rounded-2xl px-6 py-3 border border-ithac-blue/20 mb-6">
             <div className="w-2 h-2 bg-ithac-blue rounded-full animate-pulse"></div>
             <span className="text-ithac-blue font-semibold text-sm tracking-wide uppercase">
-              Established 2016 • Lagos, Nigeria
+              Established 2016 • Abuja, Nigeria
             </span>
           </div>
 

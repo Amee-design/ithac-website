@@ -6,12 +6,13 @@ import { MapPin, Navigation, ExternalLink } from "lucide-react";
 
 const locations = [
   {
-    city: "Lagos",
+    city: "Abuja",
     country: "Nigeria",
-    coordinates: { lat: 6.5244, lng: 3.3792 },
-    address: "123 Victoria Island, Lagos State, Nigeria",
+    coordinates: { lat: 9.0579, lng: 7.4951 },
+    address:
+      "Carlin Concept Plaza, opposite Aco estate or Mantrac Caterpillar company, beside Salbas petrol station, Airport Road, Abuja, Nigeria",
     isHeadquarters: true,
-    mapEmbedId: "lagos-office",
+    mapEmbedId: "abuja-office",
   },
   {
     city: "Accra",

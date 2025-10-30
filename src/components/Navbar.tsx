@@ -42,7 +42,7 @@ const Navbar = () => {
             <Link href="/" className="flex items-center">
               <div>
                 <h1 className="text-2xl font-bold text-ithac-blue">ITHAC</h1>
-                <p className="text-xs text-ithac-gray">Lagos, Nigeria</p>
+                <p className="text-xs text-ithac-gray">Abuja, Nigeria</p>
               </div>
             </Link>
           </motion.div>
