@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
+import Link from "next/link";
 
 const CTA = () => {
   const ref = useRef(null);
@@ -33,7 +34,7 @@ const CTA = () => {
     <section
       id="contact"
       ref={ref}
-      className="py-20 bg-gradient-to-br from-ithac-blue to-blue-800 relative overflow-hidden"
+      className="py-20 bg-gradient-to-br from-secondary-blue to-accent-aqua relative overflow-hidden"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -62,28 +63,38 @@ const CTA = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group bg-white text-ithac-blue px-8 py-4 rounded-xl hover:bg-blue-50 transition-all duration-300 font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl"
+              <Link href="/academy">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group bg-white text-secondary-blue px-8 py-4 rounded-xl hover:bg-blue-50 transition-all duration-300 font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl"
+                >
+                  Apply Now
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </motion.button>
+              </Link>
+              <Link href="/contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group border-2 border-white text-white px-8 py-4 rounded-xl hover:bg-white hover:text-secondary-blue transition-all duration-300 font-semibold flex items-center gap-2"
+                >
+                  Partner With Us
+                </motion.button>
+              </Link>
+              <a
+                href="https://calendly.com/ithac/consultation"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Apply Now
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group border-2 border-white text-white px-8 py-4 rounded-xl hover:bg-white hover:text-ithac-blue transition-all duration-300 font-semibold flex items-center gap-2"
-              >
-                Partner With Us
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group border border-blue-300 text-blue-100 px-6 py-3 rounded-lg hover:bg-blue-700 hover:border-blue-600 transition-all duration-300 font-medium"
-              >
-                Schedule a Call
-              </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group border border-blue-300 text-blue-100 px-6 py-3 rounded-lg hover:bg-blue-700 hover:border-blue-600 transition-all duration-300 font-medium"
+                >
+                  Schedule a Call
+                </motion.button>
+              </a>
             </div>
           </motion.div>
 
@@ -100,7 +111,12 @@ const CTA = () => {
                 <Mail className="w-6 h-6 text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Email Us</h3>
-              <p className="text-blue-100">contactus@ithac.org</p>
+              <a
+                href="mailto:contactus@ithac.org"
+                className="text-blue-100 hover:text-white transition-colors"
+              >
+                contactus@ithac.org
+              </a>
             </motion.div>
 
             <motion.div
@@ -110,8 +126,15 @@ const CTA = () => {
               <div className="bg-white/10 backdrop-blur-sm p-4 rounded-full mb-4">
                 <Phone className="w-6 h-6 text-white" />
               </div>
-              <h3 className="font-semibold text-lg mb-2">Call Us</h3>
-              <p className="text-blue-100">+234 902 143 9349</p>
+              <h3 className="font-semibold text-lg mb-2">WhatsApp Us</h3>
+              <a
+                href="https://wa.me/2349021439349"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-100 hover:text-white transition-colors"
+              >
+                +234 902 143 9349
+              </a>
             </motion.div>
 
             <motion.div

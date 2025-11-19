@@ -52,7 +52,7 @@ const Hero = () => {
         items: [
           {
             name: "Web Apps",
-            price: "From $2,999",
+            price: "",
             rating: 4.9,
             reviews: 127,
             image: "💻",
@@ -60,7 +60,7 @@ const Hero = () => {
           },
           {
             name: "Mobile Apps",
-            price: "From $4,999",
+            price: "",
             rating: 4.8,
             reviews: 89,
             image: "📱",
@@ -148,7 +148,7 @@ const Hero = () => {
           ))}
         </div>
         <Link href="/academy">
-          <button className="bg-purple-600 text-white px-6 py-2 rounded-xl font-medium hover:bg-purple-700 transition-colors">
+          <button className="bg-gradient-to-r from-secondary-blue to-accent-aqua text-white px-6 py-2 rounded-xl font-medium hover:scale-105 transition-all">
             {data.joinButton}
           </button>
         </Link>
@@ -195,9 +195,9 @@ const Hero = () => {
           className="text-center mb-16"
         >
           {/* Badge */}
-          <div className="inline-flex items-center gap-3 bg-ithac-blue/10 rounded-2xl px-6 py-3 border border-ithac-blue/20 mb-6">
-            <div className="w-2 h-2 bg-ithac-blue rounded-full animate-pulse"></div>
-            <span className="text-ithac-blue font-semibold text-sm tracking-wide uppercase">
+          <div className="inline-flex items-center gap-3 bg-secondary-blue/10 rounded-2xl px-6 py-3 border border-secondary-blue/20 mb-6">
+            <div className="w-2 h-2 bg-secondary-blue rounded-full animate-pulse"></div>
+            <span className="text-secondary-blue font-semibold text-sm tracking-wide uppercase">
               Established 2016 • Abuja, Nigeria
             </span>
           </div>
@@ -205,7 +205,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Information Technologies
             <br />
-            Hub & <span className="text-ithac-blue">Cynosure</span>
+            Hub & <span className="text-secondary-blue">Cynosure</span>
           </h1>
 
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -300,8 +300,8 @@ const Hero = () => {
                 transition={{ duration: 0.6, delay: 0.7 + index * 0.1 }}
                 className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center hover:shadow-lg transition-all duration-300"
               >
-                <div className="bg-ithac-blue/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <IconComponent className="w-6 h-6 text-ithac-blue" />
+                <div className="bg-secondary-blue/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <IconComponent className="w-6 h-6 text-secondary-blue" />
                 </div>
                 <div className="text-2xl font-bold text-gray-900 mb-1">
                   {achievement.number}
@@ -321,7 +321,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-center"
         >
-          <div className="bg-gradient-to-r from-ithac-blue to-ithac-purple rounded-3xl p-8 md:p-12 text-white">
+          <div className="bg-gradient-to-r from-secondary-blue to-accent-aqua rounded-3xl p-8 md:p-12 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to Transform Your Future?
             </h3>
@@ -332,7 +332,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/academy">
-                <Button className="bg-white text-ithac-blue hover:bg-white/90 px-8 py-4 text-lg font-semibold rounded-2xl">
+                <Button className="bg-white text-secondary-blue hover:bg-white/90 px-8 py-4 text-lg font-semibold rounded-2xl">
                   Explore Our Academy
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>

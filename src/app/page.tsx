@@ -5,7 +5,6 @@ import Programs from "../components/Programs";
 import Testimonials from "../components/Testimonials";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
-import Chatbot from "../components/Chatbot";
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
       <Testimonials />
       <CTA />
       <Footer />
-      <Chatbot />
     </main>
   );
 }

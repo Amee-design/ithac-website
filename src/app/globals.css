@@ -5,15 +5,28 @@
 /* ITHAC Design System - Global Styles */
 
 :root {
-  /* ITHAC Brand Colors */
-  --ithac-blue: #0056d2;
-  --ithac-blue-dark: #003a8c;
-  --ithac-light-blue: #e6f0ff;
+  /* New Brand Color System */
+  --primary: #ffffff;
+  --primary-light: #f5f7fa;
+  --primary-lighter: #eceef3;
+  --secondary-blue: #0000c6;
+  --secondary-blue-dark: #00009a;
+  --secondary-blue-darker: #00006b;
+  --accent-aqua: #00c0f0;
+  --accent-aqua-light: #5edfff;
+  --accent-aqua-dark: #0094b8;
+  --soft-blue-tint: #e5e8ff;
+  --accent-aqua-tint: #dff9ff;
+
+  /* Legacy ITHAC colors (updated to match new brand) */
+  --ithac-blue: #0000c6;
+  --ithac-blue-dark: #00009a;
+  --ithac-light-blue: #e5e8ff;
   --ithac-dark-gray: #1a1a1a;
   --ithac-gray-light: #f5f7fa;
   --ithac-gold: #f5c542;
   --ithac-silver: #c7cbd1;
-  --ithac-emerald: #00c2a8;
+  --ithac-emerald: #00c0f0;
   --ithac-purple: #5b3df5;
   --ithac-error: #e63946;
 }
@@ -96,7 +109,11 @@ a {
 
   /* ITHAC Gradient Text */
   .text-gradient-ithac {
-    background: linear-gradient(135deg, var(--ithac-blue), var(--ithac-purple));
+    background: linear-gradient(
+      135deg,
+      var(--secondary-blue),
+      var(--accent-aqua)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -105,8 +122,8 @@ a {
   .text-gradient-accent {
     background: linear-gradient(
       135deg,
-      var(--ithac-emerald),
-      var(--ithac-blue-dark)
+      var(--accent-aqua),
+      var(--secondary-blue-dark)
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -114,15 +131,38 @@ a {
   }
 
   .text-gradient-gold {
-    background: linear-gradient(135deg, var(--ithac-gold), var(--ithac-blue));
+    background: linear-gradient(
+      135deg,
+      var(--ithac-gold),
+      var(--secondary-blue)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-hero {
+    background: linear-gradient(
+      135deg,
+      var(--secondary-blue) 0%,
+      var(--accent-aqua) 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   /* Shadow Utilities */
+  .shadow-brand-blue {
+    box-shadow: 0 10px 40px rgba(0, 0, 198, 0.3);
+  }
+
+  .shadow-brand-aqua {
+    box-shadow: 0 10px 40px rgba(0, 192, 240, 0.3);
+  }
+
   .shadow-ithac-blue {
-    box-shadow: 0 10px 40px rgba(0, 86, 210, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 198, 0.3);
   }
 
   .shadow-ithac-purple {
@@ -130,7 +170,7 @@ a {
   }
 
   .shadow-ithac-emerald {
-    box-shadow: 0 10px 40px rgba(0, 194, 168, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 192, 240, 0.3);
   }
 
   .shadow-ithac-gold {
@@ -142,15 +182,19 @@ a {
 @layer components {
   /* Button Presets */
   .btn-ithac-primary {
-    @apply bg-gradient-to-r from-ithac-blue to-ithac-purple text-white rounded-full px-8 py-3 font-semibold shadow-lg shadow-ithac-blue/30 hover:scale-105 hover:shadow-ithac-blue/50 transition-all duration-300;
+    @apply bg-gradient-to-r from-secondary-blue to-accent-aqua text-white rounded-full px-8 py-3 font-semibold shadow-lg shadow-brand-blue/30 hover:scale-105 hover:shadow-brand-blue/50 transition-all duration-300;
   }
 
   .btn-ithac-secondary {
-    @apply border border-ithac-blue text-ithac-blue hover:bg-ithac-blue hover:text-white rounded-full px-8 py-3 transition-all duration-300 font-semibold;
+    @apply border border-secondary-blue text-secondary-blue hover:bg-secondary-blue hover:text-white rounded-full px-8 py-3 transition-all duration-300 font-semibold;
   }
 
   .btn-ithac-cta {
-    @apply bg-gradient-to-r from-ithac-emerald to-ithac-blue text-white rounded-full px-10 py-4 font-bold text-lg shadow-xl shadow-ithac-emerald/30 hover:scale-105 hover:shadow-ithac-emerald/50 transition-all duration-300;
+    @apply bg-gradient-to-r from-accent-aqua to-accent-aqua-light text-white rounded-full px-10 py-4 font-bold text-lg shadow-xl shadow-brand-aqua/30 hover:scale-105 hover:shadow-brand-aqua/50 transition-all duration-300;
+  }
+
+  .btn-brand-hero {
+    @apply bg-gradient-to-r from-secondary-blue to-accent-aqua text-white rounded-full px-12 py-4 font-bold text-lg shadow-xl hover:scale-105 transition-all duration-300;
   }
 
   /* Card Presets */
@@ -159,11 +203,15 @@ a {
   }
 
   .card-ithac-feature {
-    @apply bg-white rounded-3xl p-8 shadow-xl shadow-ithac-blue/10 hover:shadow-ithac-blue/20 hover:scale-[1.02] transition-all duration-300;
+    @apply bg-white rounded-3xl p-8 shadow-xl shadow-brand-blue/10 hover:shadow-brand-blue/20 hover:scale-[1.02] transition-all duration-300;
   }
 
   .card-ithac-service {
-    @apply bg-gradient-to-br from-white to-ithac-light-blue rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 border border-ithac-light-blue/50;
+    @apply bg-gradient-to-br from-white to-soft-blue-tint rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 border border-soft-blue-tint/50;
+  }
+
+  .card-brand-premium {
+    @apply bg-gradient-to-br from-primary to-accent-aqua-tint rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 border border-accent-aqua-light/50;
   }
 
   /* Section Presets */
@@ -332,34 +380,45 @@ img {
 .bg-gradient-ithac-primary {
   background: linear-gradient(
     135deg,
-    var(--ithac-blue) 0%,
-    var(--ithac-purple) 100%
+    var(--secondary-blue) 0%,
+    var(--accent-aqua) 100%
   );
 }
 
 .bg-gradient-ithac-accent {
   background: linear-gradient(
     135deg,
-    var(--ithac-emerald) 0%,
-    var(--ithac-blue-dark) 100%
+    var(--accent-aqua) 0%,
+    var(--secondary-blue-dark) 100%
   );
 }
 
 .bg-gradient-ithac-cta {
-  background: linear-gradient(135deg, #0056d2 0%, #00c2a8 100%);
+  background: linear-gradient(
+    135deg,
+    var(--accent-aqua) 0%,
+    var(--accent-aqua-light) 100%
+  );
 }
 
 .bg-gradient-ithac-light {
-  background: linear-gradient(135deg, var(--ithac-light-blue) 0%, #ffffff 100%);
+  background: linear-gradient(135deg, var(--soft-blue-tint) 0%, #ffffff 100%);
 }
 
 .bg-gradient-ithac-hero {
   background: linear-gradient(
     135deg,
-    var(--ithac-blue) 0%,
-    var(--ithac-purple) 50%,
-    var(--ithac-emerald) 100%
+    var(--secondary-blue) 0%,
+    var(--accent-aqua) 100%
   );
+}
+
+.bg-gradient-brand-hero {
+  background: linear-gradient(135deg, #0000c6 0%, #00c0f0 100%);
+}
+
+.bg-gradient-brand-button {
+  background: linear-gradient(135deg, #00c0f0 0%, #5edfff 100%);
 }
 
 /* Typography Enhancements */

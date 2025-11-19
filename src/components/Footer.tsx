@@ -92,7 +92,7 @@ const Footer = () => {
                 {/* Contact Info */}
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <MapPin className="w-5 h-5 text-ithac-blue flex-shrink-0" />
+                    <MapPin className="w-5 h-5 text-accent-aqua flex-shrink-0" />
                     <span className="text-gray-300 text-sm">
                       Carlin Concept Plaza, opposite Aco estate or Mantrac
                       Caterpillar company, beside Salbas petrol station, Airport
@@ -100,16 +100,24 @@ const Footer = () => {
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Phone className="w-5 h-5 text-ithac-blue flex-shrink-0" />
-                    <span className="text-gray-300 text-sm">
+                    <Phone className="w-5 h-5 text-accent-aqua flex-shrink-0" />
+                    <a
+                      href="https://wa.me/2349021439349"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-accent-aqua transition-colors text-sm"
+                    >
                       +234 902 143 9349
-                    </span>
+                    </a>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Mail className="w-5 h-5 text-ithac-blue flex-shrink-0" />
-                    <span className="text-gray-300 text-sm">
+                    <Mail className="w-5 h-5 text-accent-aqua flex-shrink-0" />
+                    <a
+                      href="mailto:contactus@ithac.org"
+                      className="text-gray-300 hover:text-accent-aqua transition-colors text-sm"
+                    >
                       contactus@ithac.org
-                    </span>
+                    </a>
                   </div>
                 </div>
               </motion.div>
@@ -129,7 +137,7 @@ const Footer = () => {
                     <li key={index}>
                       <a
                         href={link.href}
-                        className="text-gray-300 hover:text-ithac-blue transition-colors duration-200 text-sm"
+                        className="text-gray-300 hover:text-accent-aqua transition-colors duration-200 text-sm"
                       >
                         {link.name}
                       </a>
@@ -153,7 +161,7 @@ const Footer = () => {
                     <li key={index}>
                       <a
                         href={link.href}
-                        className="text-gray-300 hover:text-ithac-blue transition-colors duration-200 text-sm"
+                        className="text-gray-300 hover:text-accent-aqua transition-colors duration-200 text-sm"
                       >
                         {link.name}
                       </a>
@@ -177,7 +185,7 @@ const Footer = () => {
                     <li key={index}>
                       <a
                         href={link.href}
-                        className="text-gray-300 hover:text-ithac-blue transition-colors duration-200 text-sm"
+                        className="text-gray-300 hover:text-accent-aqua transition-colors duration-200 text-sm"
                       >
                         {link.name}
                       </a>
@@ -201,7 +209,7 @@ const Footer = () => {
                     <li key={index}>
                       <a
                         href={link.href}
-                        className="text-gray-300 hover:text-ithac-blue transition-colors duration-200 text-sm"
+                        className="text-gray-300 hover:text-accent-aqua transition-colors duration-200 text-sm"
                       >
                         {link.name}
                       </a>
@@ -229,9 +237,9 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-ithac-blue focus:border-transparent text-sm"
+                  className="flex-1 px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-aqua focus:border-transparent text-sm"
                 />
-                <button className="bg-ithac-blue text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium text-sm">
+                <button className="bg-gradient-to-r from-secondary-blue to-accent-aqua text-white px-6 py-2 rounded-lg hover:scale-105 transition-all duration-200 font-medium text-sm">
                   Subscribe
                 </button>
               </div>
@@ -266,7 +274,7 @@ const Footer = () => {
                   key={index}
                   href={social.href}
                   aria-label={social.name}
-                  className="text-gray-400 hover:text-ithac-blue transition-colors duration-200 p-2 hover:bg-gray-800 rounded-lg"
+                  className="text-gray-400 hover:text-accent-aqua transition-colors duration-200 p-2 hover:bg-gray-800 rounded-lg"
                 >
                   {social.icon}
                 </a>

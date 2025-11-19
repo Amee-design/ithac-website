@@ -18,7 +18,7 @@ const WhyChooseITHAC = () => {
         "Continuous improvement culture",
         "Best practice implementation",
       ],
-      gradient: "from-ithac-blue to-ithac-purple",
+      gradient: "from-secondary-blue to-accent-aqua",
     },
     {
       icon: Users,
@@ -32,7 +32,7 @@ const WhyChooseITHAC = () => {
         "Global technology standards",
         "Collaborative approach",
       ],
-      gradient: "from-ithac-emerald to-ithac-blue-dark",
+      gradient: "from-accent-aqua to-secondary-blue-dark",
     },
     {
       icon: Zap,
@@ -46,7 +46,7 @@ const WhyChooseITHAC = () => {
         "Rapid prototyping",
         "Iterative improvement",
       ],
-      gradient: "from-ithac-gold to-ithac-blue",
+      gradient: "from-accent-aqua-light to-secondary-blue",
     },
     {
       icon: Globe,
@@ -60,7 +60,7 @@ const WhyChooseITHAC = () => {
         "Scalable solutions",
         "Community impact focus",
       ],
-      gradient: "from-ithac-purple to-ithac-emerald",
+      gradient: "from-secondary-blue to-accent-aqua-dark",
     },
   ];
 
@@ -68,9 +68,9 @@ const WhyChooseITHAC = () => {
     <section className="py-20 lg:py-32 bg-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-gradient-to-br from-ithac-blue/20 to-ithac-purple/20"></div>
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-ithac-emerald/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-ithac-gold/10 rounded-full blur-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary-blue/20 to-accent-aqua/20"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-aqua/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-soft-blue-tint/20 rounded-full blur-3xl"></div>
       </div>
 
       <Container className="relative z-10">

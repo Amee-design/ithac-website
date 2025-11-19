@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Container from "../ui/Container";
+import Link from "next/link";
 import {
   MessageCircle,
   Phone,
@@ -257,12 +258,15 @@ export default function SupportCTA() {
             into digital reality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group bg-ithac-blue text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue/90 hover:shadow-lg hover:shadow-ithac-blue/25 flex items-center gap-2 justify-center">
-              Get Started Today
-              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </button>
-            <button className="border-2 border-ithac-blue text-ithac-blue px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue hover:text-white">
-              Download Our Portfolio
+            <Link href="#contact-form">
+              <button className="group bg-ithac-blue text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue/90 hover:shadow-lg hover:shadow-ithac-blue/25 flex items-center gap-2 justify-center">
+                Get Started Today
+                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </button>
+            </Link>
+            <Link href="/portfolio">
+              <button className="border-2 border-ithac-blue text-ithac-blue px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue hover:text-white">
+                Download Our Portfolio
             </button>
             <button className="border-2 border-ithac-emerald text-ithac-emerald px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-emerald hover:text-white">
               Request Quote

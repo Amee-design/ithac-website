@@ -48,7 +48,7 @@ export default function ContactInfo() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-ithac-dark-gray mb-6"
+            className="text-4xl md:text-5xl font-bold text-gray-800 mb-6"
           >
             Our Locations
           </motion.h2>
@@ -57,7 +57,7 @@ export default function ContactInfo() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true }}
-            className="text-xl text-ithac-gray max-w-3xl mx-auto"
+            className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
             We're strategically located across Africa to serve you better. Visit
             any of our offices or connect with us remotely.
@@ -74,10 +74,10 @@ export default function ContactInfo() {
               viewport={{ once: true }}
               className="group relative"
             >
-              <div className="bg-white rounded-3xl border border-ithac-light-gray p-8 hover:shadow-xl hover:shadow-ithac-blue/10 transition-all duration-500 hover:border-ithac-blue/30 h-full">
+              <div className="bg-white rounded-3xl border border-gray-200 p-8 hover:shadow-xl hover:shadow-secondary-blue/10 transition-all duration-500 hover:border-secondary-blue/30 h-full">
                 {office.isHeadquarters && (
                   <div className="absolute -top-3 -right-3">
-                    <span className="bg-ithac-gold text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-accent-aqua text-white px-3 py-1 rounded-full text-sm font-medium">
                       Headquarters
                     </span>
                   </div>
@@ -85,30 +85,35 @@ export default function ContactInfo() {
 
                 <div className="mb-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="bg-ithac-blue/10 p-3 rounded-full group-hover:bg-ithac-blue transition-all duration-300">
-                      <MapPin className="w-6 h-6 text-ithac-blue group-hover:text-white transition-all duration-300" />
+                    <div className="bg-secondary-blue/10 p-3 rounded-full group-hover:bg-secondary-blue transition-all duration-300">
+                      <MapPin className="w-6 h-6 text-secondary-blue group-hover:text-white transition-all duration-300" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-ithac-dark-gray">
+                      <h3 className="text-2xl font-bold text-gray-800">
                         {office.city}
                       </h3>
-                      <p className="text-ithac-gray">{office.country}</p>
+                      <p className="text-gray-600">{office.country}</p>
                     </div>
                   </div>
 
-                  <p className="text-ithac-gray leading-relaxed mb-6">
+                  <p className="text-gray-600 leading-relaxed mb-6">
                     {office.address}
                   </p>
                 </div>
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <Phone className="w-5 h-5 text-ithac-blue mt-1 flex-shrink-0" />
+                    <Phone className="w-5 h-5 text-secondary-blue mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium text-ithac-dark-gray">Phone</p>
+                      <p className="font-medium text-gray-800">Phone</p>
                       <a
-                        href={`tel:${office.phone.replace(/\s/g, "")}`}
-                        className="text-ithac-blue hover:underline"
+                        href={`https://wa.me/${office.phone.replace(
+                          /[^0-9]/g,
+                          ""
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-secondary-blue hover:text-accent-aqua transition-colors"
                       >
                         {office.phone}
                       </a>
@@ -116,9 +121,9 @@ export default function ContactInfo() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <Mail className="w-5 h-5 text-ithac-blue mt-1 flex-shrink-0" />
+                    <Mail className="w-5 h-5 text-secondary-blue mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium text-ithac-dark-gray">Email</p>
+                      <p className="font-medium text-gray-800">Email</p>
                       <a
                         href={`mailto:${office.email}`}
                         className="text-ithac-blue hover:underline"
@@ -129,21 +134,19 @@ export default function ContactInfo() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <Clock className="w-5 h-5 text-ithac-blue mt-1 flex-shrink-0" />
+                    <Clock className="w-5 h-5 text-secondary-blue mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-ithac-dark-gray">
                         Business Hours
                       </p>
-                      <p className="text-ithac-gray">{office.hours}</p>
-                      <p className="text-ithac-gray text-sm">
-                        {office.timezone}
-                      </p>
+                      <p className="text-gray-600">{office.hours}</p>
+                      <p className="text-gray-600 text-sm">{office.timezone}</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-6 pt-6 border-t border-ithac-light-gray">
-                  <button className="w-full bg-ithac-blue/10 text-ithac-blue py-3 rounded-xl font-medium hover:bg-ithac-blue hover:text-white transition-all duration-300">
+                <div className="mt-6 pt-6 border-t border-gray-200">
+                  <button className="w-full bg-secondary-blue/10 text-secondary-blue py-3 rounded-xl font-medium hover:bg-secondary-blue hover:text-white transition-all duration-300">
                     Get Directions
                   </button>
                 </div>
@@ -158,7 +161,7 @@ export default function ContactInfo() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
-          className="mt-16 bg-gradient-to-r from-ithac-blue to-ithac-purple rounded-3xl p-12 text-white text-center"
+          className="mt-16 bg-gradient-to-r from-secondary-blue to-accent-aqua rounded-3xl p-12 text-white text-center"
         >
           <h3 className="text-3xl font-bold mb-8">Our Global Reach</h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">

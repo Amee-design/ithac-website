@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Star, BarChart3, Heart, Video, Trophy } from "lucide-react";
+import Link from "next/link";
 
 interface EventCardData {
   status: string;
@@ -67,7 +68,7 @@ const Services = () => {
         items: [
           {
             name: "Web Development",
-            price: "From $2,999",
+            price: "",
             rating: 4.9,
             reviews: 127,
             image: "💻",
@@ -75,7 +76,7 @@ const Services = () => {
           },
           {
             name: "Mobile Apps",
-            price: "From $4,999",
+            price: "",
             rating: 4.8,
             reviews: 89,
             image: "📱",
@@ -153,9 +154,11 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <button className="bg-purple-600 text-white px-6 py-2 rounded-xl font-medium hover:bg-purple-700 transition-colors">
-          Join Now
-        </button>
+        <Link href="/academy">
+          <button className="bg-gradient-to-r from-secondary-blue to-accent-aqua text-white px-6 py-2 rounded-xl font-medium hover:scale-105 transition-all">
+            Join Now
+          </button>
+        </Link>
       </div>
     </div>
   );
@@ -196,7 +199,7 @@ const Services = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Our Core <span className="text-ithac-blue">Services</span>
+            Our Core <span className="text-secondary-blue">Services</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Comprehensive technology solutions designed to empower individuals

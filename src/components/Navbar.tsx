@@ -29,7 +29,7 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-ithac-light-gray shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-soft-blue-tint shadow-sm"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
@@ -48,7 +48,6 @@ const Navbar = () => {
                 height={40}
                 className="rounded-lg"
               />
-            
             </Link>
           </motion.div>
 
@@ -64,10 +63,10 @@ const Navbar = () => {
                 >
                   <Link
                     href={item.href}
-                    className="text-ithac-dark-gray hover:text-ithac-blue px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
+                    className="text-secondary-blue hover:text-accent-aqua px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
                   >
                     {item.name}
-                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-ithac-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
+                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-accent-aqua transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
                   </Link>
                 </motion.div>
               ))}
@@ -79,7 +78,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                  className="flex items-center gap-1 text-ithac-dark-gray hover:text-ithac-blue px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="flex items-center gap-1 text-secondary-blue hover:text-accent-aqua px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   More
                   <ChevronDown className="w-4 h-4" />
@@ -89,13 +88,13 @@ const Navbar = () => {
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="absolute right-0 mt-2 w-48 bg-white rounded-2xl shadow-lg border border-ithac-light-gray py-2"
+                    className="absolute right-0 mt-2 w-48 bg-white rounded-2xl shadow-lg border border-soft-blue-tint py-2"
                   >
                     {additionalPages.map((page) => (
                       <Link
                         key={page.name}
                         href={page.href}
-                        className="block px-4 py-2 text-sm text-ithac-dark-gray hover:text-ithac-blue hover:bg-ithac-light-gray/30 transition-colors"
+                        className="block px-4 py-2 text-sm text-secondary-blue hover:text-accent-aqua hover:bg-soft-blue-tint/30 transition-colors"
                         onClick={() => setDropdownOpen(false)}
                       >
                         {page.name}
@@ -115,7 +114,7 @@ const Navbar = () => {
             className="hidden md:block"
           >
             <Link href="/academy">
-              <button className="bg-ithac-blue text-white px-6 py-2 rounded-xl hover:bg-ithac-blue/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg">
+              <button className="bg-gradient-to-r from-secondary-blue to-accent-aqua text-white px-6 py-2 rounded-xl hover:scale-105 transition-all duration-200 font-medium shadow-md hover:shadow-lg">
                 Join Academy
               </button>
             </Link>
@@ -125,7 +124,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-ithac-dark-gray hover:text-ithac-blue p-2 rounded-lg hover:bg-ithac-light-gray/30 transition-colors"
+              className="text-secondary-blue hover:text-accent-aqua p-2 rounded-lg hover:bg-soft-blue-tint/30 transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -139,7 +138,7 @@ const Navbar = () => {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
-          className="lg:hidden bg-white border-t border-ithac-light-gray"
+          className="lg:hidden bg-white border-t border-soft-blue-tint"
         >
           <div className="px-4 py-6 space-y-3">
             {navItems.map((item) => (
@@ -154,12 +153,12 @@ const Navbar = () => {
             ))}
 
             {/* Additional Pages in Mobile */}
-            <div className="border-t border-ithac-light-gray pt-3 mt-3">
+            <div className="border-t border-soft-blue-tint pt-3 mt-3">
               {additionalPages.map((page) => (
                 <Link
                   key={page.name}
                   href={page.href}
-                  className="block text-ithac-dark-gray hover:text-ithac-blue py-3 px-4 text-base font-medium rounded-xl hover:bg-ithac-light-gray/30 transition-all"
+                  className="block text-secondary-blue hover:text-accent-aqua py-3 px-4 text-base font-medium rounded-xl hover:bg-soft-blue-tint/30 transition-all"
                   onClick={() => setIsOpen(false)}
                 >
                   {page.name}
@@ -170,7 +169,7 @@ const Navbar = () => {
             <div className="pt-4">
               <Link href="/academy">
                 <button
-                  className="w-full bg-ithac-blue text-white px-6 py-3 rounded-xl hover:bg-ithac-blue/90 transition-colors duration-200 font-medium"
+                  className="w-full bg-gradient-to-r from-secondary-blue to-accent-aqua text-white px-6 py-3 rounded-xl hover:scale-105 transition-all duration-200 font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   Join Academy
