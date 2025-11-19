@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle, Users, Bookmark, TrendingUp } from "lucide-react";
-import { Container, Typography, Button } from "../ui";
+import { MessageCircle, Users } from "lucide-react";
+import { Container, Typography } from "../ui";
 
 const CommunityForums = () => {
   return (

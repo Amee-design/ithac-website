@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calendar, MapPin, Users, Clock, Tag, ArrowRight } from "lucide-react";
+import { Calendar, MapPin, Users, Clock, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Container, Typography, Button } from "../ui";
 

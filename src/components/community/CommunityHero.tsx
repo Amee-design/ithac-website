@@ -1,14 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Users,
-  MessageCircle,
-  Calendar,
-  Trophy,
-  ArrowRight,
-  Heart,
-} from "lucide-react";
+import { Users, MessageCircle, Calendar, Heart } from "lucide-react";
 import Link from "next/link";
 import { Container, Typography, Button } from "../ui";
 

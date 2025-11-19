@@ -267,10 +267,12 @@ export default function SupportCTA() {
             <Link href="/portfolio">
               <button className="border-2 border-ithac-blue text-ithac-blue px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue hover:text-white">
                 Download Our Portfolio
-            </button>
+              </button>
+              </Link>
             <button className="border-2 border-ithac-emerald text-ithac-emerald px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-emerald hover:text-white">
               Request Quote
-            </button>
+              </button>
+              
           </div>
         </motion.div>
       </Container>

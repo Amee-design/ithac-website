@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Container from "../ui/Container";
 import { Plus, Minus, HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 const faqs = [
   {
