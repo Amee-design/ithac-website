@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,10 +29,10 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-ithac-light-gray shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-ithac-light-gray shadow-sm"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -39,11 +40,15 @@ const Navbar = () => {
             transition={{ delay: 0.2 }}
             className="flex-shrink-0"
           >
-            <Link href="/" className="flex items-center">
-              <div>
-                <h1 className="text-2xl font-bold text-ithac-blue">ITHAC</h1>
-                <p className="text-xs text-ithac-gray">Abuja, Nigeria</p>
-              </div>
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/images/logo.jpg"
+                alt="ITHAC Logo"
+                width={150}
+                height={40}
+                className="rounded-lg"
+              />
+            
             </Link>
           </motion.div>
 

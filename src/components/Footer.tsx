@@ -6,10 +6,10 @@ import {
   Phone,
   MapPin,
   Linkedin,
-  Twitter,
   Instagram,
   Facebook,
 } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -47,7 +47,6 @@ const Footer = () => {
       href: "https://www.linkedin.com/company/information-technologies-hub-and-cynosure-ithac/",
       name: "LinkedIn",
     },
-    { icon: <Twitter className="w-5 h-5" />, href: "#", name: "Twitter" },
     {
       icon: <Instagram className="w-5 h-5" />,
       href: "https://www.instagram.com/ithacceomd?igsh=N25kMHI2Z20wajlx",
@@ -74,9 +73,16 @@ const Footer = () => {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-2xl font-bold text-ithac-blue mb-4">
-                  ITHAC
-                </h3>
+                <div className="flex items-center gap-3 mb-4">
+                  <Image
+                    src="/images/logo.jpg"
+                    alt="ITHAC Logo"
+                    width={150}
+                    height={40}
+                    className="rounded-lg"
+                  />
+                  {/* <h3 className="text-2xl font-bold text-ithac-blue">ITHAC</h3> */}
+                </div>
                 <p className="text-gray-300 mb-6 leading-relaxed">
                   Empowering the next generation of tech innovators through
                   comprehensive training, development, and innovation
@@ -215,9 +221,9 @@ const Footer = () => {
             className="mt-12 pt-8 border-t border-gray-700"
           >
             <div className="max-w-md">
-              <h4 className="font-semibold text-lg mb-3">Stay Updated</h4>
+              <h4 className="font-semibold text-lg mb-3">FOLLOW US</h4>
               <p className="text-gray-300 text-sm mb-4">
-                Get the latest updates on our programs and tech innovations.
+                Stay tuned with us for updates
               </p>
               <div className="flex gap-2">
                 <input
