@@ -92,9 +92,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "ITHAC Team" }],
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "/images/logo.jpg",
+    shortcut: "/images/logo.jpg",
+    apple: "/images/logo.jpg",
   },
   openGraph: {
     title: "ITHAC | Empowering Africa's Digital Future",
