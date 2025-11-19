@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import Chatbot from "../components/Chatbot";
 
 import "./globals.css";
 
@@ -130,7 +131,7 @@ export const metadata: Metadata = {
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0056D2",
+  themeColor: "#0000C6",
 };
 
 export default function RootLayout({
@@ -142,6 +143,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${satoshi.variable}`}>
       <body className="font-inter antialiased bg-white text-ithac-dark-gray">
         {children}
+        <Chatbot />
       </body>
     </html>
   );

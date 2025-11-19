@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import PortfolioHero from "../../components/portfolio/PortfolioHero";
 import ProjectGallery from "../../components/portfolio/ProjectGallery";
 import CaseStudyModal from "../../components/portfolio/CaseStudyModal";
@@ -16,11 +18,13 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
   return (
     <main className="bg-white">
+      <Navbar />
       <PortfolioHero />
       <ProjectGallery />
       <TechStack />
       <ClientTestimonials />
       <CaseStudyModal />
+      <Footer />
     </main>
   );
 }

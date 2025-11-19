@@ -108,7 +108,7 @@ const Testimonials = () => {
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-ithac-dark-gray mb-4">
             What Our Students &{" "}
-            <span className="text-ithac-blue">Partners Say</span>
+            <span className="text-secondary-blue">Partners Say</span>
           </h2>
           <p className="text-lg text-ithac-dark-gray/70 max-w-3xl mx-auto">
             Don't just take our word for it. Hear from the amazing individuals
@@ -130,7 +130,7 @@ const Testimonials = () => {
               className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 relative"
             >
               {/* Quote Icon */}
-              <div className="absolute -top-4 left-6 bg-ithac-blue text-white p-3 rounded-full">
+              <div className="absolute -top-4 left-6 bg-secondary-blue text-white p-3 rounded-full">
                 <Quote className="w-5 h-5" />
               </div>
 
@@ -163,7 +163,7 @@ const Testimonials = () => {
                   <p className="text-sm text-ithac-dark-gray/60">
                     {testimonial.role}
                   </p>
-                  <p className="text-xs text-ithac-blue font-medium">
+                  <p className="text-xs text-accent-aqua font-medium">
                     {testimonial.program}
                   </p>
                 </div>
@@ -177,7 +177,7 @@ const Testimonials = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-gradient-to-r from-ithac-blue to-blue-700 rounded-2xl p-8 md:p-12 text-white"
+          className="bg-gradient-to-r from-secondary-blue to-accent-aqua rounded-2xl p-8 md:p-12 text-white"
         >
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">

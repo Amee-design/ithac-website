@@ -12,7 +12,7 @@ const stats = [
 
 export default function PortfolioHero() {
   return (
-    <section className="relative bg-white py-24 overflow-hidden">
+    <section className="relative bg-white py-24 mt-8 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-gradient-to-br from-ithac-blue to-ithac-purple"></div>

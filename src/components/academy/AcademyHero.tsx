@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap, Code, Users, Trophy } from "lucide-react";
+import Link from "next/link";
 import { Container, Typography, Button } from "../ui";
 
 const AcademyHero = () => {
@@ -123,16 +124,20 @@ const AcademyHero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg">
-              Explore Programs
-            </Button>
-            <Button
-              variant="ghost"
-              size="lg"
-              className="text-white border-white/30 hover:bg-white/10"
-            >
-              Apply Now
-            </Button>
+            <Link href="#courses">
+              <Button variant="cta" size="lg">
+                Explore Programs
+              </Button>
+            </Link>
+            <Link href="/academy#register">
+              <Button
+                variant="ghost"
+                size="lg"
+                className="text-white border-white/30 hover:bg-white/10"
+              >
+                Apply Now
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </Container>

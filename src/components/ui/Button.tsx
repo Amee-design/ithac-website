@@ -2,8 +2,8 @@ import React from "react";
 import { cn } from "../../lib/design-system";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "ghost" | "cta";
-  size?: "sm" | "md" | "lg";
+  variant?: "primary" | "secondary" | "ghost" | "cta" | "hero" | "accent";
+  size?: "sm" | "md" | "lg" | "xl";
   children: React.ReactNode;
 }
 
@@ -19,17 +19,21 @@ const Button: React.FC<ButtonProps> = ({
 
   const variants = {
     primary:
-      "bg-gradient-to-r from-ithac-blue to-ithac-purple text-white shadow-lg shadow-ithac-blue/30 hover:scale-105 hover:shadow-ithac-blue/50",
+      "bg-gradient-to-r from-secondary-blue to-accent-aqua text-white shadow-lg shadow-brand-blue/30 hover:scale-105 hover:shadow-brand-blue/50",
     secondary:
-      "border border-ithac-blue text-ithac-blue hover:bg-ithac-blue hover:text-white",
-    ghost: "text-ithac-blue hover:bg-ithac-light-blue",
-    cta: "bg-gradient-to-r from-ithac-emerald to-ithac-blue text-white shadow-xl shadow-ithac-emerald/30 hover:scale-105 hover:shadow-ithac-emerald/50",
+      "border-2 border-secondary-blue text-secondary-blue hover:bg-secondary-blue hover:text-white",
+    ghost: "text-secondary-blue hover:bg-soft-blue-tint",
+    cta: "bg-gradient-to-r from-accent-aqua to-accent-aqua-light text-white shadow-xl shadow-brand-aqua/30 hover:scale-105 hover:shadow-brand-aqua/50",
+    hero: "bg-gradient-to-r from-secondary-blue to-accent-aqua text-white shadow-2xl hover:scale-105 hover:shadow-brand-blue/60",
+    accent:
+      "bg-accent-aqua text-white hover:bg-accent-aqua-dark shadow-lg hover:shadow-brand-aqua/40",
   };
 
   const sizes = {
     sm: "rounded-full px-4 py-2 text-sm",
     md: "rounded-full px-8 py-3 text-base",
     lg: "rounded-full px-10 py-4 text-lg",
+    xl: "rounded-full px-12 py-5 text-xl font-bold",
   };
 
   return (

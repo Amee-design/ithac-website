@@ -9,25 +9,36 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // ITHAC Brand Core Palette
-        "ithac-blue": "#0056D2",
-        "ithac-blue-dark": "#003A8C",
-        "ithac-light-blue": "#E6F0FF",
+        // New Brand Colors System
+        primary: "#FFFFFF",
+        "primary-light": "#F5F7FA",
+        "primary-lighter": "#ECEEF3",
+        "secondary-blue": "#0000C6",
+        "secondary-blue-dark": "#00009A",
+        "secondary-blue-darker": "#00006B",
+        "accent-aqua": "#00C0F0",
+        "accent-aqua-light": "#5EDFFF",
+        "accent-aqua-dark": "#0094B8",
+        "soft-blue-tint": "#E5E8FF",
+        "accent-aqua-tint": "#DFF9FF",
+
+        // Legacy colors (keeping for backward compatibility)
+        "ithac-blue": "#0000C6", // Updated to match new secondary blue
+        "ithac-blue-dark": "#00009A",
+        "ithac-light-blue": "#E5E8FF", // Updated to soft blue tint
         "ithac-dark-gray": "#1A1A1A",
         "ithac-gray-light": "#F5F7FA",
         "ithac-gold": "#F5C542",
         "ithac-silver": "#C7CBD1",
-        "ithac-emerald": "#00C2A8",
+        "ithac-emerald": "#00C0F0", // Updated to accent aqua
         "ithac-purple": "#5B3DF5",
         "ithac-error": "#E63946",
-        // Legacy colors (keeping for backward compatibility)
-        primary: "#003B75",
-        secondary: "#4348C0",
-        tertiary: "#F76A4E",
+
+        // Additional utility colors
         stroke: "#D5D5D5",
         "faded-text": "#979797",
-        "feed-color": "#F2F8FF",
-        "line-color-2": "#AECFF0",
+        "feed-color": "#DFF9FF", // Updated to accent aqua tint
+        "line-color-2": "#5EDFFF", // Updated to accent aqua light
         white: "#FFFFFF",
         black: "#000000",
         transparent: "transparent",
@@ -88,9 +99,11 @@ module.exports = {
         },
       },
       boxShadow: {
-        "ithac-blue": "0 10px 40px rgba(0, 86, 210, 0.3)",
+        "brand-blue": "0 10px 40px rgba(0, 0, 198, 0.3)",
+        "brand-aqua": "0 10px 40px rgba(0, 192, 240, 0.3)",
+        "ithac-blue": "0 10px 40px rgba(0, 0, 198, 0.3)",
         "ithac-purple": "0 10px 40px rgba(91, 61, 245, 0.3)",
-        "ithac-emerald": "0 10px 40px rgba(0, 194, 168, 0.3)",
+        "ithac-emerald": "0 10px 40px rgba(0, 192, 240, 0.3)",
         "ithac-gold": "0 10px 40px rgba(245, 197, 66, 0.3)",
         card: "0 4px 20px rgba(0, 0, 0, 0.08)",
         "card-hover": "0 8px 40px rgba(0, 0, 0, 0.12)",

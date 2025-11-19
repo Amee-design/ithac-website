@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Container from "../ui/Container";
 import { Plus, Minus, HelpCircle } from "lucide-react";
+import Link from "next/link";
 
 const faqs = [
   {
@@ -188,12 +189,16 @@ export default function FAQ() {
               requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-ithac-blue text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue/90 hover:shadow-lg hover:shadow-ithac-blue/25">
-                Schedule a Call
-              </button>
-              <button className="border-2 border-ithac-blue text-ithac-blue px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue hover:text-white">
-                Send us an Email
-              </button>
+              <Link href="/contact#contact-form">
+                <button className="bg-ithac-blue text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue/90 hover:shadow-lg hover:shadow-ithac-blue/25">
+                  Schedule a Call
+                </button>
+              </Link>
+              <Link href="mailto:contactus@ithac.org">
+                <button className="border-2 border-ithac-blue text-ithac-blue px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue hover:text-white">
+                  Send us an Email
+                </button>
+              </Link>
             </div>
           </motion.div>
         </div>

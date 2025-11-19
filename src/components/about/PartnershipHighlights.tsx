@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Award, Users, Globe } from "lucide-react";
+import Link from "next/link";
 import { Container, Typography, Card, Button } from "../ui";
 
 const PartnershipHighlights = () => {
@@ -196,14 +197,16 @@ const PartnershipHighlights = () => {
               Join our mission to transform Africa's technology landscape. Let's
               create opportunities and build the future together.
             </Typography>
-            <Button
-              variant="secondary"
-              size="lg"
-              className="bg-white text-ithac-blue hover:bg-ithac-light-blue"
-            >
-              Become a Partner
-              <ExternalLink className="w-5 h-5 ml-2" />
-            </Button>
+            <Link href="/contact">
+              <Button
+                variant="secondary"
+                size="lg"
+                className="bg-white text-ithac-blue hover:bg-ithac-light-blue"
+              >
+                Become a Partner
+                <ExternalLink className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
           </Card>
         </motion.div>
       </Container>
