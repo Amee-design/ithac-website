@@ -13,6 +13,7 @@ import {
 import { Button, Container } from "./ui";
 import Link from "next/link";
 
+
 const Hero = () => {
   const heroCategories = [
     {
@@ -31,6 +32,8 @@ const Hero = () => {
         participants: ["👨‍💻", "👩‍💻", "🧑‍💻", "👨‍🎓"],
         icon: <BarChart3 className="w-5 h-5" />,
         joinButton: "Join Academy",
+        isJoined: true,
+        url: "https://ithac-web-application.vercel.app/register",
       },
       features: [
         "Full-Stack Development",
@@ -91,6 +94,7 @@ const Hero = () => {
     participants: string[];
     icon: React.ReactNode;
     joinButton: string;
+    url: string;
   }
 
   interface ProductItem {
@@ -147,7 +151,7 @@ const Hero = () => {
             </div>
           ))}
         </div>
-        <Link href="/academy">
+        <Link href={data.url} target="_blank" rel="noreferrer">
           <button className="bg-gradient-to-r from-secondary-blue to-accent-aqua text-white px-6 py-2 rounded-xl font-medium hover:scale-105 transition-all">
             {data.joinButton}
           </button>
