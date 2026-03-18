@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   Code,
   Database,
@@ -268,13 +269,28 @@ const CourseCategories = () => {
 
                   {/* CTA Buttons */}
                   <div className="space-y-3 pt-4">
-                    <Button variant="primary" className="w-full group">
-                      Enroll Now
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                    <Button variant="ghost" className="w-full text-ithac-blue">
-                      View Curriculum
-                    </Button>
+                    <Link
+                      href="https://ithac-web-application.vercel.app/register"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Button variant="primary" className="w-full group">
+                        Enroll Now
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
+                    <Link
+                      href="https://ithac-web-application.vercel.app/register"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Button
+                        variant="ghost"
+                        className="w-full text-ithac-blue"
+                      >
+                        View Curriculum
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </Card>
@@ -303,12 +319,24 @@ const CourseCategories = () => {
               path.
             </Typography>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="secondary" size="lg">
-                Request Custom Training
-              </Button>
-              <Button variant="ghost" size="lg">
-                Schedule Consultation
-              </Button>
+              <Link
+                href="https://ithac-web-application.vercel.app/register"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button variant="secondary" size="lg">
+                  Request Custom Training
+                </Button>
+              </Link>
+              <Link
+                href="https://ithac-web-application.vercel.app/register"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button variant="ghost" size="lg">
+                  Schedule Consultation
+                </Button>
+              </Link>
             </div>
           </Card>
         </motion.div>

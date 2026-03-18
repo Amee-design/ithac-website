@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Clock, Users, Award, Calendar } from "lucide-react";
-
+import Link from "next/link";
 const Programs = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -223,7 +223,13 @@ const Programs = () => {
                     whileTap={{ scale: 0.95 }}
                     className="flex-1 bg-ithac-blue text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
                   >
-                    Enroll Now
+                    <Link
+                      href={"https://ithac-web-application.vercel.app/register"}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Enroll Now
+                    </Link>
                   </motion.button>
                   <motion.button
                     whileHover={{ scale: 1.05 }}

@@ -139,7 +139,11 @@ const CommunityEvents = () => {
                   </div>
                 </div>
 
-                <Link href={`/events/${upcomingEvents[0].id}`}>
+                <Link
+                  href="https://ithac-web-application.vercel.app/register"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Button
                     variant="accent"
                     className="bg-white text-secondary-blue hover:bg-white/90"
@@ -180,7 +184,7 @@ const CommunityEvents = () => {
                 <div className="absolute top-4 left-4">
                   <span
                     className={`px-3 py-1 rounded-full text-sm font-medium ${getTypeColor(
-                      event.type
+                      event.type,
                     )}`}
                   >
                     {event.type}
@@ -217,7 +221,11 @@ const CommunityEvents = () => {
                   </div>
                 </div>
 
-                <Link href={`/events/${event.id}`}>
+                <Link
+                  href="https://ithac-web-application.vercel.app/register"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Button variant="secondary" size="sm" className="w-full">
                     Register
                   </Button>
