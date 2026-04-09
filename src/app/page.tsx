@@ -1,6 +1,6 @@
 import React from 'react';
 import { FadeIn } from '../components/animations/FadeIn';
-
+import WhyChooseITHAC from '../components/services/WhyChooseITHAC';
 
 export default function HomePage() {
   return (
@@ -60,6 +60,20 @@ export default function HomePage() {
 </div>
 </section></FadeIn>
 {/**/}
+<FadeIn delay={0.1}>
+  <section className="py-24 bg-surface-container-lowest">
+    <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-4xl mx-auto text-center">
+        <span className="font-label uppercase tracking-widest text-xs text-secondary font-bold mb-4 block">About Us</span>
+        <h2 className="font-headline text-4xl font-extrabold tracking-tight mb-8">About ITHAC</h2>
+        <p className="text-xl text-on-surface-variant leading-relaxed text-justify">
+          Information Technologies Hub and Cynosure (ITHAC) is cultivating a nurturing and synergistic environment that fosters information technology product and service creation and support. We envision becoming the go-to destination for the people of Ondo state and Nigeria at large seeking to gain digital skills, have access to top-notched infrastructures utilization and entrepreneurs aiming to transform their ideas into successful digital ventures. Our aim is to establish an ecosystem that nurtures creativity, collaboration, and entrepreneurship, allowing individuals to flourish and make a meaningful, long-lasting difference in the world. ITHAC embraces the convergence of technology, creativity, and business with our commitment to excellence, innovation, and partnership, we support organizations and individuals to realize their vision towards making a lasting impact on the digital landscape.
+        </p>
+      </div>
+    </div>
+  </section>
+</FadeIn>
+{/**/}
 <FadeIn delay={0.1}><section className="py-24 bg-surface-container-low overflow-hidden">
 <div className="max-w-7xl mx-auto px-8 mb-12 flex justify-between items-end">
 <div>
@@ -81,8 +95,8 @@ export default function HomePage() {
 <div className="h-40 mb-6 rounded-lg overflow-hidden">
 <img className="w-full h-full object-cover" data-alt="close up of code on a screen with blue and purple highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlQbTNH3QZmwqPskeakYJZULqxHDl3lfavdMZ6ktHUj4N04EMC1sQE34eGFwy06hb-rnzZjOkEv32qfJ1RoOwfX-LVhekYAQd-YWYB32aYbtxpH9-HDEOC-MMfT7JC8U5qcvahKdE7nTOZk-efYQTI687-aP-L5JUiFydlaVaOzLSLODB7Ds-HIHDXJckZi-3Ux_tWWV-s5SGt_fLXhxE_-MpRP_mzHqe3Bm_H7_tnKpuwidlZrRjIPEx0uTHMkeSH4pmQtZZC5-wR" alt="home"/>
 </div>
-<h4 className="font-headline text-xl font-bold mb-3">Technical Education</h4>
-<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Master the modern stack with deep-dive certifications and workshops.</p>
+<h4 className="font-headline text-xl font-bold mb-3">Technical Education Services</h4>
+<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Enhance your digital skills with our cutting-edge technical education programs.</p>
 <button className="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
 </div>
 {/**/}
@@ -90,8 +104,8 @@ export default function HomePage() {
 <div className="h-40 mb-6 rounded-lg overflow-hidden">
 <img className="w-full h-full object-cover" data-alt="laptop on a desk showing software development environment with clean white space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr_i-lhfUVV8xMwBISQK1aAmyof_-8RNCa8gjgA2H3TsH5wrPU-orf7vPMOyfrWtjnEx9WjPXOd14H8gwxMGOXhKaN2CHdIrsbpFHKp5Dxre89_sByWjGh949HupbTomyxG13I91QeAXxyrrSGnOG3DhQDjEKDjMhUEMq-fntGt-990rdUVr09KR3wlOYu-Ukh_swcgp3GsfVPG49Qi1rKWy4hyIIkJWv1EVIOhDKlMGC-sTkaxtueCcLWiSidiEt6N7JNcYW8nrER" alt="home"/>
 </div>
-<h4 className="font-headline text-xl font-bold mb-3">Software Development</h4>
-<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Custom engineering solutions for complex business challenges.</p>
+<h4 className="font-headline text-xl font-bold mb-3">Consulting and Advisory Services</h4>
+<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Unlock strategic insights with our expert consulting and advisory services.</p>
 <button className="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
 </div>
 {/**/}
@@ -99,8 +113,8 @@ export default function HomePage() {
 <div className="h-40 mb-6 rounded-lg overflow-hidden">
 <img className="w-full h-full object-cover" data-alt="futuristic server room with glowing blue lights and sleek hardware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsepTSZgQheuEHGCqdGf6OFKCkx4fw7FL4_-SH5Yoj5tZqH-wzoYCYZDXxW7zdvn0Ydb5Yx9cLdPeUJA3OvEwboVjT6egqGyzwh4DHn36_FuehO0YDMKXeGFUC_hibo5QTo3XjNODMtOL_soCXILdtIha5n2Pth8x0JBr2MYHAXAZxaUY4IhePTVLvk7RCy9V0_gEa2OeN4xWmz9w3cTKe8Ys3RygtgyTn5bgYCMYM43xaIpexMtGH3vPZ9PDVKeTXdT2rRMXXVUXy" alt="home"/>
 </div>
-<h4 className="font-headline text-xl font-bold mb-3">Cloud Infrastructure</h4>
-<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Scalable architecture design for high-availability applications.</p>
+<h4 className="font-headline text-xl font-bold mb-3">Training and Workshops</h4>
+<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Stay ahead in the digital landscape with our specialized training and workshops.</p>
 <button className="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
 </div>
 {/**/}
@@ -108,8 +122,8 @@ export default function HomePage() {
 <div className="h-40 mb-6 rounded-lg overflow-hidden">
 <img className="w-full h-full object-cover" data-alt="cybersecurity concept with digital lock and binary code background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeTsGKZ_ePz3es3ApS36ad8zMjOO-VxfPX04i8Oy67SmrwgJmR-pzmerqI3sYCyuImfvDud-LdG6klpRlxE4bceyAp1_yUne2gsyFnbnUBnSGiAOgjKVbEYiAhltDzxPCIXVRtAqALirZrv-F5sy2qrOWYbLn8sR2oxBQi7KmHyWrwWiZFZ8awSNAY5OHYVl0BDVvqfhueYHUDCthbHzfMAA3RO6fmX0zMsPENUtJHVdvHpgiWX_RRsIgy2RpUbqzu-GfHVUuybvgK" alt="home"/>
 </div>
-<h4 className="font-headline text-xl font-bold mb-3">Cybersecurity Hub</h4>
-<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Advanced threat detection and defensive strategy workshops.</p>
+<h4 className="font-headline text-xl font-bold mb-3">Software Development Services</h4>
+<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Bring your ideas to life with our top-notch software development services.</p>
 <button className="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
 </div>
 {/**/}
@@ -117,8 +131,8 @@ export default function HomePage() {
 <div className="h-40 mb-6 rounded-lg overflow-hidden">
 <img className="w-full h-full object-cover" data-alt="dashboard showing data visualization and charts on a large screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwE1pRKqBquhyOzjkCBlckzgCsk7L5FAgXPgQ4t0nd52wFpmxgeI2CVFgXqmGzfxSljDexdrL_yK1Abuzq4WUtgNKjLZb-Sq3UP9U6aB3uuJ3Y9y0V6ngPTau6m7Gg6PrGJ32AQn_tBH7mwpGeIAiatuU5lESOUgcTj1JaGKGZWQmh7kzUxVq1PO27U_eBelr6AbiZq5Sc-1iC4MuLaDAPMDwkYMT8_MiCcRzGGOyPrLprFtfuh-UhMywnqC3KOMYB7dhVEduLW0IR" alt="home"/>
 </div>
-<h4 className="font-headline text-xl font-bold mb-3">Data Analytics</h4>
-<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Transforming raw data into actionable business intelligence.</p>
+<h4 className="font-headline text-xl font-bold mb-3">Infotech Product Creation &amp; Sales</h4>
+<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Explore and create innovative information technology products with our support.</p>
 <button className="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
 </div>
 {/**/}
@@ -126,12 +140,14 @@ export default function HomePage() {
 <div className="h-40 mb-6 rounded-lg overflow-hidden">
 <img className="w-full h-full object-cover" data-alt="creative team brainstorming in a sunlit loft office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM7SEnwzQDHx4e5jQTNHs_2NHMN_ujIRsy5PNx4AdMcKrOQwKZWkKV1ztjFB30nUskKzHpRQoyFHGlohr1TqaIYmTxQTj57ieRnoA-q7uVXFo5E1krtd2et9ilL91vxxSyoTFB-tamBmcmticGIFqB6wMz0NOxzFdEDz730xiUAO641gR_yvtKdl92xXBqlY60i9XQpSohdvj2DRz1LktzWDT81_RpcZCzAtOSBNCAl4sH-CCNsFZXGuktaqdWfeT4lyKqEATMvNmD" alt="home"/>
 </div>
-<h4 className="font-headline text-xl font-bold mb-3">Venture Studio</h4>
-<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Incubating the next generation of tech-driven startups.</p>
+<h4 className="font-headline text-xl font-bold mb-3">Maintenance and Support Services</h4>
+<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Ensure the longevity of your digital ventures with our reliable maintenance and support.</p>
 <button className="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
 </div>
 </div>
 </section></FadeIn>
+{/**/}
+<WhyChooseITHAC />
 {/**/}
 <FadeIn delay={0.1}><section className="py-24 bg-tertiary text-on-tertiary overflow-hidden relative">
 <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary-container/10 -skew-x-12 transform translate-x-1/2"></div>

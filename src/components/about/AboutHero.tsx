@@ -60,9 +60,7 @@ const AboutHero = () => {
             variant="body"
             className="text-white/90 max-w-2xl mx-auto text-xl leading-relaxed"
           >
-            Information Technologies Hub and Cynosure (ITHAC) stands at the
-            forefront of Africa's digital transformation, cultivating
-            innovation, creativity, and entrepreneurship across the continent.
+            Information Technologies Hub and Cynosure (ITHAC) is cultivating a nurturing and synergistic environment that fosters information technology product and service creation and support. We envision becoming the go-to destination for the people of Ondo state and Nigeria at large seeking to gain digital skills, have access to top-notched infrastructures utilization and entrepreneurs aiming to transform their ideas into successful digital ventures. Our aim is to establish an ecosystem that nurtures creativity, collaboration, and entrepreneurship, allowing individuals to flourish and make a meaningful, long-lasting difference in the world. ITHAC embraces the convergence of technology, creativity, and business with our commitment to excellence, innovation, and partnership, we support organizations and individuals to realize their vision towards making a lasting impact on the digital landscape.
           </Typography>
         </motion.div>
       </Container>

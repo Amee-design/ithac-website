@@ -8,9 +8,8 @@ const WhyChooseITHAC = () => {
   const pillars = [
     {
       icon: Trophy,
-      title: "Proven Excellence",
-      description:
-        "Award-winning solutions with a track record of successful project deliveries across Africa.",
+      title: "Comprehensive Startup Incubation",
+      description: "Nurturing, guiding, and maintaining the productivity of ventures centered on technology.",
       stats: "95% Client Satisfaction",
       features: [
         "Industry-recognized expertise",
@@ -22,9 +21,8 @@ const WhyChooseITHAC = () => {
     },
     {
       icon: Users,
-      title: "Expert Team",
-      description:
-        "Highly skilled professionals with deep expertise in cutting-edge technologies and African market insights.",
+      title: "Mentoring and Workshops",
+      description: "Empowering businesses and individuals to refine creative ideas.",
       stats: "50+ Technical Experts",
       features: [
         "Certified professionals",
@@ -36,9 +34,8 @@ const WhyChooseITHAC = () => {
     },
     {
       icon: Zap,
-      title: "Rapid Innovation",
-      description:
-        "Agile methodologies and modern technologies to deliver solutions faster and more efficiently.",
+      title: "Access to Funding Opportunities",
+      description: "Building a strong foundation for sustainable growth using information technology.",
       stats: "50% Faster Delivery",
       features: [
         "Agile development process",
@@ -50,9 +47,8 @@ const WhyChooseITHAC = () => {
     },
     {
       icon: Globe,
-      title: "African Focus",
-      description:
-        "Deep understanding of African challenges with solutions designed for local contexts and global standards.",
+      title: "Network of Industry Experts",
+      description: "Connect with professionals to enhance your ventures.",
       stats: "15 Countries Served",
       features: [
         "Local context understanding",
