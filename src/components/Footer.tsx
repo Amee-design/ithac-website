@@ -40,34 +40,39 @@ const Footer = () => {
         </div>
         {/* Contact */}
         <div className="space-y-6">
-          <h5 className="font-label uppercase tracking-widest text-xs font-bold text-zinc-900 dark:text-white">Contact Us</h5>
+          <h5 className="font-label uppercase tracking-widest text-xs font-bold text-zinc-900 dark:text-white">Contact</h5>
           <ul className="space-y-4">
-            <li className="flex items-center gap-3 text-zinc-500 text-sm">
-              <span className="material-symbols-outlined text-sm">location_on</span>
-              101 Innovation Blvd, Tech City
+            <li className="flex flex-col gap-1 text-zinc-500 text-sm">
+              <span className="font-bold text-xs uppercase">Call Now</span>
+              +234 902 143 9349
             </li>
-            <li className="flex items-center gap-3 text-zinc-500 text-sm">
-              <span className="material-symbols-outlined text-sm">mail</span>
-              contact@ithac.tech
+            <li className="flex flex-col gap-1 text-zinc-500 text-sm">
+              <span className="font-bold text-xs uppercase">Email Us</span>
+              contactus@ithac.org
             </li>
-            <li className="flex items-center gap-3 text-zinc-500 text-sm">
-              <span className="material-symbols-outlined text-sm">call</span>
-              +1 (555) 0123-4567
+            <li className="flex flex-col gap-1 text-zinc-500 text-sm">
+              <span className="font-bold text-xs uppercase">Follow Us</span>
+              Stay tuned with us for updates
+              <div className="flex gap-2 mt-1">
+                 <a href="#!" className="text-zinc-500 hover:text-blue-700 transition-colors font-bold">in</a>
+              </div>
             </li>
           </ul>
         </div>
-        {/* Legal */}
+        {/* Address */}
         <div className="space-y-6">
-          <h5 className="font-label uppercase tracking-widest text-xs font-bold text-zinc-900 dark:text-white">Legal</h5>
+          <h5 className="font-label uppercase tracking-widest text-xs font-bold text-zinc-900 dark:text-white">Our Address</h5>
           <ul className="space-y-4">
-            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#!">Privacy Policy</Link></li>
-            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#!">Terms of Service</Link></li>
-            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#!">Cookie Policy</Link></li>
+            <li className="flex flex-col gap-1 text-zinc-500 text-sm">
+              <span className="font-bold text-base text-zinc-900 dark:text-zinc-200">Nigeria</span>
+              <span className="font-medium text-zinc-700 dark:text-zinc-300">Abuja Office</span>
+              <span className="leading-loose mt-2">Carlin Concept Plaza, opposite Aco estate or Mantrac Caterpillar company, beside Salbas petrol station, Airport Road, Abuja, Nigeria</span>
+            </li>
           </ul>
         </div>
       </div>
       <div className="border-t border-zinc-200 dark:border-zinc-800 py-8 max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <div className="text-zinc-500 text-xs font-medium">© 2024 ITHAC. The Editorial Architect of Digital Excellence.</div>
+        <div className="text-zinc-500 text-xs font-medium">© 2026 ITHAC. The Editorial Architect of Digital Excellence.</div>
         <div className="flex gap-6">
           <span className="text-zinc-400 text-xs font-medium">Made with precision in a modern lab.</span>
         </div>

@@ -10,14 +10,14 @@ const VisionMission = () => {
       icon: Eye,
       title: "Our Vision",
       content:
-        "To be Africa's leading technology hub and cynosure, inspiring a generation of digital innovators who will transform the continent through cutting-edge technology and entrepreneurial excellence.",
+        "The vision is to cultivate a dynamic and nurturing collective of individuals who wholeheartedly embrace the convergence of technology and the arts.",
       gradient: "from-ithac-blue to-ithac-purple",
     },
     {
       icon: Target,
       title: "Our Mission",
       content:
-        "To cultivate innovation, creativity, and entrepreneurship across Africa by providing world-class technology education, fostering strategic partnerships, and building solutions that address real-world challenges.",
+        "The mission is to facilitate accessibility to cutting-edge technology, nurture the spirit of entrepreneurialism, extend comprehensive training and educational prospects, and establish a collaborative environment for esteemed individuals in the realms of technology and creative enterprises.",
       gradient: "from-ithac-emerald to-ithac-blue-dark",
     },
     {

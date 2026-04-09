@@ -70,13 +70,10 @@ export default function AboutPage() {
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
 <div className="lg:col-span-5">
 <h2 className="text-4xl font-bold tracking-tight text-primary mb-8">About ITHAC</h2>
-<div className="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+<div className="space-y-6 text-lg text-on-surface-variant leading-relaxed text-justify">
 <p>
-                                ITHAC stands as a beacon of innovation and technical mastery. Our mission is to bridge the gap between untapped local potential and global digital demands. By establishing a world-class hub in Ondo State, we provide the infrastructure and expertise necessary for sustainable digital growth.
-                            </p>
-<p>
-                                We believe in the power of deliberate design and technical precision. Every project under the ITHAC banner is an exercise in editorial excellence—where complexity is distilled into elegant, functional digital experiences that drive real economic value for Nigeria.
-                            </p>
+    Information Technologies Hub and Cynosure (ITHAC) is cultivating a nurturing and synergistic environment that fosters information technology product and service creation and support. We envision becoming the go-to destination for the people of Ondo state and Nigeria at large seeking to gain digital skills, have access to top-notched infrastructures utilization and entrepreneurs aiming to transform their ideas into successful digital ventures. Our aim is to establish an ecosystem that nurtures creativity, collaboration, and entrepreneurship, allowing individuals to flourish and make a meaningful, long-lasting difference in the world. ITHAC embraces the convergence of technology, creativity, and business with our commitment to excellence, innovation, and partnership, we support organizations and individuals to realize their vision towards making a lasting impact on the digital landscape.
+</p>
 </div>
 </div>
 <div className="lg:col-span-7">
@@ -99,8 +96,8 @@ export default function AboutPage() {
 </div>
 <h3 className="text-3xl font-bold mb-6 text-primary">Our Vision</h3>
 <p className="text-on-surface-variant text-lg leading-relaxed">
-                            To be the premier digital catalyst in Africa, transforming Ondo State into a globally recognized epicenter of technological innovation and high-end digital craftsmanship.
-                        </p>
+    The vision is to cultivate a dynamic and nurturing collective of individuals who wholeheartedly embrace the convergence of technology and the arts.
+</p>
 </div>
 {/**/}
 <div className="bg-surface-container-highest p-16 rounded-xl border border-outline-variant/10">
@@ -109,8 +106,8 @@ export default function AboutPage() {
 </div>
 <h3 className="text-3xl font-bold mb-6 text-primary">Our Mission</h3>
 <p className="text-on-surface-variant text-lg leading-relaxed">
-                            To architect a robust ecosystem where local talent meets global standards, providing innovative IT solutions that empower businesses and government institutions through digital excellence.
-                        </p>
+    The mission is to facilitate accessibility to cutting-edge technology, nurture the spirit of entrepreneurialism, extend comprehensive training and educational prospects, and establish a collaborative environment for esteemed individuals in the realms of technology and creative enterprises.
+</p>
 </div>
 </div>
 </div>
