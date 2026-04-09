@@ -1,286 +1,75 @@
-"use client";
-
-import { motion } from "framer-motion";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Linkedin,
-  Instagram,
-  Facebook,
-} from "lucide-react";
+import Link from "next/link";
+import React from "react";
 import Image from "next/image";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
-  const footerLinks = {
-    services: [
-      { name: "IT Training", href: "#services" },
-      { name: "Software Development", href: "#services" },
-      { name: "Multimedia Solutions", href: "#services" },
-      { name: "Hackathons", href: "#services" },
-    ],
-    programs: [
-      { name: "Full-Stack Bootcamp", href: "#programs" },
-      { name: "UI/UX Workshop", href: "#programs" },
-      { name: "Mobile Development", href: "#programs" },
-      { name: "Innovation Sprint", href: "#programs" },
-    ],
-    company: [
-      { name: "About Us", href: "#about" },
-      { name: "Our Team", href: "#team" },
-      { name: "Careers", href: "#careers" },
-      { name: "Contact", href: "#contact" },
-    ],
-    support: [
-      { name: "Help Center", href: "#support" },
-      { name: "Documentation", href: "#docs" },
-      { name: "Community", href: "#community" },
-      { name: "Privacy Policy", href: "#privacy" },
-    ],
-  };
-
-  const socialLinks = [
-    {
-      icon: <Linkedin className="w-5 h-5" />,
-      href: "https://www.linkedin.com/company/information-technologies-hub-and-cynosure-ithac/",
-      name: "LinkedIn",
-    },
-    {
-      icon: <Instagram className="w-5 h-5" />,
-      href: "https://www.instagram.com/ithacceomd?igsh=N25kMHI2Z20wajlx",
-      name: "Instagram",
-    },
-    {
-      icon: <Facebook className="w-5 h-5" />,
-      href: "https://www.facebook.com/share/17EcJUNSAe/",
-      name: "Facebook",
-    },
-  ];
-
   return (
-    <footer className="bg-ithac-dark-gray text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main Footer Content */}
-        <div className="py-16">
-          <div className="grid lg:grid-cols-6 gap-8">
-            {/* Company Info */}
-            <div className="lg:col-span-2">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <Image
-                    src="/images/logo.jpg"
-                    alt="ITHAC Logo"
-                    width={150}
-                    height={40}
-                    className="rounded-lg"
-                  />
-                  {/* <h3 className="text-2xl font-bold text-ithac-blue">ITHAC</h3> */}
-                </div>
-                <p className="text-gray-300 mb-6 leading-relaxed">
-                  Empowering the next generation of tech innovators through
-                  comprehensive training, development, and innovation
-                  experiences.
-                </p>
-
-                {/* Contact Info */}
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <MapPin className="w-5 h-5 text-accent-aqua flex-shrink-0" />
-                    <span className="text-gray-300 text-sm">
-                      Carlin Concept Plaza, opposite Aco estate or Mantrac
-                      Caterpillar company, beside Salbas petrol station, Airport
-                      Road, Abuja, Nigeria
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Phone className="w-5 h-5 text-accent-aqua flex-shrink-0" />
-                    <a
-                      href="https://wa.me/2349021439349"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-accent-aqua transition-colors text-sm"
-                    >
-                      +234 902 143 9349
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail className="w-5 h-5 text-accent-aqua flex-shrink-0" />
-                    <a
-                      href="mailto:contactus@ithac.org"
-                      className="text-gray-300 hover:text-accent-aqua transition-colors text-sm"
-                    >
-                      contactus@ithac.org
-                    </a>
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-
-            {/* Services */}
-            <div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                viewport={{ once: true }}
-              >
-                <h4 className="font-semibold text-lg mb-4">Services</h4>
-                <ul className="space-y-2">
-                  {footerLinks.services.map((link, index) => (
-                    <li key={index}>
-                      <a
-                        href={link.href}
-                        className="text-gray-300 hover:text-accent-aqua transition-colors duration-200 text-sm"
-                      >
-                        {link.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            </div>
-
-            {/* Programs */}
-            <div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-              >
-                <h4 className="font-semibold text-lg mb-4">Programs</h4>
-                <ul className="space-y-2">
-                  {footerLinks.programs.map((link, index) => (
-                    <li key={index}>
-                      <a
-                        href={link.href}
-                        className="text-gray-300 hover:text-accent-aqua transition-colors duration-200 text-sm"
-                      >
-                        {link.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            </div>
-
-            {/* Company */}
-            <div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true }}
-              >
-                <h4 className="font-semibold text-lg mb-4">Company</h4>
-                <ul className="space-y-2">
-                  {footerLinks.company.map((link, index) => (
-                    <li key={index}>
-                      <a
-                        href={link.href}
-                        className="text-gray-300 hover:text-accent-aqua transition-colors duration-200 text-sm"
-                      >
-                        {link.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            </div>
-
-            {/* Support */}
-            <div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: true }}
-              >
-                <h4 className="font-semibold text-lg mb-4">Support</h4>
-                <ul className="space-y-2">
-                  {footerLinks.support.map((link, index) => (
-                    <li key={index}>
-                      <a
-                        href={link.href}
-                        className="text-gray-300 hover:text-accent-aqua transition-colors duration-200 text-sm"
-                      >
-                        {link.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            </div>
+    <footer className="bg-zinc-100 dark:bg-zinc-900 w-full rounded-none">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-16">
+        {/* Brand Section */}
+        <div className="space-y-6">
+          <Link href="/" className="inline-block">
+            <Image src="/images/logo.jpg" alt="ITHAC Logo" width={120} height={120} className="rounded-md" />
+          </Link>
+          <p className="text-zinc-500 text-sm leading-relaxed max-w-xs">
+            The Editorial Architect of Digital Excellence. Guiding IT professionals towards institutional authority.
+          </p>
+          <div className="flex gap-4">
+            <a className="text-zinc-500 hover:text-blue-700 transition-colors" href="#!">
+              <span className="material-symbols-outlined">social_leaderboard</span>
+            </a>
+            <a className="text-zinc-500 hover:text-blue-700 transition-colors" href="#!">
+              <span className="material-symbols-outlined">share</span>
+            </a>
+            <a className="text-zinc-500 hover:text-blue-700 transition-colors" href="#!">
+              <span className="material-symbols-outlined">alternate_email</span>
+            </a>
           </div>
-
-          {/* Newsletter Signup */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="mt-12 pt-8 border-t border-gray-700"
-          >
-            <div className="max-w-md">
-              <h4 className="font-semibold text-lg mb-3">FOLLOW US</h4>
-              <p className="text-gray-300 text-sm mb-4">
-                Stay tuned with us for updates
-              </p>
-              <div className="flex gap-2">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-aqua focus:border-transparent text-sm"
-                />
-                <button className="bg-gradient-to-r from-secondary-blue to-accent-aqua text-white px-6 py-2 rounded-lg hover:scale-105 transition-all duration-200 font-medium text-sm">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </motion.div>
         </div>
-
-        {/* Bottom Footer */}
-        <div className="py-6 border-t border-gray-700">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="text-gray-300 text-sm"
-            >
-              © {currentYear} ITHAC. All rights reserved. | Made with ❤️ in
-              Abuja, Nigeria
-            </motion.div>
-
-            {/* Social Links */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="flex gap-4"
-            >
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  aria-label={social.name}
-                  className="text-gray-400 hover:text-accent-aqua transition-colors duration-200 p-2 hover:bg-gray-800 rounded-lg"
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </motion.div>
-          </div>
+        {/* Sitemap */}
+        <div className="space-y-6">
+          <h5 className="font-label uppercase tracking-widest text-xs font-bold text-zinc-900 dark:text-white">Sitemap</h5>
+          <ul className="space-y-4">
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/services">Programs</Link></li>
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/services">Infrastructure</Link></li>
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/about-us">Case Studies</Link></li>
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/hub">Join Hub</Link></li>
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/communities">Communities</Link></li>
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/collaboration">Collaboration</Link></li>
+          </ul>
+        </div>
+        {/* Contact */}
+        <div className="space-y-6">
+          <h5 className="font-label uppercase tracking-widest text-xs font-bold text-zinc-900 dark:text-white">Contact Us</h5>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-3 text-zinc-500 text-sm">
+              <span className="material-symbols-outlined text-sm">location_on</span>
+              101 Innovation Blvd, Tech City
+            </li>
+            <li className="flex items-center gap-3 text-zinc-500 text-sm">
+              <span className="material-symbols-outlined text-sm">mail</span>
+              contact@ithac.tech
+            </li>
+            <li className="flex items-center gap-3 text-zinc-500 text-sm">
+              <span className="material-symbols-outlined text-sm">call</span>
+              +1 (555) 0123-4567
+            </li>
+          </ul>
+        </div>
+        {/* Legal */}
+        <div className="space-y-6">
+          <h5 className="font-label uppercase tracking-widest text-xs font-bold text-zinc-900 dark:text-white">Legal</h5>
+          <ul className="space-y-4">
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#!">Privacy Policy</Link></li>
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#!">Terms of Service</Link></li>
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#!">Cookie Policy</Link></li>
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-zinc-200 dark:border-zinc-800 py-8 max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="text-zinc-500 text-xs font-medium">© 2024 ITHAC. The Editorial Architect of Digital Excellence.</div>
+        <div className="flex gap-6">
+          <span className="text-zinc-400 text-xs font-medium">Made with precision in a modern lab.</span>
         </div>
       </div>
     </footer>

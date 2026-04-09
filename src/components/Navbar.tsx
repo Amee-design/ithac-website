@@ -1,185 +1,63 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { Menu, X, ChevronDown } from "lucide-react";
-import { useState } from "react";
 import Link from "next/link";
+import React from "react";
 import Image from "next/image";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const navItems = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Academy", href: "/academy" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Contact", href: "/contact" },
-  ];
-
-  const additionalPages = [
-    { name: "Blog", href: "/blog" },
-    { name: "Community", href: "/community" },
-  ];
-
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-soft-blue-tint shadow-sm"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24">
-          {/* Logo */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="flex-shrink-0"
+    <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-[12px] shadow-[0_20px_40px_rgba(25,28,29,0.05)]">
+      <div className="flex justify-between items-center max-w-7xl mx-auto px-8 h-20 w-full">
+        <Link href="/" className="flex items-center">
+          <Image src="/images/logo.jpg" alt="ITHAC Logo" width={120} height={120} className="rounded-md" />
+        </Link>
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center gap-8">
+          <Link
+            className="text-blue-700 border-b-2 border-blue-700 pb-1 text-sm font-semibold tracking-tight hover:text-blue-800 transition-colors"
+            href="/"
           >
-            <Link href="/" className="flex items-center gap-3">
-              <Image
-                src="/images/logo.jpg"
-                alt="ITHAC Logo"
-                width={150}
-                height={40}
-                className="rounded-lg"
-              />
-            </Link>
-          </motion.div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden lg:block">
-            <div className="ml-10 flex items-center space-x-8">
-              {navItems.map((item, index) => (
-                <motion.div
-                  key={item.name}
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 * index }}
-                >
-                  <Link
-                    href={item.href}
-                    className="text-secondary-blue hover:text-accent-aqua px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
-                  >
-                    {item.name}
-                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-accent-aqua transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
-                  </Link>
-                </motion.div>
-              ))}
-
-              {/* More Dropdown */}
-              <div className="relative">
-                <motion.button
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.6 }}
-                  onClick={() => setDropdownOpen(!dropdownOpen)}
-                  className="flex items-center gap-1 text-secondary-blue hover:text-accent-aqua px-3 py-2 text-sm font-medium transition-colors duration-200"
-                >
-                  More
-                  <ChevronDown className="w-4 h-4" />
-                </motion.button>
-
-                {dropdownOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="absolute right-0 mt-2 w-48 bg-white rounded-2xl shadow-lg border border-soft-blue-tint py-2"
-                  >
-                    {additionalPages.map((page) => (
-                      <Link
-                        key={page.name}
-                        href={page.href}
-                        className="block px-4 py-2 text-sm text-secondary-blue hover:text-accent-aqua hover:bg-soft-blue-tint/30 transition-colors"
-                        onClick={() => setDropdownOpen(false)}
-                      >
-                        {page.name}
-                      </Link>
-                    ))}
-                  </motion.div>
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* CTA Button */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            className="hidden md:block"
+            Home
+          </Link>
+          <Link
+            className="text-zinc-600 text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors"
+            href="/about-us"
           >
-            <Link href="/academy">
-              <button className="bg-gradient-to-r from-secondary-blue to-accent-aqua text-white px-6 py-2 rounded-xl hover:scale-105 transition-all duration-200 font-medium shadow-md hover:shadow-lg">
-                Join Academy
-              </button>
-            </Link>
-          </motion.div>
-
-          {/* Mobile menu button */}
-          <div className="lg:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-secondary-blue hover:text-accent-aqua p-2 rounded-lg hover:bg-soft-blue-tint/30 transition-colors"
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+            About Us
+          </Link>
+          <Link
+            className="text-zinc-600 text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors"
+            href="/services"
+          >
+            Services
+          </Link>
+          <Link
+            className="text-zinc-600 text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors"
+            href="/hub"
+          >
+            Hub
+          </Link>
+          <Link
+            className="text-zinc-600 text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors"
+            href="/communities"
+          >
+            Communities
+          </Link>
+          <Link
+            className="text-zinc-600 text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors"
+            href="/collaboration"
+          >
+            Collaboration
+          </Link>
+        </div>
+        <div className="flex items-center gap-4">
+          <button className="hidden lg:flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+            <span className="material-symbols-outlined">search</span>
+          </button>
+          <button className="bg-secondary text-on-secondary px-6 py-2.5 rounded-xl font-bold text-sm hover:bg-secondary-container transition-all active:scale-95">
+            Join the Ecosystem
+          </button>
         </div>
       </div>
-
-      {/* Mobile Navigation */}
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
-          className="lg:hidden bg-white border-t border-soft-blue-tint"
-        >
-          <div className="px-4 py-6 space-y-3">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="block text-ithac-dark-gray hover:text-ithac-blue py-3 px-4 text-base font-medium rounded-xl hover:bg-ithac-light-gray/30 transition-all"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
-
-            {/* Additional Pages in Mobile */}
-            <div className="border-t border-soft-blue-tint pt-3 mt-3">
-              {additionalPages.map((page) => (
-                <Link
-                  key={page.name}
-                  href={page.href}
-                  className="block text-secondary-blue hover:text-accent-aqua py-3 px-4 text-base font-medium rounded-xl hover:bg-soft-blue-tint/30 transition-all"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {page.name}
-                </Link>
-              ))}
-            </div>
-
-            <div className="pt-4">
-              <Link href="/academy">
-                <button
-                  className="w-full bg-gradient-to-r from-secondary-blue to-accent-aqua text-white px-6 py-3 rounded-xl hover:scale-105 transition-all duration-200 font-medium"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Join Academy
-                </button>
-              </Link>
-            </div>
-          </div>
-        </motion.div>
-      )}
-    </motion.nav>
+    </nav>
   );
 };
 

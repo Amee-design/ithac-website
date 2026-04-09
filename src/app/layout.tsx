@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import localFont from "next/font/local";
 import Chatbot from "../components/Chatbot";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 import "./globals.css";
 
@@ -9,7 +11,14 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
+  weight: ["400", "700", "800"],
 });
 
 // Using local Satoshi font files
@@ -140,9 +149,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${satoshi.variable}`}>
-      <body className="font-inter antialiased bg-white text-ithac-dark-gray">
+    <html lang="en" className={`${inter.variable} ${satoshi.variable} ${manrope.variable}`}>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+        <style>{`.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }`}</style>
+      </head>
+      <body className="font-body antialiased bg-surface text-on-surface">
+        <Navbar />
         {children}
+        <Footer />
         <Chatbot />
       </body>
     </html>
