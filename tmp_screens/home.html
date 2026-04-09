@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ITHAC | Information Technologies Hub and Cynosure</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#d9dadb",
+                        "tertiary": "#002733",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#e0e0ff",
+                        "surface-bright": "#f8f9fa",
+                        "on-primary-container": "#a2a2a2",
+                        "background": "#f8f9fa",
+                        "surface": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#004d62",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary-container": "#fffbff",
+                        "secondary": "#3a43e6",
+                        "on-primary-fixed": "#1b1b1b",
+                        "inverse-primary": "#c6c6c6",
+                        "secondary-container": "#5660ff",
+                        "tertiary-fixed": "#bbeaff",
+                        "on-secondary-fixed": "#00006e",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#00b0dc",
+                        "outline": "#767587",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c6c5d8",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#474747",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#191c1d",
+                        "tertiary-fixed-dim": "#5dd4ff",
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary-fixed-variant": "#1e25d1",
+                        "surface-tint": "#5e5e5e",
+                        "on-tertiary-fixed": "#001f29",
+                        "inverse-surface": "#2e3132",
+                        "on-background": "#191c1d",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-container-high": "#e7e8e9",
+                        "primary-container": "#393939",
+                        "on-surface-variant": "#454555",
+                        "surface-container": "#edeeef",
+                        "primary-fixed": "#e2e2e2",
+                        "secondary-fixed-dim": "#bfc2ff",
+                        "primary": "#232323",
+                        "surface-container-highest": "#e1e3e4",
+                        "tertiary-container": "#003e50",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-[0_20px_40px_rgba(25,28,29,0.05)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20 w-full">
+<div class="text-2xl font-black tracking-tighter text-zinc-900">ITHAC</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-blue-700 border-b-2 border-blue-700 pb-1 text-sm font-semibold tracking-tight" href="#">Home</a>
+<a class="text-zinc-600 font-medium text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors" href="#">About Us</a>
+<a class="text-zinc-600 font-medium text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors" href="#">Services</a>
+<a class="text-zinc-600 font-medium text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors" href="#">Why ITHAC</a>
+<a class="text-zinc-600 font-medium text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors" href="#">Hub</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-xl font-bold text-sm hover:bg-secondary-container transition-all active:scale-95">
+                    Join the Ecosystem
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] min-h-[600px] flex items-center overflow-hidden bg-primary">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40 mix-blend-luminosity" data-alt="diverse group of tech professionals collaborating in a modern high-tech laboratory with glowing screens and glass partitions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Xbv9BnS7bc0fpvplLtJpo3xtym0pH-U61xnW7uYHg1BmaxdTQ1iKGBd_H1dySa13V0eujiM61BNBnnrEDWf8IcULvGOerGqV1I2kwft4NBZH7Al6PR52mUw0je2bzsTaJhkgGwv3AgTnXWBtzK412vafyrmf9OnK2VBqEQcQnQ3neE3194wbNYkUTBLhrTmKJ4JmCvYcPrg3dLJgxUjc1rUaULo1U6N30rGGhm6z0Whd8L5aPkdKZhBNvxF48rDQ4aYXxKR4V1z6"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-primary leading-[1.1] tracking-tight mb-6">
+                        Unlock Your <span class="text-on-tertiary-container">Digital</span> Potential.
+                    </h1>
+<p class="text-xl text-on-primary-container font-medium mb-10 leading-relaxed">
+                        Join the ITHAC Ecosystem. Gain skills, access infrastructure, and transform ideas into successful ventures with our editorial approach to IT excellence.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary hover:bg-secondary-container text-on-secondary px-8 py-4 rounded-xl font-bold text-lg shadow-lg transition-all">
+                            Explore Programs
+                        </button>
+<button class="bg-surface-container-lowest/10 backdrop-blur-md border border-white/20 text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all">
+                            Learn More
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why ITHAC? -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6">
+<div class="w-14 h-14 bg-secondary/10 flex items-center justify-center rounded-2xl">
+<span class="material-symbols-outlined text-secondary text-3xl">school</span>
+</div>
+<h3 class="font-headline text-2xl font-bold">Skill-building</h3>
+<p class="text-on-surface-variant leading-relaxed">Curated educational tracks designed by industry architects to bridge the gap between theory and high-stakes production.</p>
+</div>
+<div class="space-y-6">
+<div class="w-14 h-14 bg-on-tertiary-container/10 flex items-center justify-center rounded-2xl">
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl">settings_input_component</span>
+</div>
+<h3 class="font-headline text-2xl font-bold">Infrastructure</h3>
+<p class="text-on-surface-variant leading-relaxed">Access world-class digital assets, server environments, and testing labs to scale your technical vision without barriers.</p>
+</div>
+<div class="space-y-6">
+<div class="w-14 h-14 bg-secondary/10 flex items-center justify-center rounded-2xl">
+<span class="material-symbols-outlined text-secondary text-3xl">hub</span>
+</div>
+<h3 class="font-headline text-2xl font-bold">Community</h3>
+<p class="text-on-surface-variant leading-relaxed">A cynosure for technical minds. Connect with mentors, investors, and peers in an ecosystem built for collaborative growth.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Programs -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 mb-12 flex justify-between items-end">
+<div>
+<span class="font-label uppercase tracking-widest text-xs text-secondary font-bold mb-2 block">Our Expertise</span>
+<h2 class="font-headline text-4xl font-extrabold tracking-tight">Featured Programs &amp; Services</h2>
+</div>
+<div class="flex gap-4">
+<button class="p-3 rounded-full bg-surface-container-lowest shadow-sm hover:shadow-md text-on-surface transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="p-3 rounded-full bg-surface-container-lowest shadow-sm hover:shadow-md text-on-surface transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex overflow-x-auto gap-8 px-8 pb-12 hide-scrollbar snap-x">
+<!-- Card 1 -->
+<div class="flex-none w-80 snap-start bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-outline-variant/10">
+<div class="h-40 mb-6 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close up of code on a screen with blue and purple highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlQbTNH3QZmwqPskeakYJZULqxHDl3lfavdMZ6ktHUj4N04EMC1sQE34eGFwy06hb-rnzZjOkEv32qfJ1RoOwfX-LVhekYAQd-YWYB32aYbtxpH9-HDEOC-MMfT7JC8U5qcvahKdE7nTOZk-efYQTI687-aP-L5JUiFydlaVaOzLSLODB7Ds-HIHDXJckZi-3Ux_tWWV-s5SGt_fLXhxE_-MpRP_mzHqe3Bm_H7_tnKpuwidlZrRjIPEx0uTHMkeSH4pmQtZZC5-wR"/>
+</div>
+<h4 class="font-headline text-xl font-bold mb-3">Technical Education</h4>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Master the modern stack with deep-dive certifications and workshops.</p>
+<button class="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
+</div>
+<!-- Card 2 -->
+<div class="flex-none w-80 snap-start bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-outline-variant/10">
+<div class="h-40 mb-6 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="laptop on a desk showing software development environment with clean white space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr_i-lhfUVV8xMwBISQK1aAmyof_-8RNCa8gjgA2H3TsH5wrPU-orf7vPMOyfrWtjnEx9WjPXOd14H8gwxMGOXhKaN2CHdIrsbpFHKp5Dxre89_sByWjGh949HupbTomyxG13I91QeAXxyrrSGnOG3DhQDjEKDjMhUEMq-fntGt-990rdUVr09KR3wlOYu-Ukh_swcgp3GsfVPG49Qi1rKWy4hyIIkJWv1EVIOhDKlMGC-sTkaxtueCcLWiSidiEt6N7JNcYW8nrER"/>
+</div>
+<h4 class="font-headline text-xl font-bold mb-3">Software Development</h4>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Custom engineering solutions for complex business challenges.</p>
+<button class="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
+</div>
+<!-- Card 3 -->
+<div class="flex-none w-80 snap-start bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-outline-variant/10">
+<div class="h-40 mb-6 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="futuristic server room with glowing blue lights and sleek hardware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsepTSZgQheuEHGCqdGf6OFKCkx4fw7FL4_-SH5Yoj5tZqH-wzoYCYZDXxW7zdvn0Ydb5Yx9cLdPeUJA3OvEwboVjT6egqGyzwh4DHn36_FuehO0YDMKXeGFUC_hibo5QTo3XjNODMtOL_soCXILdtIha5n2Pth8x0JBr2MYHAXAZxaUY4IhePTVLvk7RCy9V0_gEa2OeN4xWmz9w3cTKe8Ys3RygtgyTn5bgYCMYM43xaIpexMtGH3vPZ9PDVKeTXdT2rRMXXVUXy"/>
+</div>
+<h4 class="font-headline text-xl font-bold mb-3">Cloud Infrastructure</h4>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Scalable architecture design for high-availability applications.</p>
+<button class="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
+</div>
+<!-- Card 4 -->
+<div class="flex-none w-80 snap-start bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-outline-variant/10">
+<div class="h-40 mb-6 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="cybersecurity concept with digital lock and binary code background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeTsGKZ_ePz3es3ApS36ad8zMjOO-VxfPX04i8Oy67SmrwgJmR-pzmerqI3sYCyuImfvDud-LdG6klpRlxE4bceyAp1_yUne2gsyFnbnUBnSGiAOgjKVbEYiAhltDzxPCIXVRtAqALirZrv-F5sy2qrOWYbLn8sR2oxBQi7KmHyWrwWiZFZ8awSNAY5OHYVl0BDVvqfhueYHUDCthbHzfMAA3RO6fmX0zMsPENUtJHVdvHpgiWX_RRsIgy2RpUbqzu-GfHVUuybvgK"/>
+</div>
+<h4 class="font-headline text-xl font-bold mb-3">Cybersecurity Hub</h4>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Advanced threat detection and defensive strategy workshops.</p>
+<button class="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
+</div>
+<!-- Card 5 -->
+<div class="flex-none w-80 snap-start bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-outline-variant/10">
+<div class="h-40 mb-6 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="dashboard showing data visualization and charts on a large screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwE1pRKqBquhyOzjkCBlckzgCsk7L5FAgXPgQ4t0nd52wFpmxgeI2CVFgXqmGzfxSljDexdrL_yK1Abuzq4WUtgNKjLZb-Sq3UP9U6aB3uuJ3Y9y0V6ngPTau6m7Gg6PrGJ32AQn_tBH7mwpGeIAiatuU5lESOUgcTj1JaGKGZWQmh7kzUxVq1PO27U_eBelr6AbiZq5Sc-1iC4MuLaDAPMDwkYMT8_MiCcRzGGOyPrLprFtfuh-UhMywnqC3KOMYB7dhVEduLW0IR"/>
+</div>
+<h4 class="font-headline text-xl font-bold mb-3">Data Analytics</h4>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Transforming raw data into actionable business intelligence.</p>
+<button class="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
+</div>
+<!-- Card 6 -->
+<div class="flex-none w-80 snap-start bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-outline-variant/10">
+<div class="h-40 mb-6 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="creative team brainstorming in a sunlit loft office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM7SEnwzQDHx4e5jQTNHs_2NHMN_ujIRsy5PNx4AdMcKrOQwKZWkKV1ztjFB30nUskKzHpRQoyFHGlohr1TqaIYmTxQTj57ieRnoA-q7uVXFo5E1krtd2et9ilL91vxxSyoTFB-tamBmcmticGIFqB6wMz0NOxzFdEDz730xiUAO641gR_yvtKdl92xXBqlY60i9XQpSohdvj2DRz1LktzWDT81_RpcZCzAtOSBNCAl4sH-CCNsFZXGuktaqdWfeT4lyKqEATMvNmD"/>
+</div>
+<h4 class="font-headline text-xl font-bold mb-3">Venture Studio</h4>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Incubating the next generation of tech-driven startups.</p>
+<button class="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
+</div>
+</div>
+</section>
+<!-- Newsletter / Community Section -->
+<section class="py-24 bg-tertiary text-on-tertiary overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-secondary-container/10 -skew-x-12 transform translate-x-1/2"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-xl">
+<h2 class="font-headline text-4xl font-extrabold mb-6">Stay at the Center of Excellence</h2>
+<p class="text-lg opacity-80 mb-8">Receive editorial insights, event invitations, and infrastructure updates directly to your inbox.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<input class="bg-surface-container-low/10 border-none rounded-xl px-6 py-4 text-on-tertiary placeholder:text-on-tertiary/40 flex-grow focus:ring-2 focus:ring-on-tertiary-container transition-all" placeholder="professional@email.com" type="email"/>
+<button class="bg-on-tertiary-container text-tertiary font-bold px-8 py-4 rounded-xl hover:bg-tertiary-fixed transition-all whitespace-nowrap">Subscribe Now</button>
+</div>
+</div>
+<div class="hidden md:block w-96 h-96 relative">
+<div class="absolute inset-0 border-4 border-on-tertiary-container/20 rounded-full animate-pulse"></div>
+<div class="absolute inset-8 border-2 border-on-tertiary-container/40 rounded-full"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-8xl text-on-tertiary-container">stream</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-100 dark:bg-zinc-900 w-full rounded-none">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-16">
+<!-- Brand Section -->
+<div class="space-y-6">
+<div class="text-xl font-bold text-zinc-900 dark:text-white">ITHAC</div>
+<p class="text-zinc-500 text-sm leading-relaxed max-w-xs">
+                    The Editorial Architect of Digital Excellence. Guiding IT professionals towards institutional authority.
+                </p>
+<div class="flex gap-4">
+<a class="text-zinc-500 hover:text-blue-700 transition-colors" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="text-zinc-500 hover:text-blue-700 transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="text-zinc-500 hover:text-blue-700 transition-colors" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+<!-- Sitemap -->
+<div class="space-y-6">
+<h5 class="font-label uppercase tracking-widest text-xs font-bold text-zinc-900 dark:text-white">Sitemap</h5>
+<ul class="space-y-4">
+<li><a class="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#">Programs</a></li>
+<li><a class="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#">Infrastructure</a></li>
+<li><a class="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#">Case Studies</a></li>
+<li><a class="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#">Join Hub</a></li>
+</ul>
+</div>
+<!-- Contact -->
+<div class="space-y-6">
+<h5 class="font-label uppercase tracking-widest text-xs font-bold text-zinc-900 dark:text-white">Contact Us</h5>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-zinc-500 text-sm">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                        101 Innovation Blvd, Tech City
+                    </li>
+<li class="flex items-center gap-3 text-zinc-500 text-sm">
+<span class="material-symbols-outlined text-sm">mail</span>
+                        contact@ithac.tech
+                    </li>
+<li class="flex items-center gap-3 text-zinc-500 text-sm">
+<span class="material-symbols-outlined text-sm">call</span>
+                        +1 (555) 0123-4567
+                    </li>
+</ul>
+</div>
+<!-- Legal -->
+<div class="space-y-6">
+<h5 class="font-label uppercase tracking-widest text-xs font-bold text-zinc-900 dark:text-white">Legal</h5>
+<ul class="space-y-4">
+<li><a class="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-zinc-200 dark:border-zinc-800 py-8 max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-zinc-500 text-xs font-medium">© 2024 ITHAC. The Editorial Architect of Digital Excellence.</div>
+<div class="flex gap-6">
+<span class="text-zinc-400 text-xs font-medium">Made with precision in a modern lab.</span>
+</div>
+</div>
+</footer>
+</body></html>
