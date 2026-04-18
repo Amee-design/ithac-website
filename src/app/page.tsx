@@ -1,7 +1,6 @@
 import React from 'react';
 import { FadeIn } from '../components/animations/FadeIn';
-import WhyChooseITHAC from '../components/services/WhyChooseITHAC';
-import Image from 'next/image';
+
 import Link from 'next/link';
 
 export default function HomePage() {
