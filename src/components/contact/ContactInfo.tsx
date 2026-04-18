@@ -48,9 +48,9 @@ export default function ContactInfo() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-gray-800 mb-6"
+            className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 uppercase font-headline"
           >
-            Our Locations
+            Connect with the ITHAC Team
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -59,8 +59,7 @@ export default function ContactInfo() {
             viewport={{ once: true }}
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
-            We're strategically located across Africa to serve you better. Visit
-            any of our offices or connect with us remotely.
+            For enquiries, clarifications, or further information about programmes, partnerships, or ecosystem opportunities, you can reach out to us directly. Our team is available to provide guidance and support to help you identify the most relevant pathway within the ecosystem.
           </motion.p>
         </div>
 

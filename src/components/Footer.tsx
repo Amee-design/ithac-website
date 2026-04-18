@@ -15,13 +15,13 @@ const Footer = () => {
             The Editorial Architect of Digital Excellence. Guiding IT professionals towards institutional authority.
           </p>
           <div className="flex gap-4">
-            <a className="text-zinc-500 hover:text-blue-700 transition-colors" href="#!">
+            <a className="text-zinc-500 hover:text-blue-700 transition-colors" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               <span className="material-symbols-outlined">social_leaderboard</span>
             </a>
-            <a className="text-zinc-500 hover:text-blue-700 transition-colors" href="#!">
+            <a className="text-zinc-500 hover:text-blue-700 transition-colors" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               <span className="material-symbols-outlined">share</span>
             </a>
-            <a className="text-zinc-500 hover:text-blue-700 transition-colors" href="#!">
+            <a className="text-zinc-500 hover:text-blue-700 transition-colors" href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
               <span className="material-symbols-outlined">alternate_email</span>
             </a>
           </div>
@@ -31,11 +31,11 @@ const Footer = () => {
           <h5 className="font-label uppercase tracking-widest text-xs font-bold text-zinc-900 dark:text-white">Sitemap</h5>
           <ul className="space-y-4">
             <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/services">Programs</Link></li>
-            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/services">Infrastructure</Link></li>
-            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/about-us">Case Studies</Link></li>
-            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/hub">Join Hub</Link></li>
-            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/communities">Communities</Link></li>
-            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/collaboration">Collaboration</Link></li>
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/hub">Ecosystem</Link></li>
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/portfolio">Impact</Link></li>
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/hub">Hub</Link></li>
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/communities">Community</Link></li>
+            <li><Link className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm" href="/collaboration">Partnerships</Link></li>
           </ul>
         </div>
         {/* Contact */}
@@ -44,17 +44,18 @@ const Footer = () => {
           <ul className="space-y-4">
             <li className="flex flex-col gap-1 text-zinc-500 text-sm">
               <span className="font-bold text-xs uppercase">Call Now</span>
-              +234 902 143 9349
+              <a href="tel:+2349021439349" className="hover:text-blue-700">+234 902 143 9349</a>
             </li>
             <li className="flex flex-col gap-1 text-zinc-500 text-sm">
               <span className="font-bold text-xs uppercase">Email Us</span>
-              contactus@ithac.org
+              <a href="mailto:contactus@ithac.org" className="hover:text-blue-700">contactus@ithac.org</a>
             </li>
             <li className="flex flex-col gap-1 text-zinc-500 text-sm">
               <span className="font-bold text-xs uppercase">Follow Us</span>
               Stay tuned with us for updates
               <div className="flex gap-2 mt-1">
-                 <a href="#!" className="text-zinc-500 hover:text-blue-700 transition-colors font-bold">in</a>
+                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-blue-700 transition-colors font-bold">in</a>
+                 <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-green-600 transition-colors font-bold">wa</a>
               </div>
             </li>
           </ul>

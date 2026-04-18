@@ -1,124 +1,173 @@
 import React from 'react';
 import { FadeIn } from '../../components/animations/FadeIn';
+import Link from 'next/link';
 
-
-export default function CommunitiesPage() {
+export default function CommunityPage() {
   return (
-    <main className="pt-20">
-      {/* Hero Section */}
-<FadeIn><header className="relative min-h-[716px] flex items-center justify-center overflow-hidden bg-primary px-8">
-<div className="absolute inset-0 z-0">
-<img alt="African tech professionals collaborating" className="w-full h-full object-cover opacity-50 grayscale" data-alt="Modern office setting with group of young African tech professionals in focused discussion around large digital screens, warm natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4gVJrw_jeW2_Nk1x77C4brVO9h8MqtmoX-1VMDxo-AWE9TDsLIVgsk3uMtPnn967om92w0d6QPDhb-eefbwnBe_UnGD1AXM6hIas9DwBdaPCxMIHP1EwBmPBusdx9_u95-S11KXeavaS5XBqEcyXVucSJTmPoAwKdgTyPUCFAQ6OpxocZo0YO5dvCHSpz0-mBdBs2nUTgfh3WwyiAycjBiCkKLD8N9IEbo5mkxu2s84AnYZEQUBcqZVhd6mg-4Rkj01e_hJquzOg9"/>
-<div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-primary"></div>
-</div>
-<div className="relative z-10 text-center max-w-4xl">
-<span className="text-on-tertiary-container font-headline font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Ecosystem of Excellence</span>
-<h1 className="text-6xl md:text-8xl font-headline font-extrabold text-white tracking-tighter mb-8">
-                    COMMUNITIES
-                </h1>
-<p className="text-xl text-zinc-300 font-body max-w-2xl mx-auto leading-relaxed">
-                    A convergence of visionary minds, where African innovation meets world-class expertise. Join a community built for the architects of the digital future.
+    <main className="pt-20 bg-surface">
+      
+      {/* 1. HERO HEADER */}
+      <FadeIn delay={0.1}>
+        <header className="relative py-32 bg-primary overflow-hidden">
+          <div className="absolute inset-0 z-0 opacity-30">
+            <img src="/images/new_content/communities.png" alt="ITHAC Community" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-b from-primary/60 to-primary"></div>
+          </div>
+          <div className="max-w-7xl mx-auto px-8 relative z-10 text-center">
+            <span className="text-on-tertiary-container font-black tracking-[0.3em] uppercase text-sm mb-6 block">The Collective</span>
+            <h1 className="text-5xl md:text-8xl font-black text-on-primary tracking-tighter mb-8 leading-[0.9]">
+              COMMUNITY <br className="hidden md:block"/> AT ITHAC
+            </h1>
+            <p className="text-2xl font-bold text-on-primary-container max-w-3xl mx-auto mb-10">
+              Where Access Meets Opportunity and Participation Becomes Growth
+            </p>
+            <Link href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" className="bg-secondary text-on-secondary px-12 py-5 rounded-2xl font-black text-xl hover:bg-secondary-container transition-all shadow-2xl active:scale-95 inline-block text-center">
+              Join the Community
+            </Link>
+          </div>
+        </header>
+      </FadeIn>
+
+      {/* 2. WHAT IT MEANS TO BE PART SECTION */}
+      <FadeIn delay={0.2}>
+        <section className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-4xl font-black text-primary mb-8">What It Means to Be Part of the ITHAC Community</h2>
+                <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
+                  Joining the ITHAC community gives you direct access to a structured environment where information, opportunities, and support systems are consistently shared. The community is designed to ensure that you are not disconnected from opportunities that can shape your growth.
                 </p>
-</div>
-</header></FadeIn>
-{/* Community Segments */}
-<FadeIn delay={0.1}><section className="py-24 space-y-32">
-{/* Hub Community */}
-<div className="max-w-screen-2xl mx-auto px-8">
-<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div className="order-2 lg:order-1 relative">
-<div className="absolute -top-4 -left-4 w-24 h-24 bg-tertiary-fixed-dim/20 -z-10 rounded-full"></div>
-<img alt="Diverse African tech team" className="rounded-xl shadow-2xl w-full h-[500px] object-cover" data-alt="Diverse group of African business professionals in a sleek, glass-walled conference room, laughing and collaborating on a project" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOMdq7Ki016cXPwkzyYE1FfHbjevn3dbAMpHPSSdZ6E488dJqQ01xaJ7PIz3vYbja5bz8vpUoHP16fJ3qBmKlUgsYHGpMLNNyRX_I_oRIRiuSAnIq6zoajCVOk7ZCI0PwZstctzvhmIawn4Lej0okV8-yM8fNCq5xeEWijdYROTERobTe13HsL_rjFk2GFUBo0NE3WIF0dcQ9Zmgerts9lCCqlooltDCNS9srq1zCCautruhhDjviBo-X7FZNWsxEAf9j1cuN4C_h4"/>
-</div>
-<div className="order-1 lg:order-2 space-y-6">
-<h2 className="text-4xl md:text-5xl font-headline font-extrabold text-primary tracking-tight">Hub Community</h2>
-<div className="h-1 w-20 bg-secondary"></div>
-<p className="text-lg text-on-surface-variant leading-relaxed font-body">
-                            The Hub is a dynamic environment where tech and arts intersect to foster unprecedented innovation. It serves as the heartbeat of our ecosystem, providing a collaborative canvas for multidisciplinary talent to solve complex African challenges.
-                        </p>
-<ul className="space-y-4 pt-4">
-<li className="flex items-center gap-3 text-secondary font-bold">
-<span className="material-symbols-outlined">hub</span>
-                                Multidisciplinary Collaboration
-                            </li>
-<li className="flex items-center gap-3 text-secondary font-bold">
-<span className="material-symbols-outlined">rocket_launch</span>
-                                Innovation Accelerator
-                            </li>
-</ul>
-</div>
-</div>
-</div>
-{/* Creatives Community */}
-<div className="bg-surface-container-low py-24">
-<div className="max-w-screen-2xl mx-auto px-8">
-<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div className="space-y-6">
-<h2 className="text-4xl md:text-5xl font-headline font-extrabold text-primary tracking-tight">Creatives Community</h2>
-<div className="h-1 w-20 bg-on-tertiary-container"></div>
-<p className="text-lg text-on-surface-variant leading-relaxed font-body">
-                                A gathering place for the visionaries of the creative industries. From digital storytellers to visual artists, this community empowers the creative pulse of Africa through shared resources, high-end production environments, and a network of like-minded disruptors.
-                            </p>
-<div className="pt-4">
-<button className="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">
-                                    Explore Creative Projects <span className="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-<div className="relative">
-<img alt="African artists working" className="rounded-xl shadow-2xl w-full h-[500px] object-cover" data-alt="Young African female graphic designer working on a tablet in a vibrant, sun-filled studio filled with colorful art pieces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHl3T4fbyVwCYkEacRd2oxEj3PmEyqg_v_bcrk0nrNqk9MlXn5Jap7VErkSCU4WYKRVdkjuX9D7z8ve33boCSNsLY8lnrFwMkP3TtfJFwfLm4nn67QoNS84qVroiqAOnk5peP7sBWA-2PD01K8AVbDym1jM4Ld6fLe_I2DWqMNfQUwNzPRPbNoh99rYfvHLxUVU-5TJnETbNmnRYDpjSfiIekehZwm5rj0BuXa7bOsnb4YfbsXE7oCd_gyMWk9oaExU4QRQ9YSBwCy"/>
-</div>
-</div>
-</div>
-</div>
-{/* Designers Community */}
-<div className="max-w-screen-2xl mx-auto px-8">
-<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div className="order-2 lg:order-1 relative">
-<img alt="African designer at workstation" className="rounded-xl shadow-2xl w-full h-[500px] object-cover" data-alt="Close up of an African male UX designer analyzing wireframes on a dual-monitor setup with professional lighting and minimalist desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKh6PVUeTvDjEIswJLHyCh4uvvuBSHpz8BUjftkBhyhcD4pqGBiypkG_OGO9MddxqevCtJGZzD4-7_1u43Bl7Fdwb6bUqAKNWQosWTTN820yKDSkBXFseI-kuVOhqBFOZPsSwkdiMCBUhHCJlhqEajhfAP8GCD5XJVgk0mGv2zWo-oiJC-Vs4MuhgWZQzfxML0VJOOu2pCIfDivmyF_mh6ZdbajXO-7RVuGv-7-okZG0HJNCFt2voM2OG2LQqKWKopN6QhIxo8wwOY"/>
-</div>
-<div className="order-1 lg:order-2 space-y-6">
-<h2 className="text-4xl md:text-5xl font-headline font-extrabold text-primary tracking-tight">Designers Community</h2>
-<div className="h-1 w-20 bg-secondary"></div>
-<p className="text-lg text-on-surface-variant leading-relaxed font-body">
-                            Focusing on the precision of Graphic Design, UI/UX, and Product Design. We believe in aesthetics that work. This vertical brings together technical designers who are redefining how users interact with African digital products.
-                        </p>
-<div className="grid grid-cols-2 gap-4 mt-8">
-<div className="p-4 bg-white rounded-lg shadow-sm">
-<span className="material-symbols-outlined text-secondary block mb-2">web</span>
-<span className="font-bold text-sm">UI/UX Design</span>
-</div>
-<div className="p-4 bg-white rounded-lg shadow-sm">
-<span className="material-symbols-outlined text-secondary block mb-2">brush</span>
-<span className="font-bold text-sm">Visual Identity</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-{/* Developers Community */}
-<div className="bg-primary text-white py-24">
-<div className="max-w-screen-2xl mx-auto px-8">
-<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div className="space-y-6">
-<h2 className="text-4xl md:text-5xl font-headline font-extrabold text-white tracking-tight">Developers Community</h2>
-<div className="h-1 w-20 bg-tertiary-fixed-dim"></div>
-<p className="text-lg text-zinc-300 leading-relaxed font-body">
-                                The engine room of the ITHAC ecosystem. A collective of programmers, web designers, and data scientists building robust solutions. We share code, mentor talent, and develop the infrastructure that powers the next generation of African tech.
-                            </p>
-<div className="flex flex-wrap gap-4 pt-4">
-<span className="px-4 py-2 bg-white/10 rounded-full text-sm font-medium">Software Engineering</span>
-<span className="px-4 py-2 bg-white/10 rounded-full text-sm font-medium">Data Science</span>
-<span className="px-4 py-2 bg-white/10 rounded-full text-sm font-medium">Web3</span>
-</div>
-</div>
-<div className="relative">
-<img alt="African developers coding" className="rounded-xl shadow-2xl w-full h-[500px] object-cover" data-alt="Group of African male and female developers working on code together on a laptop, intense focus, blue tech lighting in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY-aQIKUk8TJut1tnS7sWMGSetEzgudkKqh-TusrOmscvY0TaptYn0dszF0kuyUN3s6bF9qlvwJqWOWNA5j_4icnErDF2RBGGbOxHqJxKeYFvFuNPXAsIj9RKW61lEZLWKP2xUURAYKjUjoSWjBEAnfBYk0zVxddts_-nEKgfjpIOUp1dT1AZ6DKE_Sx7G_Szib6tJR_C6hkI3SLGqqeQkXyAWR_GXtBI3NdQjhBxJMC5BDbqFSHVCGB134_s_DalziPuJVkaWh0l2"/>
-</div>
-</div>
-</div>
-</div>
-</section></FadeIn>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {[
+                    { title: "Programme Updates", icon: "notifications_active" },
+                    { title: "Early Training Info", icon: "history_edu" },
+                    { title: "Elite Network", icon: "hub" },
+                    { title: "Growth Pathways", icon: "trending_up" }
+                  ].map((item, idx) => (
+                    <div key={idx} className="flex items-center gap-3 p-4 bg-surface-container-low rounded-xl border border-outline-variant/10">
+                      <span className="material-symbols-outlined text-secondary">{item.icon}</span>
+                      <span className="font-bold text-sm">{item.title}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="bg-surface-container-low p-12 rounded-[3rem] border border-outline-variant/5">
+                <p className="text-2xl font-black text-primary mb-6 leading-tight">"Where individuals are not just present, but engaged. This is where opportunities are not just announced, but accessed."</p>
+                <Link href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" className="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:shadow-lg transition-all active:scale-95 text-center inline-block">
+                  Stay Connected to Opportunities
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 3. CAMPUS AMBASSADOR PROGRAMME SECTION */}
+      <FadeIn delay={0.3}>
+        <section className="py-24 bg-surface-container-low relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="order-2 lg:order-1 relative">
+                <div className="rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white/50">
+                  <img src="/images/new_content/campus_ambassadors.png" alt="Campus Ambassadors" className="w-full h-full object-cover" />
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <span className="font-label uppercase tracking-widest text-sm text-secondary font-bold mb-4 block">Leadership</span>
+                <h2 className="text-4xl md:text-5xl font-black text-primary mb-8 tracking-tight">Campus Ambassador <br/> Programme</h2>
+                <p className="text-xl font-bold text-secondary mb-6">Lead Innovation Within Your Campus</p>
+                <p className="text-lg text-on-surface-variant mb-10 italic">
+                  Designed for students who are ready to move beyond participation into leadership.
+                </p>
+                
+                <div className="grid sm:grid-cols-2 gap-8 mb-12">
+                  <div>
+                    <h4 className="font-black text-primary uppercase text-xs tracking-widest mb-4">What You Do</h4>
+                    <ul className="space-y-3">
+                      {["Promote opportunities", "Mobilise students", "Coordinate awareness", "Support initiatives"].map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-sm text-on-surface-variant">
+                          <span className="material-symbols-outlined text-secondary text-sm bg-secondary/10 rounded-full p-0.5">check</span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-black text-primary uppercase text-xs tracking-widest mb-4">What You Gain</h4>
+                    <ul className="space-y-3">
+                      {["Leadership experience", "Ecosystem access", "Real-world projects", "Impact recognition"].map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-sm text-on-surface-variant font-bold">
+                          <span className="material-symbols-outlined text-primary text-sm bg-primary/10 rounded-full p-0.5">star</span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+                
+                <Link href="/contact" className="bg-secondary text-on-secondary px-10 py-4 rounded-xl font-black transition-all hover:shadow-xl active:scale-95 text-center inline-block">
+                  Apply to Become an Ambassador
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 4. EVENTS & OPPORTUNITIES */}
+      <FadeIn delay={0.4}>
+        <section className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+              <div className="max-w-2xl">
+                <h2 className="text-4xl font-black text-primary mb-4">Events and Opportunities</h2>
+                <p className="text-lg text-on-surface-variant font-body opacity-80">Stay Engaged with What Matters. ITHAC regularly organises programmes, workshops, and initiatives.</p>
+              </div>
+              <Link href="/services" className="bg-surface-container-low border border-outline-variant/10 px-8 py-3 rounded-xl font-bold hover:bg-surface-container-high transition-colors text-center inline-block">
+                Explore All Opportunities
+              </Link>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                { title: "Specialised Training", desc: "Workshops designed to provide practical learning and technical exposure.", icon: "terminal" },
+                { title: "Innovation Initiatives", desc: "Community driven projects addressing real challenges with scalable solutions.", icon: "lightbulb" },
+                { title: "Ecosystem Events", desc: "Collaborative networking and high-engagement industry activities.", icon: "groups" }
+              ].map((event, idx) => (
+                <div key={idx} className="p-8 rounded-3xl bg-surface-container-lowest border border-outline-variant/10 shadow-sm hover:shadow-md transition-all">
+                  <div className="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center text-primary mb-6">
+                    <span className="material-symbols-outlined">{event.icon}</span>
+                  </div>
+                  <h4 className="font-headline text-xl font-bold mb-4">{event.title}</h4>
+                  <p className="text-on-surface-variant text-sm leading-relaxed mb-6">{event.desc}</p>
+                  <Link href="/contact" className="text-secondary font-bold text-xs uppercase tracking-widest flex items-center gap-2">Participate <span className="material-symbols-outlined text-sm">open_in_new</span></Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 5. SUMMARY CALLOUT */}
+      <FadeIn delay={0.5}>
+        <section className="py-24 bg-primary text-on-primary relative overflow-hidden">
+          <div className="max-w-4xl mx-auto px-8 text-center relative z-10">
+            <h2 className="text-4xl md:text-5xl font-black mb-12 tracking-tight">A Community That Moves You Forward</h2>
+            <p className="text-xl opacity-80 mb-12 italic font-medium">
+              Being part of ITHAC means more than staying informed. It means being positioned. Positioned for access. Positioned for growth. Positioned for opportunity.
+            </p>
+            <div className="text-3xl font-black text-on-tertiary-container mb-12">
+              Opportunities are easier to access when you are part of the right system.
+            </div>
+            <Link href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" className="bg-secondary text-on-secondary px-12 py-5 rounded-2xl font-black text-xl hover:bg-secondary-container transition-all shadow-xl active:scale-95 inline-block text-center">
+              Join the ITHAC Community Today
+            </Link>
+          </div>
+          <div className="absolute bottom-0 right-0 w-64 h-64 bg-on-tertiary-container/10 rounded-full blur-3xl -mr-32 -mb-32"></div>
+        </section>
+      </FadeIn>
+
     </main>
   );
 }

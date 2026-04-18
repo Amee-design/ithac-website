@@ -68,21 +68,26 @@ export default function ContactHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold text-ithac-dark-gray mb-6 leading-tight"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold text-ithac-dark-gray mb-6 leading-tight uppercase font-headline"
           >
-            Let's Build Something
-            <span className="text-ithac-blue block">Amazing Together</span>
+            GET INVOLVED <span className="text-secondary block">WITH ITHAC</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-2xl text-on-surface-variant font-bold max-w-3xl mx-auto mb-4 leading-relaxed tracking-tight"
+          >
+            Access Opportunities. Join the Ecosystem. Take Action.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
             className="text-xl text-ithac-gray max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            Ready to transform your ideas into digital reality? Our team of
-            experts is here to help you navigate the digital landscape and
-            create solutions that drive real impact across Africa.
+            ITHAC is built as an ecosystem where individuals, organisations, and communities can actively participate in structured pathways for growth, innovation, and impact.
           </motion.p>
 
           {/* Quick Stats */}

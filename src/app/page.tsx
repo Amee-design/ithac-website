@@ -1,174 +1,280 @@
 import React from 'react';
 import { FadeIn } from '../components/animations/FadeIn';
 import WhyChooseITHAC from '../components/services/WhyChooseITHAC';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
-    <main className="pt-20">
+    <main className="pt-20 bg-surface min-h-screen">
       
-{/**/}
-<FadeIn delay={0.1}><section className="relative h-[870px] min-h-[600px] flex items-center overflow-hidden bg-primary">
-<div className="absolute inset-0 z-0">
-<img className="w-full h-full object-cover opacity-40 mix-blend-luminosity" data-alt="diverse group of tech professionals collaborating in a modern high-tech laboratory with glowing screens and glass partitions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Xbv9BnS7bc0fpvplLtJpo3xtym0pH-U61xnW7uYHg1BmaxdTQ1iKGBd_H1dySa13V0eujiM61BNBnnrEDWf8IcULvGOerGqV1I2kwft4NBZH7Al6PR52mUw0je2bzsTaJhkgGwv3AgTnXWBtzK412vafyrmf9OnK2VBqEQcQnQ3neE3194wbNYkUTBLhrTmKJ4JmCvYcPrg3dLJgxUjc1rUaULo1U6N30rGGhm6z0Whd8L5aPkdKZhBNvxF48rDQ4aYXxKR4V1z6" alt="home"/>
-<div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent"></div>
-</div>
-<div className="relative z-10 max-w-7xl mx-auto px-8 w-full">
-<div className="max-w-2xl">
-<h1 className="font-headline text-5xl md:text-7xl font-extrabold text-on-primary leading-[1.1] tracking-tight mb-6">
-                        Unlock Your <span className="text-on-tertiary-container">Digital</span> Potential.
-                    </h1>
-<p className="text-xl text-on-primary-container font-medium mb-10 leading-relaxed">
-                        Join the ITHAC Ecosystem. Gain skills, access infrastructure, and transform ideas into successful ventures with our editorial approach to IT excellence.
-                    </p>
-<div className="flex flex-wrap gap-4">
-<button className="bg-secondary hover:bg-secondary-container text-on-secondary px-8 py-4 rounded-xl font-bold text-lg shadow-lg transition-all">
-                            Explore Programs
-                        </button>
-<button className="bg-surface-container-lowest/10 backdrop-blur-md border border-white/20 text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all">
-                            Learn More
-                        </button>
-</div>
-</div>
-</div>
-</section></FadeIn>
-{/**/}
-<FadeIn delay={0.1}><section className="py-24 bg-surface">
-<div className="max-w-7xl mx-auto px-8">
-<div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-<div className="space-y-6">
-<div className="w-14 h-14 bg-secondary/10 flex items-center justify-center rounded-2xl">
-<span className="material-symbols-outlined text-secondary text-3xl">school</span>
-</div>
-<h3 className="font-headline text-2xl font-bold">Skill-building</h3>
-<p className="text-on-surface-variant leading-relaxed">Curated educational tracks designed by industry architects to bridge the gap between theory and high-stakes production.</p>
-</div>
-<div className="space-y-6">
-<div className="w-14 h-14 bg-on-tertiary-container/10 flex items-center justify-center rounded-2xl">
-<span className="material-symbols-outlined text-on-tertiary-container text-3xl">settings_input_component</span>
-</div>
-<h3 className="font-headline text-2xl font-bold">Infrastructure</h3>
-<p className="text-on-surface-variant leading-relaxed">Access world-class digital assets, server environments, and testing labs to scale your technical vision without barriers.</p>
-</div>
-<div className="space-y-6">
-<div className="w-14 h-14 bg-secondary/10 flex items-center justify-center rounded-2xl">
-<span className="material-symbols-outlined text-secondary text-3xl">hub</span>
-</div>
-<h3 className="font-headline text-2xl font-bold">Community</h3>
-<p className="text-on-surface-variant leading-relaxed">A cynosure for technical minds. Connect with mentors, investors, and peers in an ecosystem built for collaborative growth.</p>
-</div>
-</div>
-</div>
-</section></FadeIn>
-{/**/}
-<FadeIn delay={0.1}>
-  <section className="py-24 bg-surface-container-lowest">
-    <div className="max-w-7xl mx-auto px-8">
-      <div className="max-w-4xl mx-auto text-center">
-        <span className="font-label uppercase tracking-widest text-xs text-secondary font-bold mb-4 block">About Us</span>
-        <h2 className="font-headline text-4xl font-extrabold tracking-tight mb-8">About ITHAC</h2>
-        <p className="text-xl text-on-surface-variant leading-relaxed text-justify">
-          Information Technologies Hub and Cynosure (ITHAC) is cultivating a nurturing and synergistic environment that fosters information technology product and service creation and support. We envision becoming the go-to destination for the people of Ondo state and Nigeria at large seeking to gain digital skills, have access to top-notched infrastructures utilization and entrepreneurs aiming to transform their ideas into successful digital ventures. Our aim is to establish an ecosystem that nurtures creativity, collaboration, and entrepreneurship, allowing individuals to flourish and make a meaningful, long-lasting difference in the world. ITHAC embraces the convergence of technology, creativity, and business with our commitment to excellence, innovation, and partnership, we support organizations and individuals to realize their vision towards making a lasting impact on the digital landscape.
-        </p>
-      </div>
-    </div>
-  </section>
-</FadeIn>
-{/**/}
-<FadeIn delay={0.1}><section className="py-24 bg-surface-container-low overflow-hidden">
-<div className="max-w-7xl mx-auto px-8 mb-12 flex justify-between items-end">
-<div>
-<span className="font-label uppercase tracking-widest text-xs text-secondary font-bold mb-2 block">Our Expertise</span>
-<h2 className="font-headline text-4xl font-extrabold tracking-tight">Featured Programs &amp; Services</h2>
-</div>
-<div className="flex gap-4">
-<button className="p-3 rounded-full bg-surface-container-lowest shadow-sm hover:shadow-md text-on-surface transition-all">
-<span className="material-symbols-outlined">arrow_back</span>
-</button>
-<button className="p-3 rounded-full bg-surface-container-lowest shadow-sm hover:shadow-md text-on-surface transition-all">
-<span className="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-<div className="flex overflow-x-auto gap-8 px-8 pb-12 hide-scrollbar snap-x">
-{/**/}
-<div className="flex-none w-80 snap-start bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-outline-variant/10">
-<div className="h-40 mb-6 rounded-lg overflow-hidden">
-<img className="w-full h-full object-cover" data-alt="close up of code on a screen with blue and purple highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlQbTNH3QZmwqPskeakYJZULqxHDl3lfavdMZ6ktHUj4N04EMC1sQE34eGFwy06hb-rnzZjOkEv32qfJ1RoOwfX-LVhekYAQd-YWYB32aYbtxpH9-HDEOC-MMfT7JC8U5qcvahKdE7nTOZk-efYQTI687-aP-L5JUiFydlaVaOzLSLODB7Ds-HIHDXJckZi-3Ux_tWWV-s5SGt_fLXhxE_-MpRP_mzHqe3Bm_H7_tnKpuwidlZrRjIPEx0uTHMkeSH4pmQtZZC5-wR" alt="home"/>
-</div>
-<h4 className="font-headline text-xl font-bold mb-3">Technical Education Services</h4>
-<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Enhance your digital skills with our cutting-edge technical education programs.</p>
-<button className="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
-</div>
-{/**/}
-<div className="flex-none w-80 snap-start bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-outline-variant/10">
-<div className="h-40 mb-6 rounded-lg overflow-hidden">
-<img className="w-full h-full object-cover" data-alt="laptop on a desk showing software development environment with clean white space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr_i-lhfUVV8xMwBISQK1aAmyof_-8RNCa8gjgA2H3TsH5wrPU-orf7vPMOyfrWtjnEx9WjPXOd14H8gwxMGOXhKaN2CHdIrsbpFHKp5Dxre89_sByWjGh949HupbTomyxG13I91QeAXxyrrSGnOG3DhQDjEKDjMhUEMq-fntGt-990rdUVr09KR3wlOYu-Ukh_swcgp3GsfVPG49Qi1rKWy4hyIIkJWv1EVIOhDKlMGC-sTkaxtueCcLWiSidiEt6N7JNcYW8nrER" alt="home"/>
-</div>
-<h4 className="font-headline text-xl font-bold mb-3">Consulting and Advisory Services</h4>
-<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Unlock strategic insights with our expert consulting and advisory services.</p>
-<button className="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
-</div>
-{/**/}
-<div className="flex-none w-80 snap-start bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-outline-variant/10">
-<div className="h-40 mb-6 rounded-lg overflow-hidden">
-<img className="w-full h-full object-cover" data-alt="futuristic server room with glowing blue lights and sleek hardware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsepTSZgQheuEHGCqdGf6OFKCkx4fw7FL4_-SH5Yoj5tZqH-wzoYCYZDXxW7zdvn0Ydb5Yx9cLdPeUJA3OvEwboVjT6egqGyzwh4DHn36_FuehO0YDMKXeGFUC_hibo5QTo3XjNODMtOL_soCXILdtIha5n2Pth8x0JBr2MYHAXAZxaUY4IhePTVLvk7RCy9V0_gEa2OeN4xWmz9w3cTKe8Ys3RygtgyTn5bgYCMYM43xaIpexMtGH3vPZ9PDVKeTXdT2rRMXXVUXy" alt="home"/>
-</div>
-<h4 className="font-headline text-xl font-bold mb-3">Training and Workshops</h4>
-<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Stay ahead in the digital landscape with our specialized training and workshops.</p>
-<button className="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
-</div>
-{/**/}
-<div className="flex-none w-80 snap-start bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-outline-variant/10">
-<div className="h-40 mb-6 rounded-lg overflow-hidden">
-<img className="w-full h-full object-cover" data-alt="cybersecurity concept with digital lock and binary code background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeTsGKZ_ePz3es3ApS36ad8zMjOO-VxfPX04i8Oy67SmrwgJmR-pzmerqI3sYCyuImfvDud-LdG6klpRlxE4bceyAp1_yUne2gsyFnbnUBnSGiAOgjKVbEYiAhltDzxPCIXVRtAqALirZrv-F5sy2qrOWYbLn8sR2oxBQi7KmHyWrwWiZFZ8awSNAY5OHYVl0BDVvqfhueYHUDCthbHzfMAA3RO6fmX0zMsPENUtJHVdvHpgiWX_RRsIgy2RpUbqzu-GfHVUuybvgK" alt="home"/>
-</div>
-<h4 className="font-headline text-xl font-bold mb-3">Software Development Services</h4>
-<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Bring your ideas to life with our top-notch software development services.</p>
-<button className="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
-</div>
-{/**/}
-<div className="flex-none w-80 snap-start bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-outline-variant/10">
-<div className="h-40 mb-6 rounded-lg overflow-hidden">
-<img className="w-full h-full object-cover" data-alt="dashboard showing data visualization and charts on a large screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwE1pRKqBquhyOzjkCBlckzgCsk7L5FAgXPgQ4t0nd52wFpmxgeI2CVFgXqmGzfxSljDexdrL_yK1Abuzq4WUtgNKjLZb-Sq3UP9U6aB3uuJ3Y9y0V6ngPTau6m7Gg6PrGJ32AQn_tBH7mwpGeIAiatuU5lESOUgcTj1JaGKGZWQmh7kzUxVq1PO27U_eBelr6AbiZq5Sc-1iC4MuLaDAPMDwkYMT8_MiCcRzGGOyPrLprFtfuh-UhMywnqC3KOMYB7dhVEduLW0IR" alt="home"/>
-</div>
-<h4 className="font-headline text-xl font-bold mb-3">Infotech Product Creation &amp; Sales</h4>
-<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Explore and create innovative information technology products with our support.</p>
-<button className="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
-</div>
-{/**/}
-<div className="flex-none w-80 snap-start bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-outline-variant/10">
-<div className="h-40 mb-6 rounded-lg overflow-hidden">
-<img className="w-full h-full object-cover" data-alt="creative team brainstorming in a sunlit loft office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM7SEnwzQDHx4e5jQTNHs_2NHMN_ujIRsy5PNx4AdMcKrOQwKZWkKV1ztjFB30nUskKzHpRQoyFHGlohr1TqaIYmTxQTj57ieRnoA-q7uVXFo5E1krtd2et9ilL91vxxSyoTFB-tamBmcmticGIFqB6wMz0NOxzFdEDz730xiUAO641gR_yvtKdl92xXBqlY60i9XQpSohdvj2DRz1LktzWDT81_RpcZCzAtOSBNCAl4sH-CCNsFZXGuktaqdWfeT4lyKqEATMvNmD" alt="home"/>
-</div>
-<h4 className="font-headline text-xl font-bold mb-3">Maintenance and Support Services</h4>
-<p className="text-on-surface-variant text-sm mb-6 leading-relaxed">Ensure the longevity of your digital ventures with our reliable maintenance and support.</p>
-<button className="w-full py-3 bg-on-tertiary-container/10 text-on-tertiary-container font-bold rounded-lg hover:bg-on-tertiary-container hover:text-white transition-all text-sm">Learn More</button>
-</div>
-</div>
-</section></FadeIn>
-{/**/}
-<WhyChooseITHAC />
-{/**/}
-<FadeIn delay={0.1}><section className="py-24 bg-tertiary text-on-tertiary overflow-hidden relative">
-<div className="absolute top-0 right-0 w-1/3 h-full bg-secondary-container/10 -skew-x-12 transform translate-x-1/2"></div>
-<div className="max-w-7xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
-<div className="max-w-xl">
-<h2 className="font-headline text-4xl font-extrabold mb-6">Stay at the Center of Excellence</h2>
-<p className="text-lg opacity-80 mb-8">Receive editorial insights, event invitations, and infrastructure updates directly to your inbox.</p>
-<div className="flex flex-col sm:flex-row gap-4">
-<input className="bg-surface-container-low/10 border-none rounded-xl px-6 py-4 text-on-tertiary placeholder:text-on-tertiary/40 flex-grow focus:ring-2 focus:ring-on-tertiary-container transition-all" placeholder="professional@email.com" type="email"/>
-<button className="bg-on-tertiary-container text-tertiary font-bold px-8 py-4 rounded-xl hover:bg-tertiary-fixed transition-all whitespace-nowrap">Subscribe Now</button>
-</div>
-</div>
-<div className="hidden md:block w-96 h-96 relative">
-<div className="absolute inset-0 border-4 border-on-tertiary-container/20 rounded-full animate-pulse"></div>
-<div className="absolute inset-8 border-2 border-on-tertiary-container/40 rounded-full"></div>
-<div className="absolute inset-0 flex items-center justify-center">
-<span className="material-symbols-outlined text-8xl text-on-tertiary-container">stream</span>
-</div>
-</div>
-</div>
-</section></FadeIn>
+      {/* 1. HERO SECTION */}
+      <FadeIn delay={0.1}>
+        <section className="relative h-[85vh] min-h-[650px] flex items-center overflow-hidden bg-primary">
+          <div className="absolute inset-0 z-0 opacity-40">
+            <img 
+              className="w-full h-full object-cover" 
+              src="/images/new_content/hero.png" 
+              alt="ITHAC Ecosystem"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent"></div>
+          </div>
+          <div className="relative z-10 max-w-7xl mx-auto px-8 w-full">
+            <div className="max-w-3xl">
+              <h1 className="font-headline text-5xl md:text-7xl font-extrabold text-on-primary leading-[1.1] tracking-tight mb-6">
+                Building Africa’s Digital Capacity Through <span className="text-on-tertiary-container">Structured Innovation</span> and Applied Learning
+              </h1>
+              <p className="text-xl text-on-primary-container font-medium mb-10 leading-relaxed max-w-2xl">
+                ITHAC is a technology, innovation, and capacity development ecosystem designed to move individuals, organisations, and communities from knowledge to execution, and from execution to measurable impact.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link href="/academy" className="bg-secondary hover:bg-secondary-container text-on-secondary px-8 py-4 rounded-xl font-bold text-lg shadow-lg transition-all active:scale-95 inline-block text-center">
+                  Apply for a Programme
+                </Link>
+                <Link href="/communities" className="bg-surface-container-lowest/10 backdrop-blur-md border border-white/20 text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all active:scale-95 inline-block text-center">
+                  Join the Community
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 2. WHAT IS ITHAC SECTION */}
+      <FadeIn delay={0.2}>
+        <section className="py-24 bg-surface">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <span className="font-label uppercase tracking-widest text-sm text-secondary font-bold mb-4 block">Definition</span>
+                <h2 className="font-headline text-4xl font-extrabold tracking-tight mb-8">What is ITHAC?</h2>
+                <p className="text-xl text-on-surface-variant leading-relaxed mb-6 font-medium">
+                  ITHAC exists at the intersection of technology, education, and innovation.
+                </p>
+                <p className="text-lg text-on-surface-variant leading-relaxed mb-6">
+                  As an integrated ecosystem, we provide structured pathways that connect digital skill development, organisational growth, and community impact through a unified system of programmes, partnerships, and execution frameworks.
+                </p>
+                <p className="text-lg text-on-surface-variant leading-relaxed italic border-l-4 border-secondary pl-6 py-2">
+                  "Our approach is not fragmented. It is designed to ensure that every learning experience translates into real world application, and every opportunity leads to sustainable outcomes."
+                </p>
+              </div>
+              <div className="relative">
+                <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl scale-95 hover:scale-100 transition-transform duration-700">
+                  <img src="/images/new_content/organisations.png" alt="Collaborative Innovation" className="w-[110%] h-[110%] object-cover -translate-x-[5%]" />
+                </div>
+                <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-secondary-container/20 rounded-full blur-[80px] -z-10"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 3. WHO WE SERVE SECTION */}
+      <FadeIn delay={0.3}>
+        <section className="py-24 bg-surface-container-lowest">
+          <div className="max-w-7xl mx-auto px-8 text-center mb-16">
+            <span className="font-label uppercase tracking-widest text-sm text-secondary font-bold mb-4 block">Audience</span>
+            <h2 className="font-headline text-4xl font-extrabold tracking-tight">Who We Serve</h2>
+          </div>
+          <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Individuals",
+                desc: "Students, early professionals, and career transitioners seeking structured pathways into the digital economy through practical skill development and guided execution.",
+                img: "/images/new_content/individuals.png"
+              },
+              {
+                title: "Organisations and Founders",
+                desc: "Teams and institutions looking to build scalable systems, strengthen operational structures, and position themselves for long term growth.",
+                img: "/images/new_content/organisations.png"
+              },
+              {
+                title: "Communities",
+                desc: "Underserved populations requiring access to education, healthcare support, and empowerment initiatives that improve quality of life and economic participation.",
+                img: "/images/new_content/communities.png"
+              }
+            ].map((item, idx) => (
+              <div key={idx} className="bg-surface p-8 rounded-2xl shadow-sm border border-outline-variant/10 flex flex-col items-center text-center">
+                <div className="w-full aspect-video rounded-xl overflow-hidden mb-6">
+                  <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
+                </div>
+                <h3 className="font-headline text-2xl font-bold mb-4">{item.title}</h3>
+                <p className="text-on-surface-variant leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 4. CORE PROGRAMMES SECTION */}
+      <FadeIn delay={0.4}>
+        <section className="py-24 bg-surface">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="flex flex-col md:flex-row justify-between items-end mb-16">
+              <div className="max-w-2xl">
+                <span className="font-label uppercase tracking-widest text-sm text-secondary font-bold mb-4 block">Excellence</span>
+                <h2 className="font-headline text-4xl font-extrabold tracking-tight mb-4">Core Programmes</h2>
+                <p className="text-lg text-on-surface-variant">We do not just teach. We build systems that enable growth, scalability, and transformation.</p>
+              </div>
+              <Link href="/services" className="hidden md:block bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold hover:shadow-lg transition-all active:scale-95 text-center">
+                Explore Programmes
+              </Link>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "Digital Empowerment Accelerator",
+                  desc: "A structured capacity development programme designed to equip individuals with practical digital skills, guided mentorship, and project based experience that leads to employability and independent earning opportunities.",
+                  icon: "bolt"
+                },
+                {
+                  title: "Enhanced Partnership Programme",
+                  desc: "A long term strategic growth programme designed for organisations and founders to build internal systems, develop sustainable partnerships, and align execution with long term organisational goals.",
+                  icon: "handshake"
+                },
+                {
+                  title: "Innovation and Community Initiatives",
+                  desc: "Targeted interventions that integrate technology, education, and social impact to address real challenges within communities through scalable and measurable solutions.",
+                  icon: "groups"
+                }
+              ].map((prog, idx) => (
+                <div key={idx} className="group p-8 rounded-2xl bg-surface-container-low border border-transparent hover:border-secondary transition-all hover:bg-white shadow-sm">
+                  <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+                    <span className="material-symbols-outlined text-3xl">{prog.icon}</span>
+                  </div>
+                  <h3 className="font-headline text-xl font-bold mb-4">{prog.title}</h3>
+                  <p className="text-on-surface-variant text-sm leading-relaxed mb-6">
+                    {prog.desc}
+                  </p>
+                  <Link href="/services" className="text-secondary font-bold text-sm flex items-center gap-2">
+                    Learn More <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 5. THE ITHAC ECOSYSTEM SECTION */}
+      <FadeIn delay={0.5}>
+        <section className="py-24 bg-primary text-on-primary overflow-hidden relative">
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-on-tertiary-container/5 -skew-x-12 transform translate-x-1/4"></div>
+          <div className="max-w-7xl mx-auto px-8 relative z-10">
+            <div className="max-w-3xl mb-16">
+              <span className="font-label uppercase tracking-widest text-sm text-on-tertiary-container font-bold mb-4 block">Infrastructure</span>
+              <h2 className="font-headline text-4xl font-extrabold tracking-tight mb-8">The ITHAC Ecosystem</h2>
+              <p className="text-xl opacity-90 leading-relaxed">
+                ITHAC operates as a multi layered ecosystem designed to support growth across different sectors through specialised structures:
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                { title: "Technology and Innovation", desc: "Development of digital solutions, infrastructure, and applied technology frameworks that support business and institutional needs." },
+                { title: "Capacity Development", desc: "Structured learning programmes focused on practical application, mentorship, and real world project execution." },
+                { title: "Media and Creative", desc: "Strategic storytelling and content systems through ITHAC Creative Production and Urban View that support brand positioning." },
+                { title: "Social Impact Systems", desc: "ITHAC Foundation implements community based interventions across education, healthcare, and empowerment." }
+              ].map((item, idx) => (
+                <div key={idx} className="bg-white/5 backdrop-blur-md rounded-xl p-8 border border-white/10 hover:bg-white/10 transition-colors">
+                  <h4 className="font-headline text-xl font-bold mb-4 text-on-tertiary-container">{item.title}</h4>
+                  <p className="text-sm opacity-80 leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+            
+            <p className="mt-16 text-center text-lg italic opacity-70 max-w-4xl mx-auto">
+              Each layer is interconnected, ensuring that learning, execution, and impact are not isolated but part of a continuous growth system.
+            </p>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 6. IMPACT & OPPORTUNITIES SECTION */}
+      <FadeIn delay={0.6}>
+        <section className="py-24 bg-surface">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-2 gap-24 items-center">
+              <div>
+                <span className="font-label uppercase tracking-widest text-sm text-secondary font-bold mb-4 block">Outcomes</span>
+                <h2 className="font-headline text-4xl font-extrabold tracking-tight mb-8">Impact</h2>
+                <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
+                  Our work is defined by measurable outcomes and sustained value creation. We have supported individuals in transitioning into the digital economy, enabled organisations to build scalable systems, and delivered community interventions that improve access to essential services.
+                </p>
+                <div className="bg-secondary/5 p-8 rounded-[2rem] border-2 border-dashed border-secondary/20">
+                  <h4 className="font-headline text-2xl font-bold mb-4 text-secondary">Impact for us is not activity.</h4>
+                  <p className="text-lg font-medium opacity-80">
+                    It is a transformation that can be tracked, measured, and sustained.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h2 className="font-headline text-4xl font-extrabold tracking-tight mb-8">Opportunities</h2>
+                <div className="space-y-4">
+                  {[
+                    "Campus Ambassador Programme",
+                    "Structured learning programmes",
+                    "Partnership and collaboration opportunities",
+                    "Community initiatives and engagement platforms"
+                  ].map((opp, idx) => (
+                    <div key={idx} className="flex items-center gap-4 p-5 rounded-xl bg-surface-container-low border border-outline-variant/5 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary">
+                        <span className="material-symbols-outlined">check_circle</span>
+                      </div>
+                      <span className="font-bold text-lg">{opp}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-8 text-on-surface-variant italic">
+                  Each opportunity is designed to move participants from passive involvement to active contribution within the ecosystem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 7. PROOF & CREDIBILITY SECTION */}
+      <FadeIn delay={0.7}>
+        <section className="py-24 bg-surface-container-lowest">
+          <div className="max-w-7xl mx-auto px-8 text-center max-w-4xl">
+            <span className="font-label uppercase tracking-widest text-sm text-secondary font-bold mb-4 block">Credibility</span>
+            <h2 className="font-headline text-4xl font-extrabold tracking-tight mb-8">Built on Structure</h2>
+            <p className="text-xl text-on-surface-variant mb-12 leading-relaxed">
+              Our programmes and initiatives are built on structured frameworks, guided mentorship, and collaborative execution. We work with institutions, organisations, and communities to ensure that every intervention delivers measurable value and aligns with long term development goals.
+            </p>
+            <div className="text-3xl font-headline font-black text-primary leading-tight">
+              The future of work, innovation, and growth requires more than intention. <br className="hidden md:block"/>
+              It requires <span className="text-secondary">structure, systems, and the right ecosystem.</span>
+            </div>
+            <p className="mt-6 text-2xl font-bold text-on-surface-variant">ITHAC provides that ecosystem.</p>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 8. FINAL CTA SECTION */}
+      <FadeIn delay={0.8}>
+        <section className="py-24 bg-white relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-8 relative z-10 text-center">
+            <h2 className="text-5xl font-black mb-12">Take the Next Step.</h2>
+            <div className="flex flex-col md:flex-row justify-center gap-6">
+              <Link href="/academy" className="bg-primary text-white px-12 py-5 rounded-2xl font-black text-xl hover:bg-zinc-800 transition-all shadow-xl active:scale-95 inline-block text-center">
+                Apply for a Programme
+              </Link>
+              <Link href="/communities" className="bg-secondary text-on-secondary px-12 py-5 rounded-2xl font-black text-xl hover:bg-secondary-container transition-all shadow-xl active:scale-95 inline-block text-center">
+                Join the Community
+              </Link>
+              <Link href="/collaboration" className="border-4 border-primary text-primary px-12 py-5 rounded-2xl font-black text-xl hover:bg-primary hover:text-white transition-all active:scale-95 inline-block text-center">
+                Partner with us
+              </Link>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
 
     </main>
   );
