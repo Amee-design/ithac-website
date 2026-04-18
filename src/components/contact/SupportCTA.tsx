@@ -6,7 +6,7 @@ import Link from "next/link";
 import {
   MessageCircle,
   Phone,
-  Mail,
+  
   Calendar,
   ArrowRight,
   Clock,
