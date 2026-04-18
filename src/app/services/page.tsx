@@ -1,188 +1,161 @@
 import React from 'react';
 import { FadeIn } from '../../components/animations/FadeIn';
+import Link from 'next/link';
 
-
-export default function ServicesPage() {
+export default function ProgramsPage() {
   return (
-    <main className="pt-20">
+    <main className="pt-20 bg-surface">
       
-{/**/}
-<FadeIn delay={0.1}><section className="relative min-h-[700px] flex items-center bg-surface overflow-hidden hero-mesh">
-<div className="absolute inset-0 constellation opacity-40"></div>
-<div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-0"></div>
-<div className="max-w-7xl mx-auto px-8 w-full relative z-10 py-24 flex flex-col lg:flex-row items-center gap-16">
-<div className="flex-1 max-w-3xl">
-<div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 mb-6">
-<span className="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-<span className="text-secondary font-label text-[10px] uppercase tracking-widest font-extrabold">Next-Gen Architecture</span>
-</div>
-<h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-primary leading-[1.05] mb-8">
-                    Explore Our <br/>
-<span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-on-tertiary-container">Comprehensive</span><br/>
-                    IT Ecosystem.
-                </h1>
-<p className="text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
-                    A centralized hub for technical infrastructure, elite talent, and innovation frameworks designed to scale enterprise digital operations.
+      {/* 1. HEADER */}
+      <FadeIn delay={0.1}>
+        <header className="relative py-24 bg-surface-container-low overflow-hidden">
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary/5 -skew-x-12 transform translate-x-1/3"></div>
+          <div className="max-w-7xl mx-auto px-8 relative z-10 text-center">
+            <span className="font-label uppercase tracking-widest text-sm text-secondary font-bold mb-4 block">Our Pathways</span>
+            <h1 className="text-5xl md:text-7xl font-black text-primary tracking-tighter leading-[1.05] mb-8">
+              CURRENT PROGRAMMES <br className="hidden md:block"/> AT ITHAC
+            </h1>
+            <p className="text-2xl font-bold text-on-surface-variant max-w-3xl mx-auto mb-8">
+              Structured Pathways for Growth, Execution, and Impact
+            </p>
+            <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl mx-auto">
+              At ITHAC, programmes are not designed as isolated learning experiences. They are structured pathways that move participants from uncertainty to clarity, from learning to application, and from effort to measurable results.
+            </p>
+          </div>
+        </header>
+      </FadeIn>
+
+      {/* 2. DIGITAL EMPOWERMENT ACCELERATOR */}
+      <FadeIn delay={0.2}>
+        <section className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 rounded-full mb-6">
+                  <span className="text-secondary font-bold text-xs uppercase tracking-widest">Skill Acceleration</span>
+                </div>
+                <h2 className="font-headline text-4xl md:text-5xl font-black mb-6 text-primary">Digital Empowerment Accelerator</h2>
+                <p className="text-2xl font-bold text-secondary mb-8 leading-tight">From Learning Without Direction to Building With Structure</p>
+                <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
+                  Many individuals enter the digital space with ambition but without clarity. They consume content, explore multiple skills, and invest time into learning, yet struggle to translate that effort into real opportunities. The Digital Empowerment Accelerator is designed to eliminate that gap.
                 </p>
-<div className="flex flex-wrap gap-4">
-<button className="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold text-base transition-all hover:bg-secondary-container hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 duration-200">
-                        Enter the Hub
-                    </button>
-<button className="bg-white border border-outline-variant text-primary px-8 py-4 rounded-xl font-bold text-base transition-all hover:bg-surface-container-low duration-200">
-                        View Solutions
-                    </button>
-</div>
-<div className="mt-12 flex items-center gap-6 border-t border-outline-variant/30 pt-8">
-<div className="flex -space-x-3">
-<div className="w-10 h-10 rounded-full border-2 border-white bg-surface-container-high overflow-hidden"><img alt="User" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVnF258C46gkSMRikaAW2tGW2xquB3A4KSqI88iA0OVGH4afr1T_EAYQw3LPFtn3UKqESoTxG8RvCbiGQz2Zfe3hmbOhYUtQ0FSGAf_gxZZjusfWz3brRyMdF7w5rlxKv7X8scFy8DTzEWgYU8ceWUhrhQJ7jdNSMQzyyyo3IlEfexgjq9_inHG4zv0Dd2FxGstyaQ3ILRRPt8_u4aDplKl4B7UeEz_MmhqC_Ktg7ypcC8dzdyuMOsXPPiErr-7IohsZOzcVDLO9Ch"/></div>
-<div className="w-10 h-10 rounded-full border-2 border-white bg-surface-container-high overflow-hidden"><img alt="User" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaGjMLDcmRv6CwWJeOTLx1I8tTs7PTx7xwVQLkAk2TovBR7LKfEUUmNTskefj-887pniKnYIWyVNKXqQBqzR6jyXk4iZQDlnMTjhM7DK5gEj7kK4UJZrir2vfiVon5GgrAQeYhrOk62WlOz2MdlPPaUX3yy482TrY9jIdG8tX4LJHnMMY93d-LbC1_g8oQrxUmSHzr9mO0n7i6fZRsm2vPZMIFW_YYImB7d2Uagw78O-Uktj7VE8VLpx7MUROkE_J3kYYB-VNiMMOs"/></div>
-<div className="w-10 h-10 rounded-full border-2 border-white bg-surface-container-high overflow-hidden flex items-center justify-center bg-secondary text-white text-[10px] font-bold">50+</div>
-</div>
-<p className="text-sm text-on-surface-variant font-medium">Trusted by leading enterprises worldwide</p>
-</div>
-</div>
-<div className="flex-1 w-full relative">
-<div className="relative w-full aspect-square max-w-[540px] ml-auto">
-{/**/}
-<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] border border-secondary/10 rounded-full animate-[spin_20s_linear_infinite]"></div>
-<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] border border-dashed border-secondary/20 rounded-full animate-[spin_30s_linear_infinite_reverse]"></div>
-<div className="relative w-full h-full rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white/50 backdrop-blur-sm z-10">
-<img alt="Technology Hub" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJVa_6oscvUTanUaLMkUrSMvEN7knxwI-0fE4iXMpBaRfp8GPjt72e5saTsadvLDglZPOcAv62AQ-YY2NkxC43cjoqKCvb5Astht0uG2AUeuUE1fuqXlIMGRZR0LWC2JuXjhK5pnQ8k8R_YN0qmvXWo9F9ButZj0RrCC3bdg9LeWmK9VKve-bda217OMKVmoDZ220b5C-HFGZQfUZEO5262-dgF4Fk6xzL2jAWXr559DfTnCrqHzSN4pfI0yD7_6J-G7ifKJc7YDYS"/>
-<div className="absolute inset-0 bg-gradient-to-t from-secondary/40 to-transparent mix-blend-overlay"></div>
-</div>
-{/**/}
-<div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur shadow-2xl p-6 rounded-2xl z-20 border border-white/20 max-w-[200px]">
-<div className="flex items-center gap-3 mb-2">
-<span className="material-symbols-outlined text-secondary font-bold">bolt</span>
-<span className="text-primary font-bold text-2xl">99.9%</span>
-</div>
-<p className="text-[11px] font-bold uppercase tracking-widest text-on-surface-variant">Infrastructure Uptime Guaranteed</p>
-</div>
-</div>
-</div>
-</div>
-</section></FadeIn>
-{/**/}
-<FadeIn delay={0.1}><section className="py-24 bg-surface-container-low relative">
-<div className="max-w-7xl mx-auto px-8">
-<div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-<div className="max-w-2xl">
-<h2 className="font-headline text-4xl font-bold tracking-tight text-primary mb-4">Core Competencies</h2>
-<p className="text-on-surface-variant font-body">Integrated services designed to support every phase of the digital lifecycle, from foundational education to enterprise innovation.</p>
-</div>
-<div className="h-px flex-grow bg-outline-variant/30 mx-8 hidden md:block"></div>
-</div>
-{/**/}
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-{/**/}
-<div className="group bg-surface-container-lowest p-10 rounded-xl transition-all hover:shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-transparent hover:border-outline-variant/10 flex flex-col justify-between min-h-[320px]">
-<div>
-<div className="w-14 h-14 rounded-lg bg-surface-container-low flex items-center justify-center mb-8 group-hover:bg-secondary/10 transition-colors">
-<span className="material-symbols-outlined text-3xl group-hover:scale-110 transition-transform" data-icon="school">school</span>
-</div>
-<h3 className="font-headline text-xl font-bold text-primary mb-3">Technical Education Services</h3>
-<p className="text-on-surface-variant text-sm leading-relaxed mb-6">Expert-led technical training and industry-recognized certifications designed to bridge the global talent gap.</p>
-</div>
-<div className="flex flex-wrap gap-2">
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Training</span>
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Certifications</span>
-</div>
-</div>
-{/**/}
-<div className="group bg-surface-container-lowest p-10 rounded-xl transition-all hover:shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-transparent hover:border-outline-variant/10 flex flex-col justify-between min-h-[320px]">
-<div>
-<div className="w-14 h-14 rounded-lg bg-surface-container-low flex items-center justify-center mb-8 group-hover:bg-secondary/10 transition-colors">
-<span className="material-symbols-outlined text-3xl group-hover:scale-110 transition-transform" data-icon="terminal">terminal</span>
-</div>
-<h3 className="font-headline text-xl font-bold text-primary mb-3">Software Development Services</h3>
-<p className="text-on-surface-variant text-sm leading-relaxed mb-6">Custom engineering for high-performance web, mobile, and enterprise platforms tailored to specific business logic.</p>
-</div>
-<div className="flex flex-wrap gap-2">
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Web</span>
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Mobile</span>
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Enterprise</span>
-</div>
-</div>
-{/**/}
-<div className="group bg-surface-container-lowest p-10 rounded-xl transition-all hover:shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-transparent hover:border-outline-variant/10 flex flex-col justify-between min-h-[320px]">
-<div>
-<div className="w-14 h-14 rounded-lg bg-surface-container-low flex items-center justify-center mb-8 group-hover:bg-secondary/10 transition-colors">
-<span className="material-symbols-outlined text-3xl group-hover:scale-110 transition-transform" data-icon="dns">dns</span>
-</div>
-<h3 className="font-headline text-xl font-bold text-primary mb-3">IT Infrastructure Services</h3>
-<p className="text-on-surface-variant text-sm leading-relaxed mb-6">World-class co-working environments and specialized laboratories for technical testing and network management.</p>
-</div>
-<div className="flex flex-wrap gap-2">
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Co-working</span>
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Labs</span>
-</div>
-</div>
-{/**/}
-<div className="group bg-surface-container-lowest p-10 rounded-xl transition-all hover:shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-transparent hover:border-outline-variant/10 flex flex-col justify-between min-h-[320px]">
-<div>
-<div className="w-14 h-14 rounded-lg bg-surface-container-low flex items-center justify-center mb-8 group-hover:bg-secondary/10 transition-colors">
-<span className="material-symbols-outlined text-3xl group-hover:scale-110 transition-transform" data-icon="biotech">biotech</span>
-</div>
-<h3 className="font-headline text-xl font-bold text-primary mb-3">Research &amp; Development</h3>
-<p className="text-on-surface-variant text-sm leading-relaxed mb-6">Pushing boundaries through emerging tech innovation and rapid prototyping for disruptive digital products.</p>
-</div>
-<div className="flex flex-wrap gap-2">
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Innovation</span>
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Prototyping</span>
-</div>
-</div>
-{/**/}
-<div className="group bg-surface-container-lowest p-10 rounded-xl transition-all hover:shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-transparent hover:border-outline-variant/10 flex flex-col justify-between min-h-[320px]">
-<div>
-<div className="w-14 h-14 rounded-lg bg-surface-container-low flex items-center justify-center mb-8 group-hover:bg-secondary/10 transition-colors">
-<span className="material-symbols-outlined text-3xl group-hover:scale-110 transition-transform" data-icon="precision_manufacturing">precision_manufacturing</span>
-</div>
-<h3 className="font-headline text-xl font-bold text-primary mb-3">Digital Solutions for SMBs</h3>
-<p className="text-on-surface-variant text-sm leading-relaxed mb-6">Strategic automation and IT consulting focused on operational efficiency for small and medium businesses.</p>
-</div>
-<div className="flex flex-wrap gap-2">
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Automation</span>
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Consulting</span>
-</div>
-</div>
-{/**/}
-<div className="group bg-surface-container-lowest p-10 rounded-xl transition-all hover:shadow-[0_20px_40px_rgba(25,28,29,0.05)] border border-transparent hover:border-outline-variant/10 flex flex-col justify-between min-h-[320px]">
-<div>
-<div className="w-14 h-14 rounded-lg bg-surface-container-low flex items-center justify-center mb-8 group-hover:bg-secondary/10 transition-colors">
-<span className="material-symbols-outlined text-3xl group-hover:scale-110 transition-transform" data-icon="groups">groups</span>
-</div>
-<h3 className="font-headline text-xl font-bold text-primary mb-3">Community &amp; Networking</h3>
-<p className="text-on-surface-variant text-sm leading-relaxed mb-6">Building a strong professional fabric through curated industry events and structured mentorship programs.</p>
-</div>
-<div className="flex flex-wrap gap-2">
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Events</span>
-<span className="px-3 py-1 bg-surface-container-low rounded text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Mentorship</span>
-</div>
-</div>
-</div>
-</div>
-</section></FadeIn>
-{/**/}
-<FadeIn delay={0.1}><section className="py-24 bg-surface relative overflow-hidden">
-<div className="max-w-7xl mx-auto px-8 relative z-10">
-<div className="bg-secondary rounded-2xl p-12 md:p-20 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden">
-<div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
-<div className="absolute bottom-0 left-0 w-64 h-64 bg-cyan-400/20 rounded-full blur-3xl -ml-32 -mb-32"></div>
-<div className="max-w-xl text-center md:text-left">
-<h2 className="font-headline text-4xl font-extrabold text-on-secondary mb-6 leading-tight">Ready to integrate your vision with our ecosystem?</h2>
-<p className="text-on-secondary/80 text-lg">Partner with ITHAC to access a world of technical expertise and infrastructure designed for growth.</p>
-</div>
-<div className="flex flex-col sm:flex-row gap-4">
-<button className="bg-surface-container-lowest text-secondary px-8 py-4 rounded-xl font-bold transition-all hover:bg-white active:scale-95 shadow-lg">
-                        Get Started
-                    </button>
-<button className="bg-transparent border border-white/30 text-white px-8 py-4 rounded-xl font-bold transition-all hover:bg-white/10">
-                        Book a Consultation
-                    </button>
-</div>
-</div>
-</div>
-</section></FadeIn>
+                
+                <div className="space-y-8 mb-10">
+                  <div className="flex gap-6">
+                    <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+                      <span className="material-symbols-outlined">person_search</span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-2">Who This Is For</h4>
+                      <p className="text-on-surface-variant">Students seeking relevant digital skills and early professionals looking to transition into the digital economy.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-6">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                      <span className="material-symbols-outlined">crisis_alert</span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-2">What This Programme Solves</h4>
+                      <ul className="text-on-surface-variant text-sm space-y-2 list-disc pl-4">
+                        <li>Lack of direction in skill development</li>
+                        <li>Inability to apply knowledge to real world scenarios</li>
+                        <li>Difficulty in converting skills into income or employability</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <Link href="/academy" className="bg-primary text-white px-10 py-4 rounded-xl font-bold hover:bg-zinc-800 transition-all shadow-xl active:scale-95 inline-block text-center">
+                  Apply for the Accelerator
+                </Link>
+              </div>
+              <div className="relative">
+                <div className="rounded-[2.5rem] overflow-hidden shadow-2xl">
+                  <img src="/images/new_content/accelerator.png" alt="Digital Empowerment Accelerator" className="w-full h-full object-cover" />
+                </div>
+                <div className="absolute -top-10 -left-10 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 3. ENHANCED PARTNERSHIP PROGRAMME */}
+      <FadeIn delay={0.3}>
+        <section className="py-24 bg-surface-container-lowest">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="order-2 lg:order-1 relative">
+                <div className="rounded-[2.5rem] overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
+                  <img src="/images/new_content/organisations.png" alt="Enhanced Partnership Programme" className="w-full h-full object-cover" />
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-on-tertiary-container/10 rounded-full mb-6">
+                  <span className="text-on-tertiary-container font-bold text-xs uppercase tracking-widest">Scalable Growth</span>
+                </div>
+                <h2 className="font-headline text-4xl md:text-5xl font-black mb-6 text-primary">Enhanced Partnership Programme</h2>
+                <p className="text-2xl font-bold text-on-tertiary-container mb-8 leading-tight">From Effort Without Systems to Scalable Growth</p>
+                <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
+                  Many organisations and founders are actively working, yet struggle with consistency, alignment, and long term growth. The challenge is not effort. It is the absence of structure.
+                </p>
+                
+                <div className="grid sm:grid-cols-2 gap-6 mb-10">
+                  <div className="p-6 bg-white rounded-2xl shadow-sm border border-outline-variant/10">
+                    <h4 className="font-bold mb-2">Sustainable Systems</h4>
+                    <p className="text-sm text-on-surface-variant">Build internal structures that support long-term organisational goals.</p>
+                  </div>
+                  <div className="p-6 bg-white rounded-2xl shadow-sm border border-outline-variant/10">
+                    <h4 className="font-bold mb-2">Strategic Clarity</h4>
+                    <p className="text-sm text-on-surface-variant">Move from fragmented execution to coordinated, scalable systems.</p>
+                  </div>
+                </div>
+                
+                <Link href="/collaboration" className="bg-secondary text-on-secondary px-10 py-4 rounded-xl font-bold hover:bg-secondary-container transition-all shadow-xl active:scale-95 inline-block text-center">
+                  Apply for Enhanced Partnership
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 4. WHY ITHAC PROGRAMMES ARE DIFFERENT */}
+      <FadeIn delay={0.4}>
+        <section className="py-24 bg-white">
+          <div className="max-w-4xl mx-auto px-8 text-center">
+            <h2 className="font-headline text-4xl font-extrabold tracking-tight mb-8">Why ITHAC Programmes Are Different</h2>
+            <p className="text-xl text-on-surface-variant leading-relaxed mb-12">
+              ITHAC programmes are built on integration, not isolation. Participants are not left to figure things out independently. They are supported within a system that connects learning, execution, and opportunity.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-8">
+              <div className="p-8 border-2 border-primary rounded-3xl">
+                <span className="material-symbols-outlined text-5xl text-primary mb-4">track_changes</span>
+                <h4 className="text-xl font-black mb-2">Actionablecapability</h4>
+                <p className="text-sm">We measure success by transformation, not just participation.</p>
+              </div>
+              <div className="p-8 border-2 border-secondary rounded-3xl">
+                <span className="material-symbols-outlined text-5xl text-secondary mb-4">hub</span>
+                <h4 className="text-xl font-black mb-2">Ecosystem Driven</h4>
+                <p className="text-sm">Direct connection between learning and real-world execution platforms.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 5. FINAL CTA */}
+      <FadeIn delay={0.5}>
+        <section className="py-24 bg-primary text-on-primary">
+          <div className="max-w-7xl mx-auto px-8 text-center">
+            <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight">Join a system that is built <br className="hidden md:block"/> to deliver results.</h2>
+            <p className="text-xl opacity-80 mb-12">Whether you are an individual seeking direction or an organisation seeking structure.</p>
+            <Link href="/academy" className="bg-secondary text-on-secondary px-12 py-5 rounded-2xl font-black text-xl hover:bg-secondary-container transition-all shadow-xl active:scale-95 inline-block text-center">
+              Apply Today
+            </Link>
+          </div>
+        </section>
+      </FadeIn>
 
     </main>
   );

@@ -87,7 +87,7 @@ export function LandingAccordionItem() {
 
   return (
     <div className="bg-primary font-sans">
-      <section className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
+      <section className="container mx-auto px-4 py-8 md:py-12 lg:py-16 bg-[#fff]">
         <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h1 className="text-3xl md:text-5xl font-black text-ithac-blue leading-tight">

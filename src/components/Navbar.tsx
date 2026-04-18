@@ -27,34 +27,46 @@ const Navbar = () => {
             className="text-zinc-600 text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors"
             href="/services"
           >
-            Services
+            Programmes
           </Link>
           <Link
             className="text-zinc-600 text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors"
             href="/hub"
           >
-            Hub
+            Ecosystem
           </Link>
           <Link
             className="text-zinc-600 text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors"
             href="/communities"
           >
-            Communities
+            Community
           </Link>
           <Link
             className="text-zinc-600 text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors"
             href="/collaboration"
           >
-            Collaboration
+            Partnerships
+          </Link>
+          <Link
+            className="text-zinc-600 text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors"
+            href="/portfolio"
+          >
+            Impact
+          </Link>
+          <Link
+            className="text-zinc-600 text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors"
+            href="/contact"
+          >
+            Contact
           </Link>
         </div>
         <div className="flex items-center gap-4">
           <button className="hidden lg:flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
             <span className="material-symbols-outlined">search</span>
           </button>
-          <button className="bg-secondary text-on-secondary px-6 py-2.5 rounded-xl font-bold text-sm hover:bg-secondary-container transition-all active:scale-95">
+          <Link href="/academy" className="bg-secondary text-on-secondary px-6 py-2.5 rounded-xl font-bold text-sm hover:bg-secondary-container transition-all active:scale-95 inline-block">
             Join the Ecosystem
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

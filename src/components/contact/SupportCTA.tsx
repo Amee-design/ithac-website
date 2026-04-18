@@ -14,42 +14,36 @@ import {
   Shield,
 } from "lucide-react";
 
-const supportChannels = [
+const entryPoints = [
   {
-    icon: MessageCircle,
-    title: "Live Chat",
-    description: "Get instant answers from our support team",
-    action: "Start Chat",
-    availability: "24/7 Available",
-    responseTime: "Under 2 minutes",
+    icon: Calendar,
+    title: "Apply for Programmes",
+    description: "Start Your Growth Journey with Structure. ITHAC programmes provide clarity, direction, and real world application.",
+    action: "Apply Now",
+    href: "/academy",
+    availability: "Pathways to Growth",
+    responseTime: "Structured",
     color: "ithac-blue",
   },
   {
-    icon: Phone,
-    title: "Phone Support",
-    description: "Speak directly with our technical experts",
-    action: "Call Now",
-    availability: "Mon-Fri 8AM-6PM",
-    responseTime: "Immediate",
+    icon: MessageCircle,
+    title: "Join the Community",
+    description: "Stay Connected to Opportunities and Growth. Receive timely information on programmes, initiatives, and activities.",
+    action: "Join Now",
+    href: "https://whatsapp.com",
+    availability: "Direct Access",
+    responseTime: "Timely",
     color: "ithac-emerald",
   },
   {
-    icon: Mail,
-    title: "Email Support",
-    description: "Send detailed questions and get comprehensive answers",
-    action: "Send Email",
-    availability: "Always Open",
-    responseTime: "Under 2 hours",
+    icon: Headphones,
+    title: "Partner with ITHAC",
+    description: "Collaborate for Impact and Innovation. Structured to ensure alignment, execution, and long term value creation.",
+    action: "Become a Partner",
+    href: "/collaboration",
+    availability: "Value Creation",
+    responseTime: "Collaborative",
     color: "ithac-purple",
-  },
-  {
-    icon: Calendar,
-    title: "Schedule a Call",
-    description: "Book a consultation with our project specialists",
-    action: "Book Meeting",
-    availability: "Flexible Times",
-    responseTime: "Same day",
-    color: "ithac-gold",
   },
 ];
 
@@ -84,9 +78,9 @@ export default function SupportCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-ithac-dark-gray mb-6"
+            className="text-4xl md:text-5xl font-bold text-ithac-dark-gray mb-6 uppercase font-headline"
           >
-            Need Help? We're Here for You
+            Take Action Today
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -95,15 +89,13 @@ export default function SupportCTA() {
             viewport={{ once: true }}
             className="text-xl text-ithac-gray max-w-3xl mx-auto"
           >
-            Our expert support team is ready to help you with any questions,
-            technical issues, or project consultations. Choose the support
-            channel that works best for you.
+            Whether you are looking to develop skills, collaborate, or contribute, there are clear entry points designed to move you from interest to action.
           </motion.p>
         </div>
 
         {/* Support Channels */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {supportChannels.map((channel, index) => {
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 px-4">
+          {entryPoints.map((channel, index) => {
             const IconComponent = channel.icon;
             return (
               <motion.div
@@ -167,8 +159,11 @@ export default function SupportCTA() {
                       </div>
                     </div>
 
-                    <button
-                      className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 ${
+                    <Link
+                      href={channel.href}
+                      target={channel.href.startsWith("http") ? "_blank" : undefined}
+                      rel={channel.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 text-center block ${
                         channel.color === "ithac-blue"
                           ? "bg-ithac-blue/10 text-ithac-blue hover:bg-ithac-blue hover:text-white"
                           : channel.color === "ithac-emerald"
@@ -179,7 +174,7 @@ export default function SupportCTA() {
                       }`}
                     >
                       {channel.action}
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
@@ -230,14 +225,20 @@ export default function SupportCTA() {
             assistance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group bg-white text-ithac-coral px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-white/90 hover:shadow-lg flex items-center gap-2 justify-center">
+            <Link 
+              href="tel:+234800000000" 
+              className="group bg-white text-ithac-coral px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-white/90 hover:shadow-lg flex items-center gap-2 justify-center"
+            >
               <Phone className="w-5 h-5" />
               Emergency Hotline
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-white hover:text-ithac-coral">
+            </Link>
+            <Link 
+              href="/contact" 
+              className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-white hover:text-ithac-coral text-center"
+            >
               Priority Support Plan
-            </button>
+            </Link>
           </div>
         </motion.div>
 
@@ -258,21 +259,25 @@ export default function SupportCTA() {
             into digital reality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="#contact-form">
-              <button className="group bg-ithac-blue text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue/90 hover:shadow-lg hover:shadow-ithac-blue/25 flex items-center gap-2 justify-center">
-                Get Started Today
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </button>
+            <Link 
+              href="#contact-form"
+              className="group bg-ithac-blue text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue/90 hover:shadow-lg hover:shadow-ithac-blue/25 flex items-center gap-2 justify-center"
+            >
+              Get Started Today
+              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Link>
-            <Link href="/portfolio">
-              <button className="border-2 border-ithac-blue text-ithac-blue px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue hover:text-white">
-                Download Our Portfolio
-              </button>
-              </Link>
-            <button className="border-2 border-ithac-emerald text-ithac-emerald px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-emerald hover:text-white">
+            <Link 
+              href="/portfolio"
+              className="border-2 border-ithac-blue text-ithac-blue px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue hover:text-white text-center"
+            >
+              View Our Impact
+            </Link>
+            <Link 
+              href="/contact"
+              className="border-2 border-ithac-emerald text-ithac-emerald px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-emerald hover:text-white text-center"
+            >
               Request Quote
-              </button>
-              
+            </Link>
           </div>
         </motion.div>
       </Container>
