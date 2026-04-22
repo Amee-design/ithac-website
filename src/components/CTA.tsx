@@ -63,7 +63,11 @@ const CTA = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Link href="/academy">
+              <Link
+                href="https://forms.gle/5YSKCpEuBYYTGmBY9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -83,7 +87,7 @@ const CTA = () => {
                 </motion.button>
               </Link>
               <a
-                href="https://calendly.com/ithac/consultation"
+                href="https://wa.me/2349021439349?text=Hello%20ITHAC%2C%20I%20want%20to%20book%20a%20free%20consultation."
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -154,7 +154,11 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <Link href="/academy">
+        <Link
+          href="https://forms.gle/5YSKCpEuBYYTGmBY9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="bg-gradient-to-r from-secondary-blue to-accent-aqua text-white px-6 py-2 rounded-xl font-medium hover:scale-105 transition-all">
             Join Now
           </button>
@@ -260,7 +264,7 @@ const Services = () => {
                     {(category.cardData as CardData).items?.map(
                       (item, itemIndex) => (
                         <ProductCard key={itemIndex} item={item} />
-                      )
+                      ),
                     )}
                   </div>
                 )}

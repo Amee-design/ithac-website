@@ -6,7 +6,6 @@ import Link from "next/link";
 import {
   MessageCircle,
   Phone,
-  
   Calendar,
   ArrowRight,
   Clock,
@@ -18,7 +17,8 @@ const entryPoints = [
   {
     icon: Calendar,
     title: "Apply for Programmes",
-    description: "Start Your Growth Journey with Structure. ITHAC programmes provide clarity, direction, and real world application.",
+    description:
+      "Start Your Growth Journey with Structure. ITHAC programmes provide clarity, direction, and real world application.",
     action: "Apply Now",
     href: "/academy",
     availability: "Pathways to Growth",
@@ -28,9 +28,10 @@ const entryPoints = [
   {
     icon: MessageCircle,
     title: "Join the Community",
-    description: "Stay Connected to Opportunities and Growth. Receive timely information on programmes, initiatives, and activities.",
+    description:
+      "Stay Connected to Opportunities and Growth. Receive timely information on programmes, initiatives, and activities.",
     action: "Join Now",
-    href: "https://whatsapp.com",
+    href: "https://chat.whatsapp.com/H0y0nOJAvpNEdQJS3BaSs8?mode=gi_t",
     availability: "Direct Access",
     responseTime: "Timely",
     color: "ithac-emerald",
@@ -38,7 +39,8 @@ const entryPoints = [
   {
     icon: Headphones,
     title: "Partner with ITHAC",
-    description: "Collaborate for Impact and Innovation. Structured to ensure alignment, execution, and long term value creation.",
+    description:
+      "Collaborate for Impact and Innovation. Structured to ensure alignment, execution, and long term value creation.",
     action: "Become a Partner",
     href: "/collaboration",
     availability: "Value Creation",
@@ -89,7 +91,9 @@ export default function SupportCTA() {
             viewport={{ once: true }}
             className="text-xl text-ithac-gray max-w-3xl mx-auto"
           >
-            Whether you are looking to develop skills, collaborate, or contribute, there are clear entry points designed to move you from interest to action.
+            Whether you are looking to develop skills, collaborate, or
+            contribute, there are clear entry points designed to move you from
+            interest to action.
           </motion.p>
         </div>
 
@@ -113,10 +117,10 @@ export default function SupportCTA() {
                         channel.color === "ithac-blue"
                           ? "bg-ithac-blue/10 group-hover:bg-ithac-blue"
                           : channel.color === "ithac-emerald"
-                          ? "bg-ithac-emerald/10 group-hover:bg-ithac-emerald"
-                          : channel.color === "ithac-purple"
-                          ? "bg-ithac-purple/10 group-hover:bg-ithac-purple"
-                          : "bg-ithac-gold/10 group-hover:bg-ithac-gold"
+                            ? "bg-ithac-emerald/10 group-hover:bg-ithac-emerald"
+                            : channel.color === "ithac-purple"
+                              ? "bg-ithac-purple/10 group-hover:bg-ithac-purple"
+                              : "bg-ithac-gold/10 group-hover:bg-ithac-gold"
                       } transition-all duration-300`}
                     >
                       <IconComponent
@@ -124,10 +128,10 @@ export default function SupportCTA() {
                           channel.color === "ithac-blue"
                             ? "text-ithac-blue"
                             : channel.color === "ithac-emerald"
-                            ? "text-ithac-emerald"
-                            : channel.color === "ithac-purple"
-                            ? "text-ithac-purple"
-                            : "text-ithac-gold"
+                              ? "text-ithac-emerald"
+                              : channel.color === "ithac-purple"
+                                ? "text-ithac-purple"
+                                : "text-ithac-gold"
                         } group-hover:text-white transition-all duration-300`}
                       />
                     </div>
@@ -161,16 +165,22 @@ export default function SupportCTA() {
 
                     <Link
                       href={channel.href}
-                      target={channel.href.startsWith("http") ? "_blank" : undefined}
-                      rel={channel.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      target={
+                        channel.href.startsWith("http") ? "_blank" : undefined
+                      }
+                      rel={
+                        channel.href.startsWith("http")
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
                       className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 text-center block ${
                         channel.color === "ithac-blue"
                           ? "bg-ithac-blue/10 text-ithac-blue hover:bg-ithac-blue hover:text-white"
                           : channel.color === "ithac-emerald"
-                          ? "bg-ithac-emerald/10 text-ithac-emerald hover:bg-ithac-emerald hover:text-white"
-                          : channel.color === "ithac-purple"
-                          ? "bg-ithac-purple/10 text-ithac-purple hover:bg-ithac-purple hover:text-white"
-                          : "bg-ithac-gold/10 text-ithac-gold hover:bg-ithac-gold hover:text-white"
+                            ? "bg-ithac-emerald/10 text-ithac-emerald hover:bg-ithac-emerald hover:text-white"
+                            : channel.color === "ithac-purple"
+                              ? "bg-ithac-purple/10 text-ithac-purple hover:bg-ithac-purple hover:text-white"
+                              : "bg-ithac-gold/10 text-ithac-gold hover:bg-ithac-gold hover:text-white"
                       }`}
                     >
                       {channel.action}
@@ -225,16 +235,16 @@ export default function SupportCTA() {
             assistance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="tel:+234800000000" 
+            <Link
+              href="tel:+234800000000"
               className="group bg-white text-ithac-coral px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-white/90 hover:shadow-lg flex items-center gap-2 justify-center"
             >
               <Phone className="w-5 h-5" />
               Emergency Hotline
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Link>
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-white hover:text-ithac-coral text-center"
             >
               Priority Support Plan
@@ -259,20 +269,20 @@ export default function SupportCTA() {
             into digital reality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
+            <Link
               href="#contact-form"
               className="group bg-ithac-blue text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue/90 hover:shadow-lg hover:shadow-ithac-blue/25 flex items-center gap-2 justify-center"
             >
               Get Started Today
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Link>
-            <Link 
+            <Link
               href="/portfolio"
               className="border-2 border-ithac-blue text-ithac-blue px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-blue hover:text-white text-center"
             >
               View Our Impact
             </Link>
-            <Link 
+            <Link
               href="/contact"
               className="border-2 border-ithac-emerald text-ithac-emerald px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-ithac-emerald hover:text-white text-center"
             >
