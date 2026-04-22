@@ -160,7 +160,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="py-24 bg-ithac-light-gray/30">
+    <section id="contact-form" className="py-24 bg-ithac-light-gray/30">
       <Container>
         <div className="text-center mb-16">
           <motion.h2

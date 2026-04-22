@@ -64,7 +64,7 @@ const CTA = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link
-                href="https://forms.gle/5YSKCpEuBYYTGmBY9"
+                href="https://ithac-web-application.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -86,19 +86,17 @@ const CTA = () => {
                   Partner With Us
                 </motion.button>
               </Link>
-              <a
-                href="https://wa.me/2349021439349?text=Hello%20ITHAC%2C%20I%20want%20to%20book%20a%20free%20consultation."
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact#contact-form"
+                className="group border border-blue-300 text-blue-100 px-6 py-3 rounded-lg hover:bg-blue-700 hover:border-blue-600 transition-all duration-300 font-medium"
               >
-                <motion.button
+                <motion.span
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group border border-blue-300 text-blue-100 px-6 py-3 rounded-lg hover:bg-blue-700 hover:border-blue-600 transition-all duration-300 font-medium"
                 >
                   Schedule a Call
-                </motion.button>
-              </a>
+                </motion.span>
+              </Link>
             </div>
           </motion.div>
 

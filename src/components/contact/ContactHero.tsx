@@ -32,7 +32,7 @@ const contactMethods = [
 ];
 
 const stats = [
-  { number: "< 2hrs", label: "Response Time", icon: Clock },
+  { number: "2hrs", label: "Response Time", icon: Clock },
   { number: "24/7", label: "Support Available", icon: Zap },
   { number: "1", label: "Office Location", icon: MapPin },
 ];
@@ -206,9 +206,7 @@ export default function ContactHero() {
               you.
             </p>
             <a
-              href="https://wa.me/2349021439349?text=Hello%20ITHAC%2C%20I%20want%20to%20book%20a%20free%20consultation."
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/contact#contact-form"
               className="inline-block bg-white text-ithac-blue px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-white/90 hover:shadow-lg"
             >
               Book Free Consultation

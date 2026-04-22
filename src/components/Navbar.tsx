@@ -50,7 +50,7 @@ const Navbar = () => {
             <span className="material-symbols-outlined">search</span>
           </button>
           <Link
-            href="https://forms.gle/5YSKCpEuBYYTGmBY9"
+            href="https://ithac-web-application.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-secondary hidden text-on-secondary px-6 py-2.5 rounded-xl font-bold text-sm hover:bg-secondary-container transition-all active:scale-95 lg:inline-block"
@@ -86,7 +86,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              href="https://forms.gle/5YSKCpEuBYYTGmBY9"
+              href="https://ithac-web-application.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
