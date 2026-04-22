@@ -20,7 +20,7 @@ const entryPoints = [
     description:
       "Start Your Growth Journey with Structure. ITHAC programmes provide clarity, direction, and real world application.",
     action: "Apply Now",
-    href: "/academy",
+    href: "https://ithac-web-application.vercel.app/",
     availability: "Pathways to Growth",
     responseTime: "Structured",
     color: "ithac-blue",
@@ -31,7 +31,7 @@ const entryPoints = [
     description:
       "Stay Connected to Opportunities and Growth. Receive timely information on programmes, initiatives, and activities.",
     action: "Join Now",
-    href: "https://chat.whatsapp.com/H0y0nOJAvpNEdQJS3BaSs8?mode=gi_t",
+    href: "https://ithac-web-application.vercel.app/",
     availability: "Direct Access",
     responseTime: "Timely",
     color: "ithac-emerald",

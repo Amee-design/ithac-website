@@ -129,9 +129,14 @@ export default function ContactInfo() {
                 </div>
 
                 <div className="mt-6 pt-6 border-t border-gray-200">
-                  <button className="w-full bg-secondary-blue/10 text-secondary-blue py-3 rounded-xl font-medium hover:bg-secondary-blue hover:text-white transition-all duration-300">
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(office.address)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-secondary-blue/10 text-secondary-blue py-3 rounded-xl font-medium hover:bg-secondary-blue hover:text-white transition-all duration-300 block text-center"
+                  >
                     Get Directions
-                  </button>
+                  </a>
                 </div>
               </div>
             </motion.div>
