@@ -14,22 +14,6 @@ const locations = [
     isHeadquarters: true,
     mapEmbedId: "abuja-office",
   },
-  {
-    city: "Accra",
-    country: "Ghana",
-    coordinates: { lat: 5.6037, lng: -0.187 },
-    address: "456 Cantonments Road, Accra, Ghana",
-    isHeadquarters: false,
-    mapEmbedId: "accra-office",
-  },
-  {
-    city: "Nairobi",
-    country: "Kenya",
-    coordinates: { lat: -1.2921, lng: 36.8219 },
-    address: "789 Westlands, Nairobi, Kenya",
-    isHeadquarters: false,
-    mapEmbedId: "nairobi-office",
-  },
 ];
 
 export default function MapSection() {
@@ -37,7 +21,7 @@ export default function MapSection() {
     const encodedAddress = encodeURIComponent(address);
     window.open(
       `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`,
-      "_blank"
+      "_blank",
     );
   };
 
@@ -61,8 +45,8 @@ export default function MapSection() {
             viewport={{ once: true }}
             className="text-xl text-ithac-gray max-w-3xl mx-auto"
           >
-            We're strategically located across major African cities. Drop by for
-            a coffee and let's discuss your next big project in person.
+            Visit our Abuja office and connect with the team in person to
+            discuss your next project.
           </motion.p>
         </div>
 
@@ -208,9 +192,9 @@ export default function MapSection() {
         >
           <h3 className="text-3xl font-bold mb-6">Serving All of Africa</h3>
           <p className="text-xl opacity-90 mb-8 max-w-3xl mx-auto">
-            While we have physical offices in Lagos, Accra, and Nairobi, we
-            serve clients across the entire African continent through our remote
-            collaboration capabilities and regional partnerships.
+            Our physical office is in Abuja, while we serve clients across the
+            African continent through remote collaboration and regional
+            partnerships.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>

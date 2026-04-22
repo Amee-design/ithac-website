@@ -231,13 +231,6 @@ const Programs = () => {
                       Enroll Now
                     </Link>
                   </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="px-4 py-2 border border-ithac-blue text-ithac-blue rounded-lg hover:bg-ithac-blue hover:text-white transition-colors text-sm font-medium"
-                  >
-                    Learn More
-                  </motion.button>
                 </div>
               </div>
             </motion.div>

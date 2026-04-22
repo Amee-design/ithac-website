@@ -16,26 +16,6 @@ const offices = [
     timezone: "GMT+1",
     isHeadquarters: true,
   },
-  {
-    city: "Accra",
-    country: "Ghana",
-    address: "456 Cantonments Road, Accra, Ghana",
-    phone: "+233 20 123 4567",
-    email: "accra@ithac.tech",
-    hours: "Mon-Fri: 8am-6pm GMT",
-    timezone: "GMT+0",
-    isHeadquarters: false,
-  },
-  {
-    city: "Nairobi",
-    country: "Kenya",
-    address: "789 Westlands, Nairobi, Kenya",
-    phone: "+254 700 123 456",
-    email: "nairobi@ithac.tech",
-    hours: "Mon-Fri: 8am-6pm EAT",
-    timezone: "GMT+3",
-    isHeadquarters: false,
-  },
 ];
 
 export default function ContactInfo() {
@@ -59,7 +39,11 @@ export default function ContactInfo() {
             viewport={{ once: true }}
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
-            For enquiries, clarifications, or further information about programmes, partnerships, or ecosystem opportunities, you can reach out to us directly. Our team is available to provide guidance and support to help you identify the most relevant pathway within the ecosystem.
+            For enquiries, clarifications, or further information about
+            programmes, partnerships, or ecosystem opportunities, you can reach
+            out to us directly. Our team is available to provide guidance and
+            support to help you identify the most relevant pathway within the
+            ecosystem.
           </motion.p>
         </div>
 
@@ -108,7 +92,7 @@ export default function ContactInfo() {
                       <a
                         href={`https://wa.me/${office.phone.replace(
                           /[^0-9]/g,
-                          ""
+                          "",
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -189,8 +173,8 @@ export default function ContactInfo() {
               <div className="flex items-center justify-center mb-3">
                 <MapPin className="w-8 h-8" />
               </div>
-              <div className="text-3xl font-bold mb-2">3</div>
-              <div className="opacity-90">Office Locations</div>
+              <div className="text-3xl font-bold mb-2">1</div>
+              <div className="opacity-90">Office Location</div>
             </div>
           </div>
         </motion.div>

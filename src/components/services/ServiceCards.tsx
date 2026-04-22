@@ -189,7 +189,7 @@ const ServiceCards = () => {
                     variant="ghost"
                     className="w-full group-hover:bg-ithac-light-blue transition-colors duration-300"
                   >
-                    Learn More
+                    Get Started
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </div>
@@ -234,7 +234,7 @@ const ServiceCards = () => {
                 size="lg"
                 className="text-white border-white/30 hover:bg-white/10"
               >
-                View Portfolio
+                Portfolio Highlights
               </Button>
             </div>
           </Card>

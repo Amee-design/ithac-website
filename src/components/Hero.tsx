@@ -13,7 +13,6 @@ import {
 import { Button, Container } from "./ui";
 import Link from "next/link";
 
-
 const Hero = () => {
   const heroCategories = [
     {
@@ -274,7 +273,7 @@ const Hero = () => {
                     {(category.cardData as ProductCardData).items?.map(
                       (item, itemIndex) => (
                         <ProductCard key={itemIndex} item={item} />
-                      )
+                      ),
                     )}
                   </div>
                 )}
@@ -335,7 +334,11 @@ const Hero = () => {
               here.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/academy">
+              <Link
+                href="https://forms.gle/5YSKCpEuBYYTGmBY9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button className="bg-white text-secondary-blue hover:bg-white/90 px-8 py-4 text-lg font-semibold rounded-2xl">
                   Explore Our Academy
                   <ArrowRight className="w-5 h-5 ml-2" />

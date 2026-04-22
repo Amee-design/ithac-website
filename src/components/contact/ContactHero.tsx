@@ -34,7 +34,7 @@ const contactMethods = [
 const stats = [
   { number: "< 2hrs", label: "Response Time", icon: Clock },
   { number: "24/7", label: "Support Available", icon: Zap },
-  { number: "3", label: "Office Locations", icon: MapPin },
+  { number: "1", label: "Office Location", icon: MapPin },
 ];
 
 export default function ContactHero() {
@@ -70,7 +70,8 @@ export default function ContactHero() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-5xl md:text-6xl lg:text-7xl font-bold text-ithac-dark-gray mb-6 leading-tight uppercase font-headline"
           >
-            GET INVOLVED <span className="text-secondary block">WITH ITHAC</span>
+            GET INVOLVED{" "}
+            <span className="text-secondary block">WITH ITHAC</span>
           </motion.h1>
 
           <motion.p
@@ -87,7 +88,9 @@ export default function ContactHero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-xl text-ithac-gray max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            ITHAC is built as an ecosystem where individuals, organisations, and communities can actively participate in structured pathways for growth, innovation, and impact.
+            ITHAC is built as an ecosystem where individuals, organisations, and
+            communities can actively participate in structured pathways for
+            growth, innovation, and impact.
           </motion.p>
 
           {/* Quick Stats */}
@@ -148,8 +151,8 @@ export default function ContactHero() {
                       method.color === "ithac-blue"
                         ? "bg-ithac-blue/10 group-hover:bg-ithac-blue"
                         : method.color === "ithac-emerald"
-                        ? "bg-ithac-emerald/10 group-hover:bg-ithac-emerald"
-                        : "bg-ithac-purple/10 group-hover:bg-ithac-purple"
+                          ? "bg-ithac-emerald/10 group-hover:bg-ithac-emerald"
+                          : "bg-ithac-purple/10 group-hover:bg-ithac-purple"
                     } transition-all duration-300 mb-6`}
                   >
                     <IconComponent
@@ -157,8 +160,8 @@ export default function ContactHero() {
                         method.color === "ithac-blue"
                           ? "text-ithac-blue"
                           : method.color === "ithac-emerald"
-                          ? "text-ithac-emerald"
-                          : "text-ithac-purple"
+                            ? "text-ithac-emerald"
+                            : "text-ithac-purple"
                       } group-hover:text-white transition-all duration-300`}
                     />
                   </div>
@@ -174,8 +177,8 @@ export default function ContactHero() {
                       method.color === "ithac-blue"
                         ? "text-ithac-blue"
                         : method.color === "ithac-emerald"
-                        ? "text-ithac-emerald"
-                        : "text-ithac-purple"
+                          ? "text-ithac-emerald"
+                          : "text-ithac-purple"
                     } group-hover:underline`}
                   >
                     {method.value}
@@ -202,9 +205,14 @@ export default function ContactHero() {
               project requirements and get a custom solution designed just for
               you.
             </p>
-            <button className="bg-white text-ithac-blue px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-white/90 hover:shadow-lg">
+            <a
+              href="https://wa.me/2349021439349?text=Hello%20ITHAC%2C%20I%20want%20to%20book%20a%20free%20consultation."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-ithac-blue px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-white/90 hover:shadow-lg"
+            >
               Book Free Consultation
-            </button>
+            </a>
           </div>
         </motion.div>
       </Container>

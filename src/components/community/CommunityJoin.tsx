@@ -25,7 +25,11 @@ const CommunityJoin = () => {
           </Typography>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/signup">
+            <Link
+              href="https://chat.whatsapp.com/H0y0nOJAvpNEdQJS3BaSs8?mode=gi_t"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button variant="primary" size="lg">
                 <Users className="w-5 h-5 mr-2" />
                 Join the Community
