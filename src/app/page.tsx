@@ -93,7 +93,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl scale-95 hover:scale-100 transition-transform duration-700">
                   <img
-                    src="/images/new_content/organisations.png"
+                    src="/home-page/photo-a.png"
                     alt="Collaborative Innovation"
                     className="w-[110%] h-[110%] object-cover -translate-x-[5%]"
                   />
@@ -121,17 +121,17 @@ export default function HomePage() {
               {
                 title: "Individuals",
                 desc: "Students, early professionals, and career transitioners seeking structured pathways into the digital economy through practical skill development and guided execution.",
-                img: "/images/new_content/individuals.png",
+                img: "/home-page/photo-a.png",
               },
               {
                 title: "Organisations and Founders",
                 desc: "Teams and institutions looking to build scalable systems, strengthen operational structures, and position themselves for long term growth.",
-                img: "/images/new_content/organisations.png",
+                img: "/home-page/photo-b.png",
               },
               {
                 title: "Communities",
                 desc: "Underserved populations requiring access to education, healthcare support, and empowerment initiatives that improve quality of life and economic participation.",
-                img: "/images/new_content/communities.png",
+                img: "/home-page/photo-c.png",
               },
             ].map((item, idx) => (
               <div

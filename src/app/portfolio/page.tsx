@@ -76,7 +76,7 @@ export default function ImpactPage() {
                 desc: "Implementing community-based interventions that improve access to essential medical services and health education for underserved populations.",
                 outcome:
                   "Successfully reached 5,000+ individuals with primary healthcare support and screenings.",
-                img: "/images/new_content/medical_impact.png",
+                img: "/home-page/photo-a.png",
                 color: "ithac-blue",
               },
               {
@@ -85,7 +85,7 @@ export default function ImpactPage() {
                 desc: "Equipping children and youth with digital tools and structured learning frameworks to bridge the educational gap.",
                 outcome:
                   "Distributed 500+ tablets and established 10 modern learning hubs across suburban regions.",
-                img: "/images/new_content/education_impact.png",
+                img: "/home-page/photo-a.png",
                 color: "ithac-emerald",
               },
               {
@@ -94,7 +94,7 @@ export default function ImpactPage() {
                 desc: "Targeted interventions integrating technology and social impact to solve nutritional challenges within local communities.",
                 outcome:
                   "Provided 100,000+ nutritious meals through structured community distribution systems.",
-                img: "/images/new_content/feeding_impact.png",
+                img: "/home-page/photo-c.png",
                 color: "ithac-coral",
               },
             ].map((project, idx) => (
@@ -141,7 +141,7 @@ export default function ImpactPage() {
       </section>
 
       {/* 4. VISUAL STORYTELLING GALLERY */}
-      <FadeIn delay={0.3}>
+      {/* <FadeIn delay={0.3}>
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-8">
             <div className="text-center mb-16">
@@ -168,7 +168,7 @@ export default function ImpactPage() {
             </div>
           </div>
         </section>
-      </FadeIn>
+      </FadeIn> */}
 
       {/* 5. FINAL CALL */}
       <FadeIn delay={0.4}>
