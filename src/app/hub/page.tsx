@@ -83,7 +83,7 @@ export default function EcosystemPage() {
             <FadeIn direction="right">
               <div className="rounded-[2.5rem] overflow-hidden shadow-2xl skew-y-1">
                 <img
-                  src="/images/new_content/hero.png"
+                  src="/home-page/photo-c.png"
                   alt="Technology Systems"
                   className="w-full h-full object-cover"
                 />
@@ -135,7 +135,7 @@ export default function EcosystemPage() {
             <FadeIn direction="right" className="lg:order-1">
               <div className="rounded-[2.5rem] overflow-hidden shadow-2xl -skew-y-1">
                 <img
-                  src="/images/new_content/individuals.png"
+                  src="/home-page/photo-b.png"
                   alt="Capacity Development"
                   className="w-full h-full object-cover"
                 />

@@ -45,7 +45,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="rounded-[3rem] overflow-hidden aspect-[4/5] shadow-2xl relative z-10">
                   <img
-                    src="/images/new_content/about_hero.png"
+                    src="/home-page/photo-a.png"
                     alt="Who We Are"
                     className="w-full h-full object-cover"
                   />
