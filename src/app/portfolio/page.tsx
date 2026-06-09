@@ -76,7 +76,7 @@ export default function ImpactPage() {
                 desc: "Implementing community-based interventions that improve access to essential medical services and health education for underserved populations.",
                 outcome:
                   "Successfully reached 5,000+ individuals with primary healthcare support and screenings.",
-                img: "/home-page/photo-a.png",
+                img: "/home-page/photo%20(2).jpg",
                 color: "ithac-blue",
               },
               {
@@ -85,7 +85,7 @@ export default function ImpactPage() {
                 desc: "Equipping children and youth with digital tools and structured learning frameworks to bridge the educational gap.",
                 outcome:
                   "Distributed 500+ tablets and established 10 modern learning hubs across suburban regions.",
-                img: "/home-page/photo-a.png",
+                img: "/home-page/photo%20(3).jpg",
                 color: "ithac-emerald",
               },
               {
@@ -94,7 +94,7 @@ export default function ImpactPage() {
                 desc: "Targeted interventions integrating technology and social impact to solve nutritional challenges within local communities.",
                 outcome:
                   "Provided 100,000+ nutritious meals through structured community distribution systems.",
-                img: "/home-page/photo-c.png",
+                img: "/home-page/photo%20(4).jpg",
                 color: "ithac-coral",
               },
             ].map((project, idx) => (

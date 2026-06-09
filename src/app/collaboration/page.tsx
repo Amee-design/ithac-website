@@ -80,7 +80,7 @@ export default function PartnershipsPage() {
               <div className="relative">
                 <div className="rounded-[3rem] overflow-hidden shadow-2xl relative z-10 border-4 border-white">
                   <img
-                    src="/home-page/photo-a.png"
+                    src="/home-page/photo%20(5).jpg"
                     alt="Partnerships"
                     className="w-full h-full object-cover"
                   />
