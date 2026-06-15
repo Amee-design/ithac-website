@@ -23,6 +23,13 @@ type Category = {
   courses: Course[];
 };
 
+const WHATSAPP_NUMBER = "2349021439349";
+
+function getCourseWhatsAppLink(course: Course, categoryTitle: string) {
+  const message = `Hi ITHAC! I'm interested in enrolling in the *${course.title}* (Course ${course.id}, ${course.duration}) under ${categoryTitle}. Please share more details on enrollment.`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
+
 const allProgramsInclude = [
   "Instructor-guided sessions",
   "Hands-on assignments",
@@ -418,7 +425,7 @@ export default function CoursesPage() {
                 {category.courses.map((course) => (
                   <article
                     key={course.id}
-                    className="h-full rounded-2xl border border-outline-variant/20 bg-white p-6 shadow-sm hover:shadow-md transition-all"
+                    className="h-full flex flex-col rounded-2xl border border-outline-variant/20 bg-white p-6 shadow-sm hover:shadow-md transition-all"
                   >
                     <div className="flex items-start justify-between gap-4 mb-4">
                       <p className="text-xs font-black tracking-widest text-secondary uppercase">
@@ -449,7 +456,7 @@ export default function CoursesPage() {
                       </ul>
                     </div>
 
-                    <div className="pt-4 border-t border-outline-variant/20">
+                    <div className="pt-4 border-t border-outline-variant/20 mb-5 flex-1">
                       <h4 className="text-xs font-black tracking-wider uppercase text-primary mb-2">
                         Career Pathway
                       </h4>
@@ -457,6 +464,15 @@ export default function CoursesPage() {
                         {course.careerPath}
                       </p>
                     </div>
+
+                    <Link
+                      href={getCourseWhatsAppLink(course, category.title)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 w-full bg-secondary text-on-secondary px-5 py-3 rounded-xl font-bold hover:bg-secondary-container transition-all active:scale-95 text-sm"
+                    >
+                      Chat With Us to Enroll →
+                    </Link>
                   </article>
                 ))}
               </div>
