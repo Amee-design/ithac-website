@@ -183,7 +183,250 @@ export default function ProgramsPage() {
         </section>
       </FadeIn>
 
-      {/* 4. WHY ITHAC PROGRAMMES ARE DIFFERENT */}
+      {/* 4. ITHAC CAMPUS AMBASSADOR PROGRAMME */}
+      <FadeIn delay={0.35}>
+        <section className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-tertiary/10 rounded-full mb-6">
+                  <span className="text-tertiary font-bold text-xs uppercase tracking-widest">
+                    Student Leadership
+                  </span>
+                </div>
+                <h2 className="font-headline text-4xl md:text-5xl font-black mb-6 text-primary">
+                  ITHAC Campus Ambassador Programme
+                </h2>
+                <p className="text-2xl font-bold text-tertiary mb-8 leading-tight">
+                  Become a Voice for Innovation, Leadership, and Impact
+                </p>
+                <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
+                  Created for students passionate about growth, technology,
+                  leadership, and community building, this programme lets you
+                  represent the ITHAC ecosystem on campus while contributing
+                  to awareness, engagement, and innovation conversations.
+                </p>
+
+                <div className="space-y-8 mb-10">
+                  <div className="flex gap-6">
+                    <div className="w-12 h-12 rounded-full bg-tertiary/10 flex items-center justify-center text-tertiary">
+                      <span className="material-symbols-outlined">
+                        person_search
+                      </span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-2">
+                        Who This Is For
+                      </h4>
+                      <p className="text-on-surface-variant">
+                        Tertiary students in Abuja who are proactive,
+                        growth-minded, collaborative, and interested in
+                        creating value beyond the classroom.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-6">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                      <span className="material-symbols-outlined">
+                        military_tech
+                      </span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-2">
+                        What You Gain
+                      </h4>
+                      <ul className="text-on-surface-variant text-sm space-y-2 list-disc pl-4">
+                        <li>
+                          Practical experience that supports personal and
+                          professional growth
+                        </li>
+                        <li>
+                          Stronger communication, leadership, and networking
+                          skills
+                        </li>
+                        <li>
+                          Engagement across ecosystem activities and
+                          initiatives
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <Link
+                  href="https://forms.gle/FVRTXAu4VA3FEAcZA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary text-white px-10 py-4 rounded-xl font-bold hover:bg-zinc-800 transition-all shadow-xl active:scale-95 inline-block text-center"
+                >
+                  Apply to Become an Ambassador
+                </Link>
+              </div>
+              <div className="relative">
+                <div className="rounded-[2.5rem] overflow-hidden shadow-2xl">
+                  <img
+                    src="/programs-images/new-ambassador.jpeg"
+                    alt="ITHAC Campus Ambassador Programme"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -top-10 -left-10 w-32 h-32 bg-tertiary/20 rounded-full blur-3xl"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 5. ITHAC VOLUNTEER PROGRAMME */}
+      <FadeIn delay={0.4}>
+        <section className="py-24 bg-surface-container-lowest">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="order-2 lg:order-1 relative">
+                <div className="rounded-[2.5rem] overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
+                  <img
+                    src="/programs-images/volunteer.jpeg"
+                    alt="ITHAC Volunteer Programme"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 rounded-full mb-6">
+                  <span className="text-secondary font-bold text-xs uppercase tracking-widest">
+                    Community Impact
+                  </span>
+                </div>
+                <h2 className="font-headline text-4xl md:text-5xl font-black mb-6 text-primary">
+                  ITHAC Volunteer Programme
+                </h2>
+                <p className="text-2xl font-bold text-secondary mb-8 leading-tight">
+                  Create Impact. Build Experience. Contribute Meaningfully.
+                </p>
+                <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
+                  Designed for individuals who are passionate about
+                  supporting meaningful initiatives, volunteers contribute
+                  across technology, learning, media, creative production,
+                  community engagement, events, and operational support
+                  within the ITHAC ecosystem.
+                </p>
+
+                <div className="grid sm:grid-cols-2 gap-6 mb-10">
+                  <div className="p-6 bg-white rounded-2xl shadow-sm border border-outline-variant/10">
+                    <h4 className="font-bold mb-2">Opportunity Areas</h4>
+                    <p className="text-sm text-on-surface-variant">
+                      Digital skills, media production, cybersecurity
+                      awareness, and innovation programmes.
+                    </p>
+                  </div>
+                  <div className="p-6 bg-white rounded-2xl shadow-sm border border-outline-variant/10">
+                    <h4 className="font-bold mb-2">What You Gain</h4>
+                    <p className="text-sm text-on-surface-variant">
+                      Practical exposure, expanded networks, and access to
+                      potential internship opportunities.
+                    </p>
+                  </div>
+                </div>
+
+                <Link
+                  href="https://forms.gle/geoWmp6xxPq5Ln4U8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-secondary text-on-secondary px-10 py-4 rounded-xl font-bold hover:bg-secondary-container transition-all shadow-xl active:scale-95 inline-block text-center"
+                >
+                  Register as a Volunteer
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 6. ENTERPRISE PARTNERSHIP PROGRAMME (EPP) */}
+      <FadeIn delay={0.45}>
+        <section className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-on-tertiary-container/10 rounded-full mb-6">
+                  <span className="text-on-tertiary-container font-bold text-xs uppercase tracking-widest">
+                    Strategic Growth
+                  </span>
+                </div>
+                <h2 className="font-headline text-4xl md:text-5xl font-black mb-6 text-primary">
+                  Enterprise Partnership Programme (EPP)
+                </h2>
+                <p className="text-2xl font-bold text-on-tertiary-container mb-8 leading-tight">
+                  Growth Becomes More Sustainable When Built Through
+                  Collaboration
+                </p>
+                <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
+                  EPP connects businesses, organisations, institutions, and
+                  strategic partners with opportunities that support growth,
+                  visibility, innovation, and long-term development through
+                  intentional partnerships across the ITHAC ecosystem.
+                </p>
+
+                <div className="space-y-8 mb-10">
+                  <div className="flex gap-6">
+                    <div className="w-12 h-12 rounded-full bg-on-tertiary-container/10 flex items-center justify-center text-on-tertiary-container">
+                      <span className="material-symbols-outlined">
+                        domain
+                      </span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-2">
+                        Who This Is For
+                      </h4>
+                      <p className="text-on-surface-variant">
+                        Organisations looking to expand impact, strengthen
+                        networks, increase visibility, and support
+                        innovation.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-6">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                      <span className="material-symbols-outlined">
+                        handshake
+                      </span>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-2">
+                        What You Gain
+                      </h4>
+                      <ul className="text-on-surface-variant text-sm space-y-2 list-disc pl-4">
+                        <li>Access to ecosystem visibility and collaboration opportunities</li>
+                        <li>Strategic conversations and learning engagements</li>
+                        <li>Development-focused programmes and partnerships</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <Link
+                  href="mailto:contactus@ithac.org"
+                  className="bg-primary text-white px-10 py-4 rounded-xl font-bold hover:bg-zinc-800 transition-all shadow-xl active:scale-95 inline-block text-center"
+                >
+                  Become an Enterprise Partner
+                </Link>
+              </div>
+              <div className="relative">
+                <div className="rounded-[2.5rem] overflow-hidden shadow-2xl">
+                  <img
+                    src="/programs-images/enterprise-partnership.jpeg"
+                    alt="Enterprise Partnership Programme (EPP)"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -top-10 -left-10 w-32 h-32 bg-on-tertiary-container/20 rounded-full blur-3xl"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 7. WHY ITHAC PROGRAMMES ARE DIFFERENT */}
       <FadeIn delay={0.4}>
         <section className="py-24 bg-white">
           <div className="max-w-4xl mx-auto px-8 text-center">
