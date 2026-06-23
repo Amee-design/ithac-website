@@ -201,10 +201,14 @@ export default function ProgramsPage() {
                   Become a Voice for Innovation, Leadership, and Impact
                 </p>
                 <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
-                  Created for students passionate about growth, technology,
-                  leadership, and community building, this programme lets you
-                  represent the ITHAC ecosystem on campus while contributing
-                  to awareness, engagement, and innovation conversations.
+                  The ITHAC Campus Ambassador Programme was created to
+                  empower students who are passionate about growth,
+                  technology, leadership, community building, and creating
+                  meaningful opportunities within their institutions. It gives
+                  students the chance to represent the ITHAC ecosystem on
+                  campus while contributing to awareness, engagement, learning
+                  initiatives, innovation conversations, and community
+                  development activities.
                 </p>
 
                 <div className="space-y-8 mb-10">
@@ -241,12 +245,16 @@ export default function ProgramsPage() {
                           professional growth
                         </li>
                         <li>
-                          Stronger communication, leadership, and networking
-                          skills
+                          Stronger communication, leadership, networking, and
+                          organisational skills
                         </li>
                         <li>
-                          Engagement across ecosystem activities and
-                          initiatives
+                          Opportunities to engage in ecosystem activities and
+                          support programme awareness
+                        </li>
+                        <li>
+                          A wider network and a role in initiatives that
+                          empower individuals and communities
                         </li>
                       </ul>
                     </div>
@@ -305,25 +313,29 @@ export default function ProgramsPage() {
                 </p>
                 <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
                   Designed for individuals who are passionate about
-                  supporting meaningful initiatives, volunteers contribute
-                  across technology, learning, media, creative production,
-                  community engagement, events, and operational support
-                  within the ITHAC ecosystem.
+                  supporting meaningful initiatives, contributing their
+                  skills, and becoming active participants in programmes that
+                  create value for people and communities. At ITHAC, we
+                  believe impact grows when individuals come together with
+                  shared purpose, ideas, and commitment towards meaningful
+                  outcomes.
                 </p>
 
                 <div className="grid sm:grid-cols-2 gap-6 mb-10">
                   <div className="p-6 bg-white rounded-2xl shadow-sm border border-outline-variant/10">
                     <h4 className="font-bold mb-2">Opportunity Areas</h4>
                     <p className="text-sm text-on-surface-variant">
-                      Digital skills, media production, cybersecurity
-                      awareness, and innovation programmes.
+                      Technology, learning, media, creative production,
+                      community engagement, events, social impact
+                      initiatives, communications, and operational support.
                     </p>
                   </div>
                   <div className="p-6 bg-white rounded-2xl shadow-sm border border-outline-variant/10">
                     <h4 className="font-bold mb-2">What You Gain</h4>
                     <p className="text-sm text-on-surface-variant">
-                      Practical exposure, expanded networks, and access to
-                      potential internship opportunities.
+                      Practical exposure, stronger professional capabilities,
+                      expanded networks, and a place within a collaborative
+                      environment focused on growth and development.
                     </p>
                   </div>
                 </div>
@@ -363,8 +375,12 @@ export default function ProgramsPage() {
                 <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
                   EPP connects businesses, organisations, institutions, and
                   strategic partners with opportunities that support growth,
-                  visibility, innovation, and long-term development through
-                  intentional partnerships across the ITHAC ecosystem.
+                  visibility, innovation, collaboration, and long-term
+                  development. We understand that organisations thrive when
+                  they operate within ecosystems that encourage knowledge
+                  sharing, strategic partnerships, and meaningful engagement,
+                  unlocking value not only internally but across industries
+                  and communities.
                 </p>
 
                 <div className="space-y-8 mb-10">
@@ -380,8 +396,8 @@ export default function ProgramsPage() {
                       </h4>
                       <p className="text-on-surface-variant">
                         Organisations looking to expand impact, strengthen
-                        networks, increase visibility, and support
-                        innovation.
+                        networks, increase visibility, support innovation,
+                        and contribute to meaningful transformation.
                       </p>
                     </div>
                   </div>
@@ -396,9 +412,9 @@ export default function ProgramsPage() {
                         What You Gain
                       </h4>
                       <ul className="text-on-surface-variant text-sm space-y-2 list-disc pl-4">
-                        <li>Access to ecosystem visibility and collaboration opportunities</li>
+                        <li>Access to collaboration opportunities and ecosystem visibility</li>
                         <li>Strategic conversations and learning engagements</li>
-                        <li>Development-focused programmes and partnerships</li>
+                        <li>Development-focused programmes and intentional partnerships</li>
                       </ul>
                     </div>
                   </div>
