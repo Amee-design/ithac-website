@@ -29,7 +29,144 @@ export default function ProgramsPage() {
         </header>
       </FadeIn>
 
-      {/* 2. DIGITAL EMPOWERMENT ACCELERATOR */}
+      {/* 2. KIDS DRONE & ROBOTICS BOOTCAMP - 5-DAY PROMO */}
+      <FadeIn delay={0.15}>
+        <section className="py-24 bg-surface-container-lowest">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-red-600/10 rounded-full mb-6">
+                  <span className="text-red-600 font-bold text-xs uppercase tracking-widest">
+                    5-Day Promo Alert
+                  </span>
+                </div>
+                <h2 className="font-headline text-4xl md:text-5xl font-black mb-6 text-primary">
+                  Kids Drone & Robotics Bootcamp
+                </h2>
+                <p className="text-2xl font-bold text-secondary mb-2 leading-tight">
+                  Give Your Child the Gift of Tech This Summer
+                </p>
+                <p className="text-lg text-on-surface-variant leading-relaxed mb-4">
+                  ITHAC&apos;s Kids Drone and Robotics Bootcamp is now{" "}
+                  <span className="font-black text-primary">₦30,000</span>{" "}
+                  <span className="line-through opacity-60">₦50,000</span>{" "}
+                  — but only for 5 days.
+                </p>
+                <p className="text-sm font-bold text-secondary mb-8 uppercase tracking-wide">
+                  Promo Dates: Monday, 20 July 2026 – Friday, 24 July 2026
+                </p>
+
+                <div className="mb-8">
+                  <h4 className="font-bold text-lg mb-3">
+                    What Kids Will Learn
+                  </h4>
+                  <ul className="text-on-surface-variant text-sm space-y-2 list-disc pl-4">
+                    <li>Build and fly drones</li>
+                    <li>Artificial Intelligence (AI)</li>
+                    <li>Introduction to robotics + coding fundamentals</li>
+                    <li>
+                      Engineering, design thinking & creative problem solving
+                    </li>
+                    <li>Team collaboration & technology innovation</li>
+                  </ul>
+                </div>
+
+                <div className="mb-10">
+                  <h4 className="font-bold text-lg mb-3">Bonuses Included</h4>
+                  <ul className="text-on-surface-variant text-sm space-y-2 list-disc pl-4">
+                    <li>Light lunch every day</li>
+                    <li>Certificate of completion</li>
+                    <li>Awards & exciting gifts</li>
+                    <li>100% hands-on learning</li>
+                  </ul>
+                </div>
+
+                <p className="text-sm font-bold text-on-surface-variant mb-6">
+                  This offer ends Friday, 24 July 2026. Limited slots are
+                  available!
+                </p>
+
+                <Link
+                  href="https://forms.gle/B1NdyL8g1f4nZuGQ6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-secondary text-on-secondary px-10 py-4 rounded-xl font-bold hover:bg-secondary-container transition-all shadow-xl active:scale-95 inline-block text-center"
+                >
+                  Register Now to Secure Your Child&apos;s Spot
+                </Link>
+              </div>
+              <div className="relative">
+                <div className="rounded-[2.5rem] overflow-hidden shadow-2xl">
+                  <img
+                    src="/programs-images/drone.jpeg"
+                    alt="Kids Drone & Robotics Bootcamp"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -top-10 -left-10 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 3. GIVE YOUR CHILD A HEAD START THIS HOLIDAY */}
+      <FadeIn delay={0.18}>
+        <section className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="order-2 lg:order-1 relative">
+                <div className="rounded-[2.5rem] overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
+                  <img
+                    src="/programs-images/robotics.jpeg"
+                    alt="Give Your Child a Head Start This Holiday"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-tertiary/10 rounded-full mb-6">
+                  <span className="text-tertiary font-bold text-xs uppercase tracking-widest">
+                    Holiday Tech Programme
+                  </span>
+                </div>
+                <h2 className="font-headline text-4xl md:text-5xl font-black mb-6 text-primary">
+                  Give Your Child a Head Start This Holiday
+                </h2>
+                <p className="text-2xl font-bold text-tertiary mb-8 leading-tight">
+                  This Holiday Can Be the Beginning of Your Child&apos;s
+                  Future
+                </p>
+                <p className="text-lg text-on-surface-variant leading-relaxed mb-6">
+                  Children learn best when they are exploring, creating, and
+                  solving real problems. Rather than spending the holidays
+                  with endless screen time or unstructured routines, give
+                  your child the opportunity to build valuable skills that
+                  will remain relevant for years to come.
+                </p>
+                <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
+                  At ITHAC, we believe every child deserves the chance to
+                  discover their potential in technology through engaging,
+                  practical experiences that develop creativity, confidence,
+                  and critical thinking. The future will belong to those who
+                  are prepared for it — why not give your child a head start?
+                </p>
+
+                <Link
+                  href="https://forms.gle/ugFvjLUiJg8oNxgz5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-tertiary text-on-tertiary px-10 py-4 rounded-xl font-bold hover:bg-tertiary-container transition-all shadow-xl active:scale-95 inline-block text-center"
+                >
+                  Register Your Child Today
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* 4. DIGITAL EMPOWERMENT ACCELERATOR */}
       <FadeIn delay={0.2}>
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-8">
@@ -120,7 +257,7 @@ export default function ProgramsPage() {
         </section>
       </FadeIn>
 
-      {/* 3. ENHANCED PARTNERSHIP PROGRAMME */}
+      {/* 5. ENHANCED PARTNERSHIP PROGRAMME */}
       <FadeIn delay={0.3}>
         <section className="py-24 bg-surface-container-lowest">
           <div className="max-w-7xl mx-auto px-8">
@@ -183,7 +320,7 @@ export default function ProgramsPage() {
         </section>
       </FadeIn>
 
-      {/* 4. ITHAC CAMPUS AMBASSADOR PROGRAMME */}
+      {/* 6. ITHAC CAMPUS AMBASSADOR PROGRAMME */}
       <FadeIn delay={0.35}>
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-8">
@@ -285,7 +422,7 @@ export default function ProgramsPage() {
         </section>
       </FadeIn>
 
-      {/* 5. ITHAC VOLUNTEER PROGRAMME */}
+      {/* 7. ITHAC VOLUNTEER PROGRAMME */}
       <FadeIn delay={0.4}>
         <section className="py-24 bg-surface-container-lowest">
           <div className="max-w-7xl mx-auto px-8">
@@ -354,7 +491,7 @@ export default function ProgramsPage() {
         </section>
       </FadeIn>
 
-      {/* 6. ENTERPRISE PARTNERSHIP PROGRAMME (EPP) */}
+      {/* 8. ENTERPRISE PARTNERSHIP PROGRAMME (EPP) */}
       <FadeIn delay={0.45}>
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-8">
@@ -442,7 +579,7 @@ export default function ProgramsPage() {
         </section>
       </FadeIn>
 
-      {/* 7. WHY ITHAC PROGRAMMES ARE DIFFERENT */}
+      {/* 9. WHY ITHAC PROGRAMMES ARE DIFFERENT */}
       <FadeIn delay={0.4}>
         <section className="py-24 bg-white">
           <div className="max-w-4xl mx-auto px-8 text-center">
@@ -482,7 +619,7 @@ export default function ProgramsPage() {
         </section>
       </FadeIn>
 
-      {/* 5. FINAL CTA */}
+      {/* 10. FINAL CTA */}
       <FadeIn delay={0.5}>
         <section className="py-24 bg-primary text-on-primary">
           <div className="max-w-7xl mx-auto px-8 text-center">
