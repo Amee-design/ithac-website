@@ -14,6 +14,7 @@ const Navbar = () => {
     { href: "/about-us", label: "About Us" },
     { href: "/services", label: "Programmes" },
     { href: "/courses", label: "Courses" },
+    { href: "/kids-bootcamp", label: "Kids Bootcamp" },
     { href: "/hub", label: "Ecosystem" },
     { href: "/communities", label: "Community" },
     { href: "/collaboration", label: "Partnerships" },
