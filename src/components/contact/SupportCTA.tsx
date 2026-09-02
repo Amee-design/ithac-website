@@ -236,7 +236,7 @@ export default function SupportCTA() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="tel:+234800000000"
+              href="tel:+2348034550677"
               className="group bg-white text-ithac-coral px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-white/90 hover:shadow-lg flex items-center gap-2 justify-center"
             >
               <Phone className="w-5 h-5" />

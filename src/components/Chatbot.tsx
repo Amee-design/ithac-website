@@ -53,7 +53,7 @@ const Chatbot = () => {
     location: {
       keywords: ["location", "where", "address", "abuja", "office"],
       response:
-        "📍 We're located in Abuja, Nigeria:\n\nITHAC Headquarters\nCarlin Concept Plaza, opposite Aco estate or Mantrac Caterpillar company, beside Salbas petrol station, Airport Road, Abuja, Nigeria\n\n📞 Phone: +234 902 143 9349\n📧 Email: contactus@ithac.org",
+        "📍 We're located in Abuja, Nigeria:\n\nITHAC Headquarters\nCarlin Concept Plaza, opposite Aco estate or Mantrac Caterpillar company, beside Salbas petrol station, Airport Road, Abuja, Nigeria\n\n📞 Office Number: 0803 455 0677\n💬 WhatsApp: +234 902 143 9349\n📧 Email: contactus@ithac.org",
     },
     requirements: {
       keywords: ["requirement", "prerequisite", "need", "qualify"],
@@ -68,7 +68,7 @@ const Chatbot = () => {
     contact: {
       keywords: ["contact", "reach", "get in touch", "call", "email"],
       response:
-        "Get in touch with us:\n\n📧 Email: contactus@ithac.org\n📞 Phone: +234 902 143 9349\n\nOr use the contact form on our website!",
+        "Get in touch with us:\n\n📧 Email: contactus@ithac.org\n📞 Office Number: 0803 455 0677\n💬 WhatsApp: +234 902 143 9349\n\nOr use the contact form on our website!",
     },
     about: {
       keywords: ["about", "who are you", "company", "ithac"],
