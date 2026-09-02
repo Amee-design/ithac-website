@@ -22,6 +22,12 @@ const Navbar = () => {
     { href: "/contact", label: "Contact" },
   ];
 
+  // Desktop shows a trimmed set; the rest live in the footer and mobile menu.
+  const desktopNavHrefs = ["/courses", "/kids-bootcamp", "/communities", "/contact"];
+  const desktopNavLinks = navLinks.filter((link) =>
+    desktopNavHrefs.includes(link.href),
+  );
+
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-[12px] shadow-[0_20px_40px_rgba(25,28,29,0.05)]">
       <div className="flex justify-between items-center max-w-7xl mx-auto px-8 h-20 w-full">
@@ -36,7 +42,7 @@ const Navbar = () => {
         </Link>
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
+          {desktopNavLinks.map((link) => (
             <Link
               key={link.href}
               className="text-zinc-600 text-sm font-semibold tracking-tight hover:text-blue-600 transition-colors"

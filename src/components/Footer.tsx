@@ -59,6 +59,22 @@ const Footer = () => {
             <li>
               <Link
                 className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm"
+                href="/"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm"
+                href="/about-us"
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm"
                 href="/services"
               >
                 Programs
