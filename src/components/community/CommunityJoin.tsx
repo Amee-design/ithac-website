@@ -121,15 +121,22 @@ const CommunityJoin = () => {
               className="text-accent-aqua hover:text-secondary-blue transition-colors"
             >
               community@ithac.org
-            </a>{" "}
-            or call us at{" "}
+            </a>
+            , call us on{" "}
             <a
-              href="https://wa.me/2348000000000"
+              href="tel:+2348034550677"
+              className="text-accent-aqua hover:text-secondary-blue transition-colors"
+            >
+              0803 455 0677
+            </a>{" "}
+            or message us on{" "}
+            <a
+              href="https://wa.me/2349021439349"
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent-aqua hover:text-secondary-blue transition-colors"
             >
-              +234 800 000 0000
+              +234 902 143 9349
             </a>
           </Typography>
         </motion.div>

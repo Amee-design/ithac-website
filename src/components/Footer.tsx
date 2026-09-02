@@ -59,6 +59,22 @@ const Footer = () => {
             <li>
               <Link
                 className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm"
+                href="/"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm"
+                href="/about-us"
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm"
                 href="/services"
               >
                 Programs
@@ -70,6 +86,14 @@ const Footer = () => {
                 href="/courses"
               >
                 Courses
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-zinc-500 hover:underline decoration-blue-500 decoration-2 underline-offset-4 text-sm"
+                href="/kids-bootcamp"
+              >
+                Kids Summer Bootcamp
               </Link>
             </li>
             <li>
@@ -121,8 +145,19 @@ const Footer = () => {
           </h5>
           <ul className="space-y-4">
             <li className="flex flex-col gap-1 text-zinc-500 text-sm">
-              <span className="font-bold text-xs uppercase">Call Now</span>
-              <a href="tel:+2349021439349" className="hover:text-blue-700">
+              <span className="font-bold text-xs uppercase">Office Number</span>
+              <a href="tel:+2348034550677" className="hover:text-blue-700">
+                0803 455 0677
+              </a>
+            </li>
+            <li className="flex flex-col gap-1 text-zinc-500 text-sm">
+              <span className="font-bold text-xs uppercase">WhatsApp</span>
+              <a
+                href="https://wa.me/2349021439349"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-700"
+              >
                 +234 902 143 9349
               </a>
             </li>

@@ -16,17 +16,17 @@ const contactMethods = [
   {
     icon: Phone,
     title: "Call Us",
-    description: "Mon-Fri from 8am to 6pm",
-    value: "+234 902 143 9349",
-    href: "tel:+2349021439349",
+    description: "ITHAC Office Number",
+    value: "0803 455 0677",
+    href: "tel:+2348034550677",
     color: "ithac-emerald",
   },
   {
     icon: MessageCircle,
-    title: "Live Chat",
+    title: "WhatsApp Us",
     description: "Chat with our team",
-    value: "Start Conversation",
-    href: "#",
+    value: "+234 902 143 9349",
+    href: "https://wa.me/2349021439349",
     color: "ithac-purple",
   },
 ];

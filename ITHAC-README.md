@@ -237,7 +237,8 @@ extend: {
 For questions about the ITHAC homepage implementation:
 
 - **Email**: contactus@ithac.org
-- **Phone**: +234 902 143 9349
+- **Office Number**: 0803 455 0677
+- **WhatsApp**: +234 902 143 9349
 - **Address**: Carlin Concept Plaza, opposite Aco estate or Mantrac Caterpillar company, beside Salbas petrol station, Airport Road, Abuja, Nigeria
 
 ---

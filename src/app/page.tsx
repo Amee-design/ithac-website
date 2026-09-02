@@ -230,6 +230,62 @@ export default function HomePage() {
         </section>
       </FadeIn>
 
+      {/* 4b. KIDS SUMMER BOOTCAMP SPOTLIGHT */}
+      <FadeIn delay={0.45}>
+        <section className="py-24 bg-surface-container-lowest">
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <span className="font-label uppercase tracking-widest text-sm text-secondary font-bold mb-4 block">
+                  ITHAC Foundation
+                </span>
+                <h2 className="font-headline text-4xl font-extrabold tracking-tight mb-6">
+                  ITHAC Kids Summer Bootcamp
+                </h2>
+                <p className="text-lg text-on-surface-variant leading-relaxed mb-6">
+                  Six days introducing curious young minds in Abuja to
+                  Artificial Intelligence, prompt engineering, and hands-on
+                  drone technology. From first questions to flying drones with
+                  real confidence, watch the day-by-day journey.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {["Artificial Intelligence", "Prompt Engineering", "Drone Technology"].map(
+                    (tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wide rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ),
+                  )}
+                </div>
+                <Link
+                  href="/kids-bootcamp"
+                  className="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold hover:bg-secondary-container transition-all active:scale-95 inline-flex items-center gap-2"
+                >
+                  Watch the Journey
+                  <span className="material-symbols-outlined text-sm">
+                    arrow_forward
+                  </span>
+                </Link>
+              </div>
+              <div className="rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white bg-black">
+                <video
+                  controls
+                  preload="metadata"
+                  playsInline
+                  className="w-full max-h-[70vh] bg-black"
+                >
+                  <source src="/VIDEOS/VIDEO-1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
       {/* 5. THE ITHAC ECOSYSTEM SECTION */}
       <FadeIn delay={0.5}>
         <section className="py-24 bg-primary text-on-primary overflow-hidden relative">

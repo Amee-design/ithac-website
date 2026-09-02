@@ -2,7 +2,15 @@
 
 import { motion } from "framer-motion";
 import Container from "../ui/Container";
-import { MapPin, Clock, Phone, Mail, Globe, Users } from "lucide-react";
+import {
+  MapPin,
+  Clock,
+  Phone,
+  Mail,
+  Globe,
+  Users,
+  MessageCircle,
+} from "lucide-react";
 
 const offices = [
   {
@@ -10,7 +18,8 @@ const offices = [
     country: "Nigeria",
     address:
       "Carlin Concept Plaza, opposite Aco estate or Mantrac Caterpillar company, beside Salbas petrol station, Airport Road, Abuja, Nigeria",
-    phone: "+234 902 143 9349",
+    phone: "0803 455 0677",
+    whatsapp: "+234 902 143 9349",
     email: "contactus@ithac.org",
     hours: "Mon-Fri: 8am-6pm WAT",
     timezone: "GMT+1",
@@ -88,9 +97,22 @@ export default function ContactInfo() {
                   <div className="flex items-start gap-3">
                     <Phone className="w-5 h-5 text-secondary-blue mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-medium text-gray-800">Phone</p>
+                      <p className="font-medium text-gray-800">Office Number</p>
                       <a
-                        href={`https://wa.me/${office.phone.replace(
+                        href={`tel:+234${office.phone.replace(/[^0-9]/g, "").replace(/^0/, "")}`}
+                        className="text-secondary-blue hover:text-accent-aqua transition-colors"
+                      >
+                        {office.phone}
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <MessageCircle className="w-5 h-5 text-secondary-blue mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="font-medium text-gray-800">WhatsApp</p>
+                      <a
+                        href={`https://wa.me/${office.whatsapp.replace(
                           /[^0-9]/g,
                           "",
                         )}`}
@@ -98,7 +120,7 @@ export default function ContactInfo() {
                         rel="noopener noreferrer"
                         className="text-secondary-blue hover:text-accent-aqua transition-colors"
                       >
-                        {office.phone}
+                        {office.whatsapp}
                       </a>
                     </div>
                   </div>
